@@ -18,19 +18,57 @@ body {
     align-items: center;
     flex-direction: column;
     z-index: 1;
+    flex: 1 100%;
 }
 
 #intro_title{
     position:relative;
     color:red;
     top: 30%;
-    align-self: center;
-    overflow: auto;
 }
-#intro_buttons{
-    position:relative;
+#intro_title h1{
+    text-align: center;
+}
+/*nav*/
+#menu{
+position: relative;
+    top: 2em;
+    font-size: 140%;
+    letter-spacing: 4px;
     color:greenyellow;
-    top: 50%;
-    align-self: center;
-    overflow: auto;
+}
+#menu li{
+    float:left;
+    list-style-type: none;
+   padding:30px;
+   background-color: blueviolet;
+   margin:10px;
+}
+#menu a {
+    text-decoration: none;
+    color:inherit;
+}
+
+/* for medium screen sizes from 950px */
+@media screen and (max-width: 950px) {
+    /* #intro_buttons{
+   clear:left;
+    
+    margin-left: 30px;
+    margin-bottom: 20px;
+    line-height: 25px;
+    width: 100%;
+    }
+    #menu{
+       
+        width:80%;
+        margin:0 auto;
+    }*/
+    #menu li{
+        float:none;
+       /* clear:both;
+        width:100%;
+        margin:0 auto;*/
+    }
+
 }
