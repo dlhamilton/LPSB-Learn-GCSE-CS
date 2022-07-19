@@ -27,3 +27,10 @@ body {
     align-self: center;
     overflow: auto;
 }
+#intro_buttons{
+    position:relative;
+    color:greenyellow;
+    top: 50%;
+    align-self: center;
+    overflow: auto;
+}
