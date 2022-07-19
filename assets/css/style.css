@@ -1,3 +1,29 @@
-body h1 {
+*{
+    margin:0;
+    padding:0;
+    border: none;
+}
+body {
     font-family: "Lucida Console", "Courier New", monospace;
+}
+#intro{
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+   /* justify-content: center;*/
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+#intro_title{
+    position:relative;
+    color:red;
+    top: 30%;
+    align-self: center;
+    overflow: auto;
 }
