@@ -32,7 +32,7 @@ body {
 /*nav*/
 #menu{
 position: relative;
-    top: 2em;
+    top: 6vh;
     font-size: 140%;
     letter-spacing: 4px;
     color:greenyellow;
@@ -42,7 +42,10 @@ position: relative;
     list-style-type: none;
    padding:30px;
    background-color: blueviolet;
-   margin:10px;
+ margin: 0 2vw;
+   -webkit-box-sizing: border-box; 
+ -moz-box-sizing: border-box;  
+   box-sizing: border-box;
 }
 #menu a {
     text-decoration: none;
@@ -51,24 +54,14 @@ position: relative;
 
 /* for medium screen sizes from 950px */
 @media screen and (max-width: 950px) {
-    /* #intro_buttons{
-   clear:left;
-    
-    margin-left: 30px;
-    margin-bottom: 20px;
-    line-height: 25px;
-    width: 100%;
+
+    #intro_title{
+        width:90%;
     }
-    #menu{
-       
-        width:80%;
-        margin:0 auto;
-    }*/
     #menu li{
-        float:none;
-       /* clear:both;
+        margin: 1em 0;
+         clear:both;
         width:100%;
-        margin:0 auto;*/
     }
 
 }
