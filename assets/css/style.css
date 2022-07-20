@@ -4,7 +4,7 @@
     border: none;
 }
 body {
-    font-family: "Lucida Console", "Courier New", monospace;
+    font-family: "Lucida Console", "Courier New", "monospace";
 }
 #intro{
     background-color: blue;
@@ -19,6 +19,7 @@ body {
     flex-direction: column;
     z-index: 1;
     flex: 1 100%;
+    overflow: auto;
 }
 
 #intro_title{
@@ -57,11 +58,18 @@ position: relative;
 
     #intro_title{
         width:90%;
+        top:10%;
     }
     #menu li{
-        margin: 1em 0;
+        margin: 2% 0;
          clear:both;
         width:100%;
     }
 
+}
+
+@media screen and (max-height: 520px) {
+    #intro_title{
+       margin-bottom: 100px;
+    }
 }
