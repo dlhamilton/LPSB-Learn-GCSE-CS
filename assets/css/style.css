@@ -34,11 +34,12 @@ body{
 
 #intro_title{
     position:relative;
-    color:red;
+    color:white;
     top: 30%;
 }
 #intro_title h1{
     text-align: center;
+    font-size: 400%;
 }
 /*nav*/
 #menu{
@@ -49,6 +50,7 @@ position: relative;
     color:rgb(14,0,255);
 }
 #menu li{
+    text-align: center;
     float:left;
     list-style-type: none;
    padding:30px;
