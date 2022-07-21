@@ -54,6 +54,10 @@ position: relative;
     text-decoration: none;
     color:inherit;
 }
+#menu li:hover {
+    color: rgb(230, 230, 255);
+    background-color:rgb(14,0,255);
+}
 #school_logo{
     background-image: url(../images/logo_lpsb.png);
     background-position:center;
