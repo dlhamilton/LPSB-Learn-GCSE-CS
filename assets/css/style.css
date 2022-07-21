@@ -72,12 +72,15 @@ position: relative;
 }
 #school_logo{
     /* display: flex; */
+    background-image: url(../images/logo_lpsb.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:contain;
     color:maroon;
     top: 0;
     right: 0;
     max-width: 10em;
     max-height: 10em;
-    border:1px solid maroon;
     position: absolute;
     min-height: 5em;
     min-width: 5em;
