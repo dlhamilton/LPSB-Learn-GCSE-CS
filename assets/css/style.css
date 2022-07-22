@@ -11,6 +11,8 @@ body {
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed; 
+    animation-name: fadein;
+    animation-duration: 2s;
 }
 #intro{
     position: absolute;
@@ -71,6 +73,19 @@ position: relative;
     min-height: 5em;
     min-width: 5em;
 }
+@keyframes fadein {
+    0%   { opacity: 0.0;}
+    10%   { opacity: 0.1;}
+    20%  { opacity: 0.2;}
+    30%  { opacity: 0.3;}
+    40%  { opacity: 0.4;}
+    500% { opacity: 0.5;}
+    60%  { opacity: 0.6;}
+    70%  { opacity: 0.7;}
+    80%  { opacity: 0.8;}
+    90%  { opacity: 0.9;}
+    100% { opacity: 1;}
+  }
 /* for medium screen sizes from 950px */
 @media screen and (max-width: 950px) {
     #intro_title{
