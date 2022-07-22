@@ -67,11 +67,16 @@ position: relative;
     background-size:contain;
     top: 0;
     right: 0;
-    max-width: 10em;
-    max-height: 10em;
+    /* max-width: 10em;
+    max-height: 10em; */
     position: absolute;
     min-height: 5em;
     min-width: 5em;
+    transition: width 2s, height 2s,
+}
+#school_logo:hover{
+    width: 7em;
+  height: 7em;
 }
 @keyframes fadein {
     0%   { opacity: 0.0;}
