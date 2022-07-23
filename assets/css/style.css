@@ -161,7 +161,10 @@ overflow:auto;
 font-size:12px!important;
 text-align:center!important;
 }
-
+#large_nav img{
+opacity: 0.5;
+vertical-align:middle;
+}
 #large_nav .nav-item{
     width:100%;
     display:block;
