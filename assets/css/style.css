@@ -383,6 +383,53 @@ details > summary {
     content: "Show Specification Content";
   }
 
+  .s_3_3_1{
+    color:#ffabab;
+  }
+  .s_3_3_2{
+    color:#ffcba9;
+  }
+  .s_3_3_3{
+    color:#ffff89;
+  }
+  .s_3_3_4{
+    color:#dbffd6;
+  }
+  .s_3_3_5{
+    color:#ace7f8;
+  }
+  .s_3_3_6{
+    color:#afcbff;
+  }
+  .s_3_3_7{
+    color:#d5aaff;
+  }
+  .s_3_3_8{
+    color:#ffccf9;
+  }
+
+  .lesson_button{
+    display:inline-block;
+    padding: 10px;
+    border: 2px solid black;
+   list-style:none;
+   text-decoration: none;
+   width: 12em;
+   text-align: center;
+   margin: 20px 2px;
+   box-sizing: border-box;
+   background-color:black;
+   color:white;
+  }
+
+  .lesson_button:hover{
+    background-color:#696969;
+   color:#ffabab;
+  }
+  .question_button{
+    display:inline-block;
+  }
+
   @media screen and (max-width:600px){
     details td{
         width:100vw;
@@ -390,5 +437,9 @@ details > summary {
       details > table {
         width:100%;
         min-width: 200%;
+      }
+      .lesson_button{
+width:100%;
+margin: 10px 2px;
       }
 }
