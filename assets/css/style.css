@@ -353,6 +353,14 @@ details > summary {
     border-collapse: collapse;
     
   }
+
+  details[open] summary::before {
+    content: "Click to hide Specification Content";
+  }
+  details:not([open]) summary::after {
+    content: "Click to show Specification Content";
+  }
+
   @media screen and (max-width:600px){
     details td{
         width:100vw;
