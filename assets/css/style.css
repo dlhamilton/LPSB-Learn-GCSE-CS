@@ -206,7 +206,7 @@ line-height: 2;
     cursor:not-allowed;
     opacity:0.3;}
 
-    .nav-item:hover{
+    .nav-item:hover, #large_nav .active{
         /* color:#000!important; */
         color:#696969;
         background-color: white!important;
@@ -245,7 +245,7 @@ margin:auto;
     display:table;
     clear:both
 }
-#small_nav span:hover{
+#small_nav span:hover, #small_nav .active{
     opacity:1;
     background-color: white;
     color: #696969;
