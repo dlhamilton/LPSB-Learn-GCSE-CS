@@ -48,7 +48,7 @@
 
 <!-- Header/Home -->
 <header id="page_header">
-<h1>Binary arithmetic</h1>
+<h1>Representing images</h1>
 <p>Computer Science Hub</p>
 </header>
 
@@ -58,35 +58,29 @@
  <div id="lesson_content">
     <!-- Article title -->
     <h1>Lesson</h1>
-    <h2><u>Binary addition</u></h2>
-<p><em>Binary addition rules</em></p>
-<p>0<sub>2</sub> + 0<sub>2</sub>  = 0<sub>2</sub> </p>
-<p>0<sub>2</sub> + 1<sub>2</sub>  = 1<sub>2</sub> </p>
-<p>1<sub>2</sub>  + 0<sub>2</sub>  = 1<sub>2</sub> </p>
-<p>1<sub>2</sub>  + 1<sub>2</sub>  = 10<sub>2</sub>  (carry 1)</p>
-<p>1<sub>2</sub>  + 1<sub>2</sub>  + 1<sub>2</sub> =11<sub>2</sub>  (carry 1)</p>
-<figure><img src="/assets/images/binary_add_img.png" alt="Image showing an example of adding three bnary numbers together"></figure>
+<p>Bitmap images are made up from tiny dots called <strong>pixels</strong>. Each pixel will have a colour associated with it.  An image can then be constructed from many of pixels which will have different colours arranged in rows and columns.</p>
+   <br>
+   <p><em>Total number of pixels in image = width in pixels x height in pixels</em></p>
 <br>
-<h2><u>Binary Shift</u></h2>
-<p>The binary shift operator is used to perform multiplication and division of numbers by powers of 2</p>
+<figure><img src="/assets/images/pixel_grid.png" alt="Grid showing how pixels are arrangd in an image"></figure>
 <br>
-<table>
-  <tr><td>multiply/divide</td><td>x 16</td><td>x 8</td><td>x 4</td><td>x 12</td><td>/ 2</td><td>/ 4</td><td>/ 8</td></tr>
-  <tr><td>shift</td><td>Left 4</td><td>Left 3</td><td>Left 2</td><td>Left 1</td><td>Right 1</td><td>Right 2</td><td>Right 3</td></tr>
-</table>
+<p><strong>Colour depth</strong> is the number of bits used to represent each pixel in an image. If we have a black and white image it has two colours.  Each pixel can be represented by a single pixel because a bit value of 0 is black and 1 is white.</p>
 <br>
-<p><em>Example:</em> Apply shift operator to 1101<sub>2</sub> (13<sub>10</sub>)</p>
+<p><em>Image and corresponding binary encoding</em></p>
+<figure><img src="/assets/images/bw_pixel_img.jpeg" alt="black and white smile image"></figure>
+<p>11111111 10011001 10011001 11111111 11111111 10111101 11000011 11111111</p>
 <br>
-<table>
-  <tr><th>Shift</th><th>Result</th><th>denary</th></tr>
-  <tr><td>Left 1</td><td>11010<sub>2</sub></td><td>13<sub>10</sub> x 2<sub>10</sub> =26<sub>10</sub></td></tr>
-  <tr><td>Left 2</td><td>110100<sub>2</sub></td><td>13<sub>10</sub> x 4<sub>10</sub> =52<sub>10</sub></td></tr>
-  <tr><td>Right 1</td><td>110<sub>2</sub></td><td>13<sub>10</sub> // 2<sub>10</sub> =6<sub>10</sub></td></tr>
-</table>
+<p>To represent more colours we can use more bits.  For instance if we have 2-bits per pixel we can represent 4 colours because we know have 4 binary code combinations (00, 01, 10 11) where each code represents a different colour</p>
 <br>
-<p>Note that odd numbers are rounded down to the nearest integer when the right shift operator is applied.</p>
+<p><strong>Pixilation</strong> occurs when the image is overstretched. In these situations, the image looses quality and has a blocky and blurred appearance. This arises when the image is presented at too large a size and there are not enough pixels to reproduce the details in the image at this larger size.</p>
+   <br>
+   <h2>Calculating the size of a bitmap image </h2>
+   <br>
+   <p><em>File size in bits = width in pixels x height in pixels x colour depth</em></p>
+   <br>
+   <p><em>File size in bytes = width in pixels x height in pixels x colour depth / 8</em></p>
 
-    </div>
+</div>
 
 
 <!-- Question Content -->

@@ -58,35 +58,75 @@
  <div id="lesson_content">
     <!-- Article title -->
     <h1>Lesson</h1>
-    <h2><u>Binary addition</u></h2>
-<p><em>Binary addition rules</em></p>
-<p>0<sub>2</sub> + 0<sub>2</sub>  = 0<sub>2</sub> </p>
-<p>0<sub>2</sub> + 1<sub>2</sub>  = 1<sub>2</sub> </p>
-<p>1<sub>2</sub>  + 0<sub>2</sub>  = 1<sub>2</sub> </p>
-<p>1<sub>2</sub>  + 1<sub>2</sub>  = 10<sub>2</sub>  (carry 1)</p>
-<p>1<sub>2</sub>  + 1<sub>2</sub>  + 1<sub>2</sub> =11<sub>2</sub>  (carry 1)</p>
-<figure><img src="/assets/images/binary_add_img.png" alt="Image showing an example of adding three bnary numbers together"></figure>
+    <p>The purpose of data compression is to make the files smaller which means that:</p>
+    <ul>
+      <li>Less time / less bandwidth to transfer data</li>
+      <li>Take up less space on the disk</li>
+    </ul>
+    <br>
+    <p>Given that there are 7 bits per ASCII character, the uncompressed size of an ASCII phrase is:</p>
 <br>
-<h2><u>Binary Shift</u></h2>
-<p>The binary shift operator is used to perform multiplication and division of numbers by powers of 2</p>
+<p><em>size = number of characters (including spaces) x 7</em></p>
 <br>
+<p><strong>Run Length Encoding (RLE)</strong> is a compression method where sequences of the same values are stored in pairs of the value and the number of those values. For instance, the sequence: </p>
+<p><em>0 0 0 1 1 0 1 1 1 1 0 1 1 1 1 </em></p>
+<p>would be represented as: </p>
+<p><em>3 0 2 1 1 0 4 1 1 0 4 1</em></p>
+<br>
+<p>
+  <strong>Huffman coding</strong> is a form of compression that allows us to use fewer bits for higher frequency data. More common letters are represented using fewer bits than less common letters.  For instance, “a” and “e”, which occur in many words would be represented with fewer bit than “z” which occurs rarely.
+This allows for much more effective compression than RLE.
+</p>
+<br>
+<p>The steps involved in Huffman encoding as are follows:</p>
+<ol>
+  <li>Do frequency table</li>
+  <li>Order table</li>
+  <li>Create the tree</li>
+  <li>Add 1, 0 to the branches</li>
+  <li>Encode letters</li>
+  <li>Encode message</li>
+</ol>
+<br>
+<p><em>Worked Example: How much smaller is the phrase henry horse encoded using Huffman encoding compared with its uncompressed size.</em></p>
+<br>
+<p><em>Calculate the uncompressed size</em></p>
+<p>In the phrase henry horse there are 11 characters (including the space).  
+  Therefore the uncompressed size is 11 x 7 = <u>77 bits</u></p>
+<br>
+<p><em>Generate ordered frequency table (steps 1 and 2)</em></p>
 <table>
-  <tr><td>multiply/divide</td><td>x 16</td><td>x 8</td><td>x 4</td><td>x 12</td><td>/ 2</td><td>/ 4</td><td>/ 8</td></tr>
-  <tr><td>shift</td><td>Left 4</td><td>Left 3</td><td>Left 2</td><td>Left 1</td><td>Right 1</td><td>Right 2</td><td>Right 3</td></tr>
+  <tr><th>letter</th><th>frequency</th></tr>
+  <tr><td>e</td><td>2</td></tr>
+  <tr><td>h</td><td>2</td></tr>
+  <tr><td>r</td><td>2</td></tr>
+  <tr><td>space</td><td>1</td></tr>
+  <tr><td>o</td><td>1</td></tr>
+  <tr><td>s</td><td>1</td></tr>
+  <tr><td>y</td><td>1</td></tr>
+  <tr><td>n</td><td>1</td></tr>
 </table>
 <br>
-<p><em>Example:</em> Apply shift operator to 1101<sub>2</sub> (13<sub>10</sub>)</p>
-<br>
-<table>
-  <tr><th>Shift</th><th>Result</th><th>denary</th></tr>
-  <tr><td>Left 1</td><td>11010<sub>2</sub></td><td>13<sub>10</sub> x 2<sub>10</sub> =26<sub>10</sub></td></tr>
-  <tr><td>Left 2</td><td>110100<sub>2</sub></td><td>13<sub>10</sub> x 4<sub>10</sub> =52<sub>10</sub></td></tr>
-  <tr><td>Right 1</td><td>110<sub>2</sub></td><td>13<sub>10</sub> // 2<sub>10</sub> =6<sub>10</sub></td></tr>
+<figure><figcaption><em>Create the tree and add 1 and 0 to branches (steps 3 and 4)</em></figcaption><img src="/assets/images/huffman_tree.png" alt="huffman tree example"></figure>
+ <br>
+ <table>
+  <tr><th>letter</th><th>encoding</th></tr>
+  <tr><td>e</td><td>01</td></tr>
+  <tr><td>h</td><td>00</td></tr>
+  <tr><td>r</td><td>111</td></tr>
+  <tr><td>space</td><td>100</td></tr>
+  <tr><td>o</td><td>1011</td></tr>
+  <tr><td>s</td><td>1010</td></tr>
+  <tr><td>y</td><td>1101</td></tr>
+  <tr><td>n</td><td>1100</td></tr>
 </table>
 <br>
-<p>Note that odd numbers are rounded down to the nearest integer when the right shift operator is applied.</p>
+<p><em>Encode message</em></p>
+<p>00 01 1100 111 1101 100 00 1011 111 1000 01 = <u>33 bits</u></p>
+<br>
+<p>Therefore by using compression we have reduced the size from 77 bits to 33 bits a saving of <u>44 bits</u>.</p>
 
-    </div>
+</div>
 
 
 <!-- Question Content -->

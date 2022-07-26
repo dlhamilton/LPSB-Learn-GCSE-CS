@@ -48,7 +48,7 @@
 
 <!-- Header/Home -->
 <header id="page_header">
-<h1>Binary arithmetic</h1>
+<h1>Representing images</h1>
 <p>Computer Science Hub</p>
 </header>
 
@@ -58,35 +58,30 @@
  <div id="lesson_content">
     <!-- Article title -->
     <h1>Lesson</h1>
-    <h2><u>Binary addition</u></h2>
-<p><em>Binary addition rules</em></p>
-<p>0<sub>2</sub> + 0<sub>2</sub>  = 0<sub>2</sub> </p>
-<p>0<sub>2</sub> + 1<sub>2</sub>  = 1<sub>2</sub> </p>
-<p>1<sub>2</sub>  + 0<sub>2</sub>  = 1<sub>2</sub> </p>
-<p>1<sub>2</sub>  + 1<sub>2</sub>  = 10<sub>2</sub>  (carry 1)</p>
-<p>1<sub>2</sub>  + 1<sub>2</sub>  + 1<sub>2</sub> =11<sub>2</sub>  (carry 1)</p>
-<figure><img src="/assets/images/binary_add_img.png" alt="Image showing an example of adding three bnary numbers together"></figure>
+<p><strong>Sample</strong> - Measure of the analogue signal at a given point in time</p>
 <br>
-<h2><u>Binary Shift</u></h2>
-<p>The binary shift operator is used to perform multiplication and division of numbers by powers of 2</p>
+<p><strong>Sample rate</strong> - number of samples taken per second and is measured in Hertz.</p>
 <br>
-<table>
-  <tr><td>multiply/divide</td><td>x 16</td><td>x 8</td><td>x 4</td><td>x 12</td><td>/ 2</td><td>/ 4</td><td>/ 8</td></tr>
-  <tr><td>shift</td><td>Left 4</td><td>Left 3</td><td>Left 2</td><td>Left 1</td><td>Right 1</td><td>Right 2</td><td>Right 3</td></tr>
-</table>
+<p><strong>Sample resolution</strong> - number of bits used to represent each sample</p>
 <br>
-<p><em>Example:</em> Apply shift operator to 1101<sub>2</sub> (13<sub>10</sub>)</p>
+<p>The size of sound files can be calculated using:</p>
 <br>
-<table>
-  <tr><th>Shift</th><th>Result</th><th>denary</th></tr>
-  <tr><td>Left 1</td><td>11010<sub>2</sub></td><td>13<sub>10</sub> x 2<sub>10</sub> =26<sub>10</sub></td></tr>
-  <tr><td>Left 2</td><td>110100<sub>2</sub></td><td>13<sub>10</sub> x 4<sub>10</sub> =52<sub>10</sub></td></tr>
-  <tr><td>Right 1</td><td>110<sub>2</sub></td><td>13<sub>10</sub> // 2<sub>10</sub> =6<sub>10</sub></td></tr>
-</table>
+<p><em>size of file = length (seconds) x sample rate x sampling resolution </em></p>
 <br>
-<p>Note that odd numbers are rounded down to the nearest integer when the right shift operator is applied.</p>
+<p>For sound to be stored digitally on a computer it needs to be converted from its continuous analogue form into a discrete binary values. The steps are:</p>
+<ol>
+  <li>Microphone detects the sound wave and converts it into an electrical (analogue) signal</li>
+  <li>The analogue signal is sampled at regular intervals</li>
+  <li>The samples are approximated to the nearest integer (quantised)</li>
+  <li>Each integer is encoded in binary with a fixed number of bits</li>
+</ol>
+<br>
+<figure><figcaption><em>Original analogue signal</em></figcaption><img src="/assets/images/a2d_step_1.jpg" alt="Image showing Original analogue signal" ></figure>
+<figure><figcaption><em>Sample signal at regular intervals</em></figcaption><img src="/assets/images/a2d_step_2.jpg" alt="Image showing Sample signal at regular intervals" ></figure>
+<figure><figcaption><em>Integer values give to each sample</em></figcaption><img src="/assets/images/a2d_step_3.png" alt="Image showing Integer values give to each sample" ></figure>
+<figure><figcaption><em>Encode as binary</em></figcaption><img src="/assets/images/a2d_step_4.png" alt="Image showing Encode as binary" ></figure>
 
-    </div>
+</div>
 
 
 <!-- Question Content -->
