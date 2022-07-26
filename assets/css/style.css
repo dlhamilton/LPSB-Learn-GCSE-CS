@@ -317,6 +317,7 @@ clear:both;
   color:black !important;
     list-style:none;
    text-decoration: none;
+
 }
 #page_footer p{
   word-spacing: 0px;
@@ -324,6 +325,14 @@ clear:both;
 #page_footer img{
 width: 22px;
 height: 22px;
+
+
+}
+#page_footer img:hover{
+  background-color:rgba(105,105,105,0.5);
+}
+#page_footer i:hover {
+  background-color: rgba(105,105,105,0.5);
 }
 
 @media screen and (max-width:600px){
