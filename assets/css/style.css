@@ -381,7 +381,7 @@ details > summary {
     /* min-width: 800px; */
     border: 2px solid black;
   }
-  details td,th{
+  details td, details th{
     padding: 5px;
     width:50%;
   }

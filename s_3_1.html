@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get ready to learn the GCSE theory topics">
+    <meta name="keywords" content="computer science, gcse, binary, base 2, computing">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>LPSB Computer Science</title>
+</head>
+<body>
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav id="large_nav">
+  <img src="./assets/images/logo_lpsb.png" style="width:100%">
+  <a href="/lessons.html" title="Go to Lesson" class="nav-item active">
+    <i class="fa-solid fa-book-open"></i>
+    <p>Lessons</p>
+  </a>
+  <a href="#" title="Go to Exam questions" class="nav-item">
+    <i class="fa-solid fa-pen-to-square"></i>
+    <p>Exam</p>
+  </a>
+  <a href="#" title="Go to Upload" class="nav-item">
+    <i class="fa-solid fa-file-arrow-up"></i>
+    <p>Upload</p>
+  </a>
+  <a href="#" title="Go to Drop in" class="nav-item">
+    <i class="fa-solid fa-person-chalkboard"></i>
+    <p>Drop In</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<nav id="small_nav">
+ <span class="active"><a href="/lessons.html" title="Go to Lesson">Lessons</a></span> 
+<span><a href="#"title="Go to Exam questions">Exam</a></span> 
+<span><a href="#" title="Go to Upload" >Upload</a></span> 
+<span><a href="#" title="Go to Drop in">Drop In</a></span> 
+</nav>
+
+<!-- Page Content -->
+<main id="main_content">
+
+
+
+<!-- Header/Home -->
+<header id="page_header">
+<h1>Data Representation</h1>
+<p>Computer Science Hub</p>
+</header>
+
+  <!-- Section -->
+  <article id="page_section">
+ <!-- Lesson Content -->
+ <div id="lesson_content">
+    <!-- Article title -->
+    <h1>Lesson</h1>
+
+   
+      <p> 
+        <strong>Denary (or decimal)</strong> is base-10 and is the number system we are most familiar with. 
+        We have the columns of units, tens, hundreds, thousands and so on. 
+        Base-10 means that we have 10 possible values (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) in each column.
+      </p><br>
+      <p>
+        <strong>Binary</strong> is base-2 and has 2 values, 0 and 1. 
+        It requires a greater number of digits in binary to represent a number than denary. 
+        This is how data and instructions are stored in a computer.
+      </p><br>
+      <p>
+        To calculate the maximum value for a given number of bits we use 2<sup>n</sup>-1 where n is the number of bits.  
+        For example for 4 bits we have 2<sup>4</sup>-1 which is 15.
+      </p><br>
+      <table>
+        <tr>
+          <th><strong>Bits</strong></th>
+          <th><strong>Max value binary</strong></th>
+          <th><strong>Max value denary</strong></th>
+        </tr>
+        <tr><td>1</td><td>1<sub>2</sub></td><td>1<sub>10</sub></td></tr>
+        <tr><td>2</td><td>11<sub>2</sub></td><td>3<sub>10</sub></td></tr>
+        <tr><td>3</td><td>111<sub>2</sub></td><td>7<sub>10</sub></td></tr>
+        <tr><td>4</td><td>1111<sub>2</sub></td><td>15<sub>10</sub></td></tr>
+        <tr><td>5</td><td>11111<sub>2</sub></td><td>31<sub>10</sub></td></tr>
+        <tr><td>6</td><td>111111<sub>2</sub></td><td>63<sub>10</sub></td></tr>
+        <tr><td>7</td><td>1111111<sub>2</sub></td><td>127<sub>10</sub></td></tr>
+        <tr><td>8</td><td>11111111<sub>2</sub></td><td>255<sub>10</sub></td></tr>
+      </table>
+      <br>
+      <p>
+        <strong>Hexadecimal</strong> is base-16.  
+        To make up the 16 values we use the ten denary numbers in addition to 6 letters (A, B, C, D, E, F).
+      </p>
+      <br>
+      <table>
+        <tr>
+          <th><strong>Denary</strong></th>
+          <th><strong>Hex.</strong></th>
+          <th><strong>Binary</strong></th>
+        </tr>
+        <tr><td>0<sub>10</sub></td><td>0<sub>16</sub></td><td>0000<sub>2</sub></td></tr>
+        <tr><td>1<sub>10</sub></td><td>1<sub>16</sub></td><td>0001<sub>2</sub></td></tr>
+        <tr><td>2<sub>10</sub></td><td>2<sub>16</sub></td><td>0010<sub>2</sub></td></tr>
+        <tr><td>3<sub>10</sub></td><td>3<sub>16</sub></td><td>0011<sub>2</sub></td></tr>
+        <tr><td>4<sub>10</sub></td><td>4<sub>16</sub></td><td>0100<sub>2</sub></td></tr>
+        <tr><td>5<sub>10</sub></td><td>5<sub>16</sub></td><td>0101<sub>2</sub></td></tr>
+        <tr><td>6<sub>10</sub></td><td>6<sub>16</sub></td><td>0110<sub>2</sub></td></tr>
+        <tr><td>7<sub>10</sub></td><td>7<sub>16</sub></td><td>0111<sub>2</sub></td></tr>
+      </table>
+      <table>
+        <tr>
+          <th><strong>Denary</strong></th>
+          <th><strong>Hex.</strong></th>
+          <th><strong>Binary</strong></th>
+        </tr>
+        <tr><td>8<sub>10</sub></td><td>8<sub>16</sub></td><td>1000<sub>2</sub></td></tr>
+        <tr><td>9<sub>10</sub></td><td>9<sub>16</sub></td><td>1001<sub>2</sub></td></tr>
+        <tr><td>10<sub>10</sub></td><td>A<sub>16</sub></td><td>1010<sub>2</sub></td></tr>
+        <tr><td>11<sub>10</sub></td><td>B<sub>16</sub></td><td>1011<sub>2</sub></td></tr>
+        <tr><td>12<sub>10</sub></td><td>C<sub>16</sub></td><td>1100<sub>2</sub></td></tr>
+        <tr><td>13<sub>10</sub></td><td>D<sub>16</sub></td><td>1101<sub>2</sub></td></tr>
+        <tr><td>14<sub>10</sub></td><td>E<sub>16</sub></td><td>1110<sub>2</sub></td></tr>
+        <tr><td>15<sub>10</sub></td><td>F<sub>16</sub></td><td>1111<sub>2</sub></td></tr>
+      </table><br>
+      <p>
+        Hexadecimal is used a lot in computing because it much easier to read than binary.  
+        There are far fewer characters than binary.  
+        So hexadecimal is often used in place of binary as a shorthand to save space. 
+        For instance, the hexadecimal number 7BA3D456 (8 digits) is 01111011101000111101010001010110 (32 digits) in binary which is hard to read.
+      </p><br>
+      <p>Hexadecimal is better than denary at representing binary because hexadecimal is based on powers of 2. </p>
+
+
+    </div>
+
+
+<!-- Question Content -->
+<div id="question_content">
+  <p> questions content</p>
+</div>
+
+
+
+  </article>
+  <!-- Footer -->
+<footer id="page_footer">
+  <a href="https://www.lpsb.org.uk/" rel="external" title="Go to Langley Park School for boys page" target="_blank" class="footer_button"><img src="./assets/images/logo_lpsb_bw.png"></a>
+  <a href="https://www.aqa.org.uk/" rel="external" title="Go to AQA Website" target="_blank" class="footer_button"><img src="./assets/images/aqa_logo.png"></a>
+  <a href="https://www.youtube.com/" rel="noopener" title="Go to Youtube" target="_blank" class="footer_button"><i class="fa-brands fa-youtube"></i></a>
+  <a href="https://www.instagram.com/" rel="noopener" title="Go to Instagram" target="_blank" class="footer_button"><i class="fa-brands fa-instagram-square"></i></a>
+  <a href="https://en-gb.facebook.com/" rel="noopener" title="Go to Facebook" target="_blank" class="footer_button"><i class="fa-brands fa-facebook-square"></i></a>
+  <a href="https://github.com/dlhamilton" rel="author" title="Go to D Hamilton Github" target="_blank" class="footer_button"><p>Made by D Hamilton</p></a>
+</footer>
+</main>
+
+ <!-- font awesome script -->
+ <script src="https://kit.fontawesome.com/372da758e4.js" crossorigin="anonymous"></script>
+</body>
+</html>
