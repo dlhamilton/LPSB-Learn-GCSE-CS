@@ -383,32 +383,32 @@ details > summary {
     content: "Show Specification Content";
   }
 
-  .s_3_3_1{
+  .s_3_3_1 i, .s_3_3_1 .spec_button:hover{
     color:#ffabab;
   }
-  .s_3_3_2{
+  .s_3_3_2 i, .s_3_3_2 .spec_button:hover{
     color:#ffcba9;
   }
-  .s_3_3_3{
+  .s_3_3_3 i, .s_3_3_3 .spec_button:hover{
     color:#ffff89;
   }
-  .s_3_3_4{
+  .s_3_3_4 i, .s_3_3_4 .spec_button:hover{
     color:#dbffd6;
   }
-  .s_3_3_5{
+  .s_3_3_5 i, .s_3_3_5 .spec_button:hover{
     color:#ace7f8;
   }
-  .s_3_3_6{
+  .s_3_3_6 i, .s_3_3_6 .spec_button:hover{
     color:#afcbff;
   }
-  .s_3_3_7{
+  .s_3_3_7 i, .s_3_3_7 .spec_button:hover{
     color:#d5aaff;
   }
-  .s_3_3_8{
+  .s_3_3_8 i, .s_3_3_8 .spec_button:hover{
     color:#ffccf9;
   }
 
-  .lesson_button{
+  .spec_button{
     display:inline-block;
     padding: 10px;
     border: 2px solid black;
@@ -422,13 +422,19 @@ details > summary {
    color:white;
   }
 
-  .lesson_button:hover{
+  .spec_button:hover{
     background-color:#696969;
-   color:#ffabab;
+   /* color:#ffabab; */
   }
   .question_button{
     display:inline-block;
   }
+
+  .spec_item label {color:#000; }
+
+  .spec_item input[type="checkbox"]:checked + label {
+    color: green;
+}
 
   @media screen and (max-width:600px){
     details td{
@@ -437,8 +443,9 @@ details > summary {
       details > table {
         width:100%;
         min-width: 200%;
+        overflow-x: scroll;
       }
-      .lesson_button{
+      .spec_button{
 width:100%;
 margin: 10px 2px;
       }
