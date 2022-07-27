@@ -484,6 +484,34 @@ border-color: #ffabab !important;
     color: green;
 }
 
+/* spec pages */
+.two_column{
+  width: 40%;
+  padding:5px;
+  float: left;
+}
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.spec_table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid black;
+}
+.spec_table td, .spec_table th {
+  padding: 4px;
+}
+.spec_table th{
+  background-color:#8f8f8f ;
+}
+.two_column .spec_table{
+  width: 100%;
+}
+
+
   @media screen and (max-width:600px){
     details td{
         width:100vw;
@@ -496,5 +524,10 @@ border-color: #ffabab !important;
       .spec_button{
 width:100%;
 margin: 10px 2px;
+      }
+
+      .two_column{
+        width: 100%;
+        float: none;
       }
 }
