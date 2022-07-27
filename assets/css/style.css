@@ -407,30 +407,54 @@ details > summary {
     content: "Show Specification Content";
   }
 
-  .s_3_3_1 i, .s_3_3_1 .spec_button:hover{
-    color:#ffabab;
+  .s_3_3_1 i, .s_3_1_h, .s_3_3_1 .spec_button:hover{
+    color:#ffabab !important;
   }
-  .s_3_3_2 i, .s_3_3_2 .spec_button:hover{
-    color:#ffcba9;
+  .s_3_1_b{
+border-color: #ffabab !important;
   }
-  .s_3_3_3 i, .s_3_3_3 .spec_button:hover{
-    color:#ffff89;
+  .s_3_3_2 i,.s_3_2_h, .s_3_3_2 .spec_button:hover{
+    color:#ffcba9!important;
   }
-  .s_3_3_4 i, .s_3_3_4 .spec_button:hover{
-    color:#dbffd6;
+  .s_3_2_b{
+    border-color: #ffcba9 !important;
+      }
+  .s_3_3_3 i,.s_3_3_h, .s_3_3_3 .spec_button:hover{
+    color:#ffff70!important;
   }
-  .s_3_3_5 i, .s_3_3_5 .spec_button:hover{
-    color:#ace7f8;
+  .s_3_3_b{
+    border-color: #ffff70 !important;
+      }
+  .s_3_3_4 i,.s_3_4_h, .s_3_3_4 .spec_button:hover{
+    color:#c5ffbd!important;
   }
-  .s_3_3_6 i, .s_3_3_6 .spec_button:hover{
-    color:#afcbff;
+  .s_3_4_b{
+    border-color: #c5ffbd !important;
+      }
+  .s_3_3_5 i,.s_3_5_h, .s_3_3_5 .spec_button:hover{
+    color:#ace7f8!important;
   }
-  .s_3_3_7 i, .s_3_3_7 .spec_button:hover{
-    color:#d5aaff;
+  .s_3_5_b{
+    border-color: #ace7f8 !important;
+      }
+  .s_3_3_6 i,.s_3_6_h, .s_3_3_6 .spec_button:hover{
+    color:#afcbff!important;
   }
-  .s_3_3_8 i, .s_3_3_8 .spec_button:hover{
-    color:#ffccf9;
+  .s_3_6_b{
+    border-color: #afcbff !important;
+      }
+  .s_3_3_7 i,.s_3_7_h, .s_3_3_7 .spec_button:hover{
+    color:#d5aaff!important;
   }
+  .s_3_7_b{
+    border-color: #d5aaff !important;
+      }
+  .s_3_3_8 i,.s_3_8_h, .s_3_3_8 .spec_button:hover{
+    color:#ffccf9!important;
+  }
+  .s_3_8_b{
+    border-color: #ffccf9 !important;
+      }
 
   .spec_button{
     display:inline-block;
