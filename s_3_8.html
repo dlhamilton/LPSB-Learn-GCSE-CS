@@ -48,7 +48,7 @@
 
 <!-- Header/Home -->
 <header id="page_header">
-<h1>Binary arithmetic</h1>
+<h1>Data compression</h1>
 <p class="s_3_8_h">Computer Science Hub</p>
 </header>
 
@@ -95,7 +95,7 @@ This allows for much more effective compression than RLE.
   Therefore the uncompressed size is 11 x 7 = <u>77 bits</u></p>
 <br>
 <p><em>Generate ordered frequency table (steps 1 and 2)</em></p>
-<table>
+<table class="spec_table">
   <tr><th>letter</th><th>frequency</th></tr>
   <tr><td>e</td><td>2</td></tr>
   <tr><td>h</td><td>2</td></tr>
@@ -107,9 +107,9 @@ This allows for much more effective compression than RLE.
   <tr><td>n</td><td>1</td></tr>
 </table>
 <br>
-<figure><figcaption><em>Create the tree and add 1 and 0 to branches (steps 3 and 4)</em></figcaption><img src="/assets/images/huffman_tree.png" alt="huffman tree example"></figure>
+<figure><figcaption><em>Create the tree and add 1 and 0 to branches (steps 3 and 4)</em></figcaption><img class="two_column_width" src="/assets/images/huffman_tree.png" alt="huffman tree example"></figure>
  <br>
- <table>
+ <table class="spec_table">
   <tr><th>letter</th><th>encoding</th></tr>
   <tr><td>e</td><td>01</td></tr>
   <tr><td>h</td><td>00</td></tr>

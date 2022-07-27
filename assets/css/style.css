@@ -510,7 +510,19 @@ border-color: #ffabab !important;
 .two_column .spec_table{
   width: 100%;
 }
-
+.two_column_width{
+width:100%;
+}
+.spec_img_border{
+  border:2px solid black;
+}
+.figure_border{
+  /* border:2px solid black; */
+  margin:5px;
+}
+.one_column_width{
+  width:15em;
+}
 
   @media screen and (max-width:600px){
     details td{
@@ -529,5 +541,10 @@ margin: 10px 2px;
       .two_column{
         width: 100%;
         float: none;
+      }
+
+      .one_column_width{
+        width:80%;
+        margin: 0 10%;
       }
 }

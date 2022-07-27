@@ -48,7 +48,7 @@
 
 <!-- Header/Home -->
 <header id="page_header">
-<h1>Representing images</h1>
+<h1>Representing sound</h1>
 <p class="s_3_7_h">Computer Science Hub</p>
 </header>
 
@@ -69,6 +69,7 @@
 <p><em>size of file = length (seconds) x sample rate x sampling resolution </em></p>
 <br>
 <p>For sound to be stored digitally on a computer it needs to be converted from its continuous analogue form into a discrete binary values. The steps are:</p>
+<br>
 <ol>
   <li>Microphone detects the sound wave and converts it into an electrical (analogue) signal</li>
   <li>The analogue signal is sampled at regular intervals</li>
@@ -76,10 +77,22 @@
   <li>Each integer is encoded in binary with a fixed number of bits</li>
 </ol>
 <br>
-<figure><figcaption><em>Original analogue signal</em></figcaption><img src="/assets/images/a2d_step_1.jpg" alt="Image showing Original analogue signal" ></figure>
-<figure><figcaption><em>Sample signal at regular intervals</em></figcaption><img src="/assets/images/a2d_step_2.jpg" alt="Image showing Sample signal at regular intervals" ></figure>
-<figure><figcaption><em>Integer values give to each sample</em></figcaption><img src="/assets/images/a2d_step_3.png" alt="Image showing Integer values give to each sample" ></figure>
-<figure><figcaption><em>Encode as binary</em></figcaption><img src="/assets/images/a2d_step_4.png" alt="Image showing Encode as binary" ></figure>
+<div class="spec_img_border">
+<div class="row">
+  <div class="two_column"><figure class="figure_border"><figcaption><em>1. Original analogue signal</em></figcaption><img class="two_column_width" src="/assets/images/a2d_step_1.jpg" alt="Image showing Original analogue signal" ></figure>
+  </div>
+  <div class="two_column"><figure class="figure_border"><figcaption><em>2. Sample signal at regular intervals</em></figcaption><img class="two_column_width" src="/assets/images/a2d_step_2.jpg" alt="Image showing Sample signal at regular intervals" ></figure>
+  </div>
+</div>
+<div class="row">
+  <div class="two_column"><figure class="figure_border"><figcaption><em>3. Integer values give to each sample</em></figcaption><img class="two_column_width" src="/assets/images/a2d_step_3.png" alt="Image showing Integer values give to each sample" ></figure>
+  </div>
+  <div class="two_column"><figure class="figure_border"><figcaption><em>4. Encode as binary</em></figcaption><img class="two_column_width" src="/assets/images/a2d_step_4.png" alt="Image showing Encode as binary" ></figure>
+  </div>
+</div>
+</div>
+
+
 
 </div>
 
