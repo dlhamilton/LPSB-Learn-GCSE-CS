@@ -59,29 +59,42 @@
     <!-- Article title -->
     <h1 class="s_3_4_b"><i class="fa-solid fa-calculator s_3_4_h"></i> Lesson</h1>
     <h2><u>Binary addition</u></h2>
+    <div class="row">
+    <div class="two_column">
 <p><em>Binary addition rules</em></p>
 <p>0<sub>2</sub> + 0<sub>2</sub>  = 0<sub>2</sub> </p>
 <p>0<sub>2</sub> + 1<sub>2</sub>  = 1<sub>2</sub> </p>
 <p>1<sub>2</sub>  + 0<sub>2</sub>  = 1<sub>2</sub> </p>
 <p>1<sub>2</sub>  + 1<sub>2</sub>  = 10<sub>2</sub>  (carry 1)</p>
 <p>1<sub>2</sub>  + 1<sub>2</sub>  + 1<sub>2</sub> =11<sub>2</sub>  (carry 1)</p>
-<figure><img src="/assets/images/binary_add_img.png" alt="Image showing an example of adding three bnary numbers together"></figure>
 <br>
+</div>
+<div class="two_column">
+<figure><img src="/assets/images/binary_add_img.png" width="300px" alt="Image showing an example of adding three bnary numbers together"></figure>
+<br>
+</div>
+</div>
 <h2><u>Binary Shift</u></h2>
 <p>The binary shift operator is used to perform multiplication and division of numbers by powers of 2</p>
 <br>
-<table>
-  <tr><td>multiply/divide</td><td>x 16</td><td>x 8</td><td>x 4</td><td>x 12</td><td>/ 2</td><td>/ 4</td><td>/ 8</td></tr>
-  <tr><td>shift</td><td>Left 4</td><td>Left 3</td><td>Left 2</td><td>Left 1</td><td>Right 1</td><td>Right 2</td><td>Right 3</td></tr>
+<table class="spec_table">
+  <tr><th>multiply</th><td>x 16</td><td>x 8</td><td>x 4</td><td>x 2</td></tr>
+  <tr><th>shift</th><td>Left 4</td><td>Left 3</td><td>Left 2</td><td>Left 1</td></tr>
 </table>
+<br>
+<table class="spec_table">
+  <tr><th>divide</th><td>/ 2</td><td>/ 4</td><td>/ 8</td></tr>
+  <tr><th>shift</th><td>Right 1</td><td>Right 2</td><td>Right 3</td></tr>
+</table>
+<br>
 <br>
 <p><em>Example:</em> Apply shift operator to 1101<sub>2</sub> (13<sub>10</sub>)</p>
 <br>
-<table>
+<table class="spec_table">
   <tr><th>Shift</th><th>Result</th><th>denary</th></tr>
   <tr><td>Left 1</td><td>11010<sub>2</sub></td><td>13<sub>10</sub> x 2<sub>10</sub> =26<sub>10</sub></td></tr>
   <tr><td>Left 2</td><td>110100<sub>2</sub></td><td>13<sub>10</sub> x 4<sub>10</sub> =52<sub>10</sub></td></tr>
-  <tr><td>Right 1</td><td>110<sub>2</sub></td><td>13<sub>10</sub> // 2<sub>10</sub> =6<sub>10</sub></td></tr>
+  <tr><td>Right 1</td><td>110<sub>2</sub></td><td>13<sub>10</sub> /2<sub>10</sub> =6<sub>10</sub></td></tr>
 </table>
 <br>
 <p>Note that odd numbers are rounded down to the nearest integer when the right shift operator is applied.</p>
