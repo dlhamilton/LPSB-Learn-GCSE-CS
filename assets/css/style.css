@@ -545,7 +545,19 @@ width:100%;
 }
 .show_answer:hover{
   display:none;
-  
+}
+
+.y_pixel{
+  background-color: yellow;
+}
+.b_pixel{
+  background-color: blue; 
+}
+.r_pixel{
+  background-color: red;
+}
+.g_pixel{
+  background-color: green;
 }
   @media screen and (max-width:600px){
     details td{
