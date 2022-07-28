@@ -86,7 +86,87 @@
 <!-- Question Content -->
 <div id="question_content">
   <h1 class="s_3_6_b"><i class="fa-solid fa-circle-question s_3_6_h"></i> Questions</h1>
-  <p> questions content</p>
+  
+  <div class="spec_question">
+    <p>This image uses four colours so requires 2 bits per pixel. Fill each pixel in the image as a computer using the key. </p>
+    <table>
+<tr><td>00</td><td>01</td><td>01</td><td>00</td></tr>
+<tr><td>00</td><td>11</td><td>10</td><td>00</td></tr>
+<tr><td>00</td><td>10</td><td>11</td><td>00</td></tr>
+<tr><td>00</td><td>01</td><td>01</td><td>00</td></tr>
+ </table>
+
+ <p>Key</p>
+ <table>
+  <tr><td>00</td><td>01</td><td>10</td><td>11</td></tr>
+ </table>
+    <div class="spec_answer">
+      <table>
+        <tr><td>00</td><td>01</td><td>01</td><td>00</td></tr>
+        <tr><td>00</td><td>11</td><td>10</td><td>00</td></tr>
+        <tr><td>00</td><td>10</td><td>11</td><td>00</td></tr>
+        <tr><td>00</td><td>01</td><td>01</td><td>00</td></tr>
+         </table>
+    </div>
+  </div>
+
+  <div class="spec_question">
+    <p>How does increasing the image resolution affect the file size?</p>
+    <div class="spec_answer">
+      <p>Increasing the resolution will increase the number of pixels used, therefore increasing the file size since each additional pixel will require extra binary data to store its colour value.</p>
+    </div>
+  </div>
+
+  <div class="spec_question">
+    <p>Explain the relationship between image quality and file size.</p>
+    <div class="spec_answer">
+      <p>As the number of pixels increases in the same area, the quality improves, as does the file size. As the number of colours in an image increases, the data required to store a greater number of colours increases, as does the quality and the file size.</p>
+    </div>
+  </div>
+
+  <div class="spec_question">
+    <p>State two factors that affect the file size of a bitmap image.</p>
+    <div class="spec_answer">
+      <p>Colour depth / number of bits per pixel / number of colours in the image.
+        Dimensions of the image in pixels / resolution - ‘Size of the image’ is not enough.
+        </p>
+    </div>
+  </div>
+
+  <div class="spec_question">
+    <p>Calculate the file size of each of the following 
+      A 256 colour icon with dimensions of 50 x 50 pixels
+    </p>
+    <div class="spec_answer">
+      <p>256 colours require 8 bits = 1 byte. 50 x 50 = 2 500 pixels. Size = 2 500 bytes</p>
+    </div>
+  </div>
+
+  <div class="spec_question">
+    <p>Calculate the file size of each of the following
+      A 16 colour icon with dimensions of 100 x 100 pixels
+    </p>
+    <div class="spec_answer">
+      <p>16 colours require 4 bits. 100 x 100 = 10 000 pixels, x 4 bits = 40 000 bits / 8 = 5 000 bytes.</p>
+    </div>
+  </div>
+
+  <div class="spec_question">
+    <p>Additional metadata data is stored alongside the binary colour values for each pixel.
+      Give two examples of metadata.
+    </p>
+    <div class="spec_answer">
+      <p>Answers include: 
+        Dimensions / Width and height
+        Bit depth / colour depth / number of bits per pixel
+        File name
+        Date created / modified
+        File type
+        Author
+        </p>
+    </div>
+  </div>
+
 </div>
 
 
