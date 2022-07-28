@@ -293,7 +293,7 @@ clear:both;
 }
 #page_section h1{
     font-size:32px!important;
-    padding-top:12px!important;
+    padding-top:32px!important;
     padding-bottom:12px!important;
     border-bottom: 2px solid black;
     margin-bottom: 32px;
@@ -523,7 +523,9 @@ width:100%;
 .one_column_width{
   width:15em;
 }
-
+#lesson_content{
+  list-style:inside;
+}
   @media screen and (max-width:600px){
     details td{
         width:100vw;
