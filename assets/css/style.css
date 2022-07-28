@@ -526,6 +526,13 @@ width:100%;
 #lesson_content{
   list-style:inside;
 }
+.spec_question{
+  border:2px solid black;
+  margin: 10px 0;
+}
+.spec_answer{
+  border:2px solid red;
+}
   @media screen and (max-width:600px){
     details td{
         width:100vw;
