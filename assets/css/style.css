@@ -528,10 +528,24 @@ width:100%;
 }
 .spec_question{
   border:2px solid black;
-  margin: 10px 0;
+  margin: 20px 0;
+  padding: 5px;
+  border-radius: 10px;
 }
 .spec_answer{
+  display:none;
+  padding:5px;
   border:2px solid red;
+  border-radius: 10px;
+}
+
+.show_answer:hover + .spec_answer{
+  display:block;
+  
+}
+.show_answer:hover{
+  display:none;
+  
 }
   @media screen and (max-width:600px){
     details td{
