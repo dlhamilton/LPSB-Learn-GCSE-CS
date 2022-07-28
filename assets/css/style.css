@@ -274,7 +274,7 @@ margin:auto;
     
 }
 #page_header h1{font-size:64px!important;}
-#page_header p{ color:#696969;}
+#page_header p{ color:white; font-size: large; background-color: #696969;}
 #page_header:after,#page_header:before{
 content:"";
 display:table;
