@@ -548,6 +548,7 @@ width:100%;
   
 }
 .show_answer:hover{
+  cursor: s-resize;
   font-weight: bold;
 }
 
