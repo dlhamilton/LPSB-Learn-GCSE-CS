@@ -654,6 +654,9 @@ box-sizing: border-box;
     details td{
         width:100vw;
       }
+      #page_header h1{font-size:40px!important;}
+
+      
       details > table {
         width:100%;
         min-width: 200%;
