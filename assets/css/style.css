@@ -568,9 +568,6 @@ width:100%;
 
 /* Upload form */
 
-.signup-form{
-
-}
 .text-input{
   background: transparent;
   color:#696969;
@@ -603,6 +600,28 @@ width:100%;
   color:white;
 }
 
+/* drop in form */
+
+.dropin-form-section {
+  
+  clear: left;
+  background: url("/assets/images/classroom.jpeg") no-repeat center center!important;
+  background-size: cover;
+  background-position: center;
+  height: fit-content!important;
+
+}
+
+
+.form-section{
+width: 20em;
+margin: 0 auto;
+padding: 20px;
+background-color: #696969;
+box-sizing: border-box;
+}
+
+
   @media screen and (max-width:600px){
     details td{
         width:100vw;
@@ -615,6 +634,9 @@ width:100%;
       .spec_button{
 width:100%;
 margin: 10px 2px;
+      }
+      .form-section{
+        width: 100%;
       }
 
       .two_column{
