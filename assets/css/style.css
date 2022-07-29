@@ -586,7 +586,7 @@ width:100%;
 }
 
 .text-input_height{
-height: 100px!important;
+height: 60px!important;
 }
 
 .text-input:hover{
@@ -619,7 +619,7 @@ height: 100px!important;
 }
 
 .upload-button:hover{
-  background-color:#696969;
+  background-color:maroon;
   color:white;
 }
 
