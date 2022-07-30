@@ -32,7 +32,7 @@ body {
 }
 #intro_title h1{
     text-align: center;
-    font-size: 400%;
+    font-size: 4.5em;
 }
 /*nav*/
 #menu{
@@ -81,6 +81,13 @@ position: relative;
     width: 7em;
   height: 7em;
 }
+
+#intro_instructions{
+  margin-top: 50px;
+  text-align: center;
+  font-size: 1.45em;
+}
+
 @keyframes fadein {
     0%   { opacity: 0.0;}
     10%   { opacity: 0.1;}
@@ -112,6 +119,7 @@ position: relative;
     #intro_title h1{
     max-width: 80vw;
     margin: 0 auto;
+    font-size: 3.5em;
     }
 }
 /* Spinner */
