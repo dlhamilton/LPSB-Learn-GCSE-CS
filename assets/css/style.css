@@ -303,9 +303,15 @@ clear:both;
     font-size:32px!important;
     padding-top:32px!important;
     padding-bottom:12px!important;
-    border-bottom: 2px solid black;
-    margin-bottom: 32px;
+    
+   
 }
+#page_section > p{
+  border-bottom: 2px solid black;
+  margin-bottom: 32px;
+  padding-bottom:12px!important;
+}
+
 #page_footer{
     margin-left:auto;
     margin-right:auto;
