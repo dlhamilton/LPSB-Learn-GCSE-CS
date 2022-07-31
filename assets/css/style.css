@@ -273,7 +273,7 @@ margin:auto;
 #page_header{
     padding:0.01em 16px;
     padding-top:32px!important;
-    padding-bottom:32px!important;
+
     text-align:center!important;
     /* flex */
     flex: 0 1 auto;
@@ -294,16 +294,23 @@ clear:both;
     max-width:980px;
     text-align:justify;
     padding-top:0px!important;
-    padding-bottom:64px!important;
+    
     /* flex */
     flex: 1 1 auto;
     width:100%;
 }
 #page_section h1{
+  font-size:32px!important;
+  border-bottom: 2px solid black;
+  padding-bottom:12px!important;
+  margin-bottom: 16px;
+  padding-top:32px!important;
+}
+#page_section > h1{
     font-size:32px!important;
-    padding-top:32px!important;
+    border-bottom: none;
     padding-bottom:12px!important;
-    
+    margin-bottom: 0!important;
    
 }
 #page_section > p{
@@ -317,7 +324,7 @@ clear:both;
     margin-right:auto;
     max-width:980px;
     padding-top:32px!important;
-    padding-bottom:64px!important;
+    padding-bottom:32px!important;
     font-size:24px!important;
     /* flex */
     flex: 0 1 auto;
@@ -364,7 +371,7 @@ height: 22px;
     /* background-color: lightblue; */
     border-bottom: 2px solid black;
     padding: 5px;
-    margin-bottom: 24px;
+    padding-top: 29px;
 }
 .spec_item h2{
     font-size: x-large;
@@ -539,6 +546,7 @@ width:100%;
 }
 #lesson_content{
   list-style:inside;
+  margin-bottom: 32px;
 }
 .spec_question{
   border:2px solid black;
