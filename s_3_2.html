@@ -1,278 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get ready to learn the GCSE theory topics">
-    <meta name="keywords" content="computer science, gcse, binary, base 2, computing">
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico" />
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>LPSB Computer Science</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get ready to learn the GCSE theory topics">
+  <meta name="keywords" content="computer science, gcse, binary, base 2, computing">
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>LPSB Computer Science</title>
 </head>
+
 <body>
 
   <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav id="large_nav">
-  <img src="./assets/images/logo_lpsb.png" style="width:100%">
-  <a href="lessons.html" title="Go to Lesson" class="nav-item active">
-    <i class="fa-solid fa-book-open"></i>
-    <p>Lessons</p>
-  </a>
-  <a href="exams.html" title="Go to Exam questions" class="nav-item">
-    <i class="fa-solid fa-pen-to-square"></i>
-    <p>Exam</p>
-  </a>
-  <a href="upload.html" title="Go to Upload" class="nav-item">
-    <i class="fa-solid fa-file-arrow-up"></i>
-    <p>Upload</p>
-  </a>
-  <a href="drop_in.html" title="Go to Drop in" class="nav-item">
-    <i class="fa-solid fa-person-chalkboard"></i>
-    <p>Drop In</p>
-  </a>
-</nav>
+  <nav id="large_nav">
+    <img src="./assets/images/logo_lpsb.png" style="width:100%">
+    <a href="lessons.html" title="Go to Lesson" class="nav-item active">
+      <i class="fa-solid fa-book-open"></i>
+      <p>Lessons</p>
+    </a>
+    <a href="exams.html" title="Go to Exam questions" class="nav-item">
+      <i class="fa-solid fa-pen-to-square"></i>
+      <p>Exam</p>
+    </a>
+    <a href="upload.html" title="Go to Upload" class="nav-item">
+      <i class="fa-solid fa-file-arrow-up"></i>
+      <p>Upload</p>
+    </a>
+    <a href="drop_in.html" title="Go to Drop in" class="nav-item">
+      <i class="fa-solid fa-person-chalkboard"></i>
+      <p>Drop In</p>
+    </a>
+  </nav>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<nav id="small_nav">
- <span class="active"><a href="lessons.html" title="Go to Lesson">Lessons</a></span> 
-<span><a href="exams.html"title="Go to Exam questions">Exam</a></span> 
-<span><a href="upload.html" title="Go to Upload" >Upload</a></span> 
-<span><a href="drop_in.html" title="Go to Drop in">Drop In</a></span> 
-</nav>
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <nav id="small_nav">
+    <span class="active"><a href="lessons.html" title="Go to Lesson">Lessons</a></span>
+    <span><a href="exams.html" title="Go to Exam questions">Exam</a></span>
+    <span><a href="upload.html" title="Go to Upload">Upload</a></span>
+    <span><a href="drop_in.html" title="Go to Drop in">Drop In</a></span>
+  </nav>
 
-<!-- Page Content -->
-<main id="main_content">
+  <!-- Page Content -->
+  <main id="main_content">
 
 
 
-<!-- Header/Home -->
-<header id="page_header">
-<h1>Converting between bases</h1>
-<p class="s_3_2_h">Computer Science Hub</p>
-</header>
+    <!-- Header/Home -->
+    <header id="page_header">
+      <h1>Converting between bases</h1>
+      <p class="s_3_2_h">Computer Science Hub</p>
+    </header>
 
-  <!-- Section -->
-  <article id="page_section">
- <!-- Lesson Content -->
- <div id="lesson_content">
-    <!-- Article title -->
-    <h1 class="s_3_2_b"><i class="fa-solid fa-arrow-right-arrow-left s_3_2_h"></i> Lesson</h1>
-<h2><u>Denary to binary conversion</u></h2>
-<ol>
-  <li>Create a grid:</li>
-  <table class="spec_table">
-    <tr><th>128</th><th>64</th><th>32</th><th>16</th><th>8</th><th>4</th><th>2</th><th>1</th></tr>
-  <tr><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
-  </table>
-  <br>
-<li>Add a 1 to the corresponding cell if number contributes to target number and 0 to all the other cells</li>
-</ol>
-<br>
-<p><em>Worked example:</em> convert 24<sub>10</sub> to binary.</p>
-<table class="spec_table">
-  <tr><th>128</th><th>64</th><th>32</th><th>16</th><th>8</th><th>4</th><th>2</th><th>1</th></tr>
-<tr><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
-</table>
-<br>
-     <p>16<sub>10</sub>+8<sub>10</sub>=24<sub>10</sub></p>
-     <p>The binary value is <u>11000<sub>2</sub></u> (we can ignore the preceding zeros)</p>
-<br>
-     <h2><u>Binary to denary conversion</u></h2>
-    <p><em>Worked example:</em> Convert 01011001<sub>2</sub> to denary</p>
-    <ol>
-      <li>Create the grid:</li>
-      <table class="spec_table">
-        <tr><th>128</th><th>64</th><th>32</th><th>16</th><th>8</th><th>4</th><th>2</th><th>1</th></tr>
-      <tr><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
-      </table>
+    <!-- Section -->
+    <article id="page_section">
+      <!-- Lesson Content -->
+      <div id="lesson_content">
+        <!-- Article title -->
+        <h1 class="s_3_2_b"><i class="fa-solid fa-arrow-right-arrow-left s_3_2_h"></i> Lesson</h1>
+        <h2><u>Denary to binary conversion</u></h2>
+        <ol>
+          <li>Create a grid:</li>
+          <table class="spec_table">
+            <tr>
+              <th>128</th>
+              <th>64</th>
+              <th>32</th>
+              <th>16</th>
+              <th>8</th>
+              <th>4</th>
+              <th>2</th>
+              <th>1</th>
+            </tr>
+            <tr>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+            </tr>
+          </table>
+          <br>
+          <li>Add a 1 to the corresponding cell if number contributes to target number and 0 to all the other cells</li>
+        </ol>
+        <br>
+        <p><em>Worked example:</em> convert 24<sub>10</sub> to binary.</p>
+        <table class="spec_table">
+          <tr>
+            <th>128</th>
+            <th>64</th>
+            <th>32</th>
+            <th>16</th>
+            <th>8</th>
+            <th>4</th>
+            <th>2</th>
+            <th>1</th>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+        </table>
+        <br>
+        <p>16<sub>10</sub>+8<sub>10</sub>=24<sub>10</sub></p>
+        <p>The binary value is <u>11000<sub>2</sub></u> (we can ignore the preceding zeros)</p>
+        <br>
+        <h2><u>Binary to denary conversion</u></h2>
+        <p><em>Worked example:</em> Convert 01011001<sub>2</sub> to denary</p>
+        <ol>
+          <li>Create the grid:</li>
+          <table class="spec_table">
+            <tr>
+              <th>128</th>
+              <th>64</th>
+              <th>32</th>
+              <th>16</th>
+              <th>8</th>
+              <th>4</th>
+              <th>2</th>
+              <th>1</th>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+            </tr>
+          </table>
+          <br>
+          <li>Add up the cells that have a corresponding value of 1:</li>
+          <p>64 + 16<sub>10</sub> + 8<sub>10</sub> + 1= <u>89<sub>10</sub></u></p>
+        </ol>
+        <br>
+        <h2><u>Hexadecimal to denary conversion</u></h2>
+        <ol>
+          <li>Convert the two hex values separately to denary value</li>
+          <li>Multiply the first value by 16</li>
+          <li>Add the second value</li>
+        </ol>
+        <br>
+        <p><em>Worked example:</em> Covert A3<sub>16</sub> to denary</p>
+        <p>A<sub>16</sub> = 10<sub>10</sub></p>
+        <p>3<sub>16</sub> = 3<sub>10</sub></p>
+        <p>(10<sub>10</sub> x 16<sub>10</sub>) +3<sub>10</sub> = <u>163<sub>10</sub></u></p>
+        <br>
+        <h2><u>Denary to hexadecimal conversion</u></h2>
+        <ol>
+          <li>Integer divide the denary number by 16</li>
+          <li>Take the modulus 16 of the denary number</li>
+          <li>Convert the two numbers to the corresponding hex values.</li>
+        </ol>
+        <br>
+        <p><em>Worked example:</em> Covert 189<sub>10</sub> to hex</p>
+        <p>189<sub>10</sub> / 16<sub>10</sub> = 11<sub>10</sub> remainder 15<sub>10</sub></p>
+        <p>11<sub>10</sub> = B<sub>16</sub></p>
+        <p>15<sub>10</sub> = F<sub>16</sub></p>
+        <p>189<sub>10</sub> = <u>BF<sub>16</sub></u></p>
+        <br>
+        <h2><u>Hexadecimal to binary conversion</u></h2>
+        <ol>
+          <li>Find the corresponding 4-bit binary number for the two numbers</li>
+          <li>Concatenate the two binary values to give the final binary value</li>
+        </ol>
+        <br>
+        <p><em>Worked example:</em> Covert C3<sub>16</sub> to binary</p>
+        <p>C<sub>16</sub> = 12<sub>10</sub> = 1100<sub>2</sub></p>
+        </p>3<sub>16</sub>= 3<sub>10</sub> = 0011<sub>2</sub></p>
+        </p><u>11000011<sub>2</sub></u></p>
+        <br>
+        <h2><u>Binary to hexadecimal conversion</u></h2>
+        <ol>
+          <li>Split the binary number into groups of 4 bits: 1110<sub>2</sub> 1010<sub>2</sub></li>
+          <li>Find the corresponding Hex value for each of the 4-bit groups</li>
+        </ol>
+        <br>
+        <p><em>Worked example:</em> Covert 11101010<sub>2</sub> to hexadecimal</p>
+        <p>1110<sub>2</sub> |1010<sub>2</sub></p>
+        </p>1110<sub>2</sub> = 14<sub>10</sub> = E<sub>16</sub></p>
+        </p>1010<sub>2</sub> = 10<sub>10</sub> = A<sub>16</sub></p>
+        </p><u>EA<sub>16</sub></u></p>
+
+      </div>
+
+
+      <!-- Question Content -->
+      <div id="question_content">
+        <h1 class="s_3_2_b"><i class="fa-solid fa-circle-question s_3_2_h"></i> Questions</h1>
+        <ol>
+          <li>
+            <div class="spec_question">
+              <p>For each of the binary values below, write down the decimal equivalent. </p>
+              <p>a) 1101</p>
+              <p>b) 1111</p>
+              <p>c) 00100110</p>
+              <p>d) 10110111</p>
+              <br>
+              <span class="show_answer">
+                <p></p>
+              </span>
+              <div class="spec_answer">
+                <p>a) 13</p>
+                <p>b) 15</p>
+                <p>c) 38</p>
+                <p>d) 183</p>
+
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="spec_question">
+              <p>For each of the decimal values below, write down the binary equivalent.</p>
+              <p>a) 18</p>
+              <p>b) 57</p>
+              <p>c) 163</p>
+              <p>d) 255</p>
+              </p>
+              <br>
+              <span class="show_answer">
+                <p></p>
+              </span>
+              <div class="spec_answer">
+                <p>a) 00010010</p>
+                <p>b) 00111001</p>
+                <p>c) 10100011</p>
+                <p>d) 11111111</p>
+                <br>
+                <p> When converting from denary to binary, leading zeros do not need to be written. So (a) would be just
+                  as correct to write 10010.
+                  However, if the question asks for an 8 bit number, then only 00010010 would be correct.</p>
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="spec_question">
+              <p>Circle the binary value below that represents the decimal value 87.</p>
+              <p>(a) 01011010</p>
+              <p>(b) 11000100</p>
+              <p>(c) 01010111</p>
+              <p>(d) 00011010</p>
+              <br>
+              <span class="show_answer">
+                <p></p>
+              </span>
+              <div class="spec_answer">
+                <p>(c) 01010111</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="spec_question">
+              <p>Decimal to Hexadecimal conversion</p>
+              <p>(i) Convert decimal 19 to hexadecimal:</p>
+              <p>(ii) Convert decimal 44 to hexadecimal:</p>
+              <p>(iii) Convert hexadecimal 19 to decimal:</p>
+              <p>(iv) Convert hexadecimal A3 to decimal:</p>
+              <br>
+              <span class="show_answer">
+                <p></p>
+              </span>
+              <div class="spec_answer">
+                <p>i) 13</p>
+                <p>ii) 2C</p>
+                <p>iii) 25</p>
+                <p>iv) 163</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="spec_question">
+              <p>Binary to hexadecimal conversion:</p>
+              </p>(i) Convert binary 00110101 to hexadecimal:</p>
+              </p>(ii) Convert binary 11010111 to hexadecimal:</p>
+              </p>(iii) Convert hexadecimal 1E to binary:</p>
+              </p>(iv) Convert hexadecimal FF to binary:</p>
+              <br>
+              <span class="show_answer">
+                <p></p>
+              </span>
+              <div class="spec_answer">
+                <p>i) 35</p>
+                </p>ii) D7</p>
+                </p>iii) 0001 1110</p>
+                </p>iv) 1111 1111</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="spec_question">
+              <p>Convert the following values to and from Hexadecimal: (Show your working).</p>
+              <p>(a) Decimal 37 to Hex</p>
+              <p>(b) Decimal 59 to Hex</p>
+              <p>(c) Hex 11 to Decimal</p>
+              <p>(d) Hex 2F to Decimal</p>
+              <p>(e) Hex 1A to Binary</p>
+              <p>(f) Hex 16 to Binary</p>
+              </p>
+              <p>(g) Binary 0011 0111 to Hex</p>
+              <p>(h) Binary 1101 1111 to Hex</p>
+              <br>
+              <span class="show_answer">
+                <p></p>
+              </span>
+              <div class="spec_answer">
+                <p>a) 25</p>
+                <p>b) 3B</p>
+                <p>c) 17</p>
+                <p>d) 47</p>
+                <p>e) 0001 1010</p>
+                <p>f) 0001 0110</p>
+                <p>g) 37</p>
+                <p>h) DF</p>
+              </div>
+            </div>
+          </li>
+
+        </ol>
+      </div>
       <br>
-      <li>Add up the cells that have a corresponding value of 1:</li>
-      <p>64 + 16<sub>10</sub> + 8<sub>10</sub> + 1= <u>89<sub>10</sub></u></p>
-    </ol>
-    <br>
-    <h2><u>Hexadecimal to denary conversion</u></h2>
-    <ol>
-      <li>Convert the two hex values separately to denary value</li>
-      <li>Multiply the first value by 16</li>
-      <li>Add the second value</li>
-    </ol>
-    <br>
-    <p><em>Worked example:</em> Covert A3<sub>16</sub> to denary</p>
-    <p>A<sub>16</sub> = 10<sub>10</sub></p>
-    <p>3<sub>16</sub> = 3<sub>10</sub></p>
-    <p>(10<sub>10</sub> x 16<sub>10</sub>) +3<sub>10</sub> = <u>163<sub>10</sub></u></p>
-    <br>
-    <h2><u>Denary to hexadecimal conversion</u></h2>
-    <ol>
-      <li>Integer divide the denary number by 16</li>
-      <li>Take the modulus 16 of the denary number</li>
-      <li>Convert the two numbers to the corresponding hex values.</li>
-    </ol>
-    <br>
-    <p><em>Worked example:</em> Covert 189<sub>10</sub> to hex</p>
-    <p>189<sub>10</sub> / 16<sub>10</sub> = 11<sub>10</sub> remainder 15<sub>10</sub></p>
-  <p>11<sub>10</sub> = B<sub>16</sub></p>
-<p>15<sub>10</sub> = F<sub>16</sub></p>
-<p>189<sub>10</sub> = <u>BF<sub>16</sub></u></p>
-<br>
-    <h2><u>Hexadecimal to binary conversion</u></h2>
-    <ol>
-      <li>Find the corresponding 4-bit binary number for the two numbers</li>
-      <li>Concatenate the two binary values to give the final binary value</li>
-    </ol>
-    <br>
-    <p><em>Worked example:</em> Covert C3<sub>16</sub> to binary</p>
-    <p>C<sub>16</sub> = 12<sub>10</sub> = 1100<sub>2</sub></p>
-  </p>3<sub>16</sub>= 3<sub>10</sub> = 0011<sub>2</sub></p>
-</p><u>11000011<sub>2</sub></u></p>
-<br>
-    <h2><u>Binary to hexadecimal conversion</u></h2>
-    <ol>
-      <li>Split the binary number into groups of 4 bits: 1110<sub>2</sub> 1010<sub>2</sub></li>
-      <li>Find the corresponding Hex value for each of the 4-bit groups</li>
-    </ol>
-    <br>
-    <p><em>Worked example:</em> Covert 11101010<sub>2</sub> to hexadecimal</p>
-    <p>1110<sub>2</sub> |1010<sub>2</sub></p>
-  </p>1110<sub>2</sub> = 14<sub>10</sub> = E<sub>16</sub></p>
-</p>1010<sub>2</sub> = 10<sub>10</sub> = A<sub>16</sub></p>
-</p><u>EA<sub>16</sub></u></p>
-
-    </div>
-
-
-<!-- Question Content -->
-<div id="question_content">
-  <h1 class="s_3_2_b"><i class="fa-solid fa-circle-question s_3_2_h"></i> Questions</h1>
-<ol>
- <li> <div class="spec_question">
-    <p>For each of the binary values below, write down the decimal equivalent. </p>
-     <p>a) 1101</p> 
-      <p>b) 1111</p>
-      <p>c) 00100110</p>
-      <p>d) 10110111</p>
-    <br>
-    <span class="show_answer"><p></p></span>
-    <div class="spec_answer">
-      <p>a) 13</p>
-        <p>b) 15</p>
-        <p>c) 38</p>
-       <p>d) 183</p> 
-      
-    </div>
-  </div></li>
-
-<li><div class="spec_question">
-    <p>For each of the decimal values below, write down the binary equivalent.</p>
-      <p>a) 18</p>
-      <p>b) 57</p>
-      <p>c) 163</p>
-      <p>d) 255</p>
-    </p>
-    <br>
-    <span class="show_answer"><p></p></span>
-    <div class="spec_answer">
-      <p>a) 00010010</p>
-      <p>b) 00111001</p> 
-      <p>c) 10100011</p> 
-      <p>d) 11111111</p> 
       <br>
-       <p> When converting from denary to binary, leading zeros do not need to be written. So (a) would be just as correct to write 10010.
-However, if the question asks for an 8 bit number, then only 00010010 would be correct.</p>
-      </p>
-    </div>
-  </div></li>
-
-<li><div class="spec_question">
-    <p>Circle the binary value below that represents the decimal value 87.</p>
-    <p>(a)	01011010</p>
-    <p>(b)	11000100</p>
-    <p>(c)	01010111</p>
-    <p>(d)	00011010</p>
-    <br>
-    <span class="show_answer"><p></p></span>
-    <div class="spec_answer">
-      <p>(c)	01010111</p>
-    </div>
-  </div></li>
-
-<li><div class="spec_question">
-    <p>Decimal to Hexadecimal conversion</p>
-  <p>(i)	Convert decimal 19 to hexadecimal:</p>
-<p>(ii)	Convert decimal 44 to hexadecimal:</p>
-<p>(iii)	Convert hexadecimal 19 to decimal:</p>
-<p>(iv)	Convert hexadecimal A3 to decimal:</p>
-      <br>
-    <span class="show_answer"><p></p></span>
-    <div class="spec_answer">
-      <p>i) 13</p>
-    <p>ii)  2C</p>
-  <p>iii)  25</p>
-<p>iv)  163</p>
-    </div>
-  </div></li>
-
-<li> <div class="spec_question">
-    <p>Binary to hexadecimal conversion:</p>
-  </p>(i)	Convert binary 00110101 to hexadecimal:</p>
-    </p>(ii)	Convert binary 11010111 to hexadecimal:</p>
-    </p>(iii)	Convert hexadecimal 1E to binary:</p>
-    </p>(iv)	Convert hexadecimal FF to binary:</p>
-      <br>
-    <span class="show_answer"><p></p></span>
-    <div class="spec_answer">
-      <p>i) 35</p>
-    </p>ii) D7</p>
-      </p>iii) 0001 1110</p>
-    </p>iv) 1111 1111</p>
-    </div>
-  </div></li>
-
-<li><div class="spec_question">
-    <p>Convert the following values to and from Hexadecimal: (Show your working).</p>
-  <p>(a)	Decimal 	37	to	Hex</p>
-<p>(b)	Decimal 	59	to 	Hex</p>
-<p>(c)	Hex	11	to	Decimal</p>
-<p>(d)	Hex	2F	to 	Decimal</p>
-<p>(e)	Hex	1A	to	Binary</p>
-<p>(f)	Hex	16	to	Binary</p></p>
-<p>(g)	Binary	0011 0111	to 	Hex</p>
-<p>(h)	Binary 	1101 1111	to	Hex</p>
-<br>
-    <span class="show_answer"><p></p></span>
-    <div class="spec_answer">
-      <p>a) 25</p>
-    <p>b) 3B</p>
-      <p>c) 17</p>
-      <p>d) 47</p>
-      <p>e) 0001 1010</p>
-      <p>f) 0001 0110</p>
-      <p>g) 37</p>
-      <p>h) DF</p>
-    </div>
-  </div></li>
-
-</ol>
-</div>
-<br>
-<br>
-<a href="lessons.html#s_3_3_2" title="Go to lessons page" class="spec_button">Go Back</a>
+      <a href="lessons.html#s_3_3_2" title="Go to lessons page" class="spec_button">Go Back</a>
 
 
-  </article>
-  <!-- Footer -->
-<footer id="page_footer">
-  <a href="https://www.lpsb.org.uk/" rel="external" title="Go to Langley Park School for boys page" target="_blank" class="footer_button"><img src="./assets/images/logo_lpsb_bw.png"></a>
-  <a href="https://www.aqa.org.uk/" rel="external" title="Go to AQA Website" target="_blank" class="footer_button"><img src="./assets/images/aqa_logo.png"></a>
-  <a href="https://www.youtube.com/" rel="noopener" title="Go to Youtube" target="_blank" class="footer_button"><i class="fa-brands fa-youtube"></i></a>
-  <a href="https://www.instagram.com/" rel="noopener" title="Go to Instagram" target="_blank" class="footer_button"><i class="fa-brands fa-instagram-square"></i></a>
-  <a href="https://en-gb.facebook.com/" rel="noopener" title="Go to Facebook" target="_blank" class="footer_button"><i class="fa-brands fa-facebook-square"></i></a>
-  <a href="https://github.com/dlhamilton" rel="author" title="Go to D Hamilton Github" target="_blank" class="footer_button"><p>Made by D Hamilton</p></a>
-</footer>
-</main>
+    </article>
+    <!-- Footer -->
+    <footer id="page_footer">
+      <a href="https://www.lpsb.org.uk/" rel="external" title="Go to Langley Park School for boys page" target="_blank"
+        class="footer_button"><img src="./assets/images/logo_lpsb_bw.png"></a>
+      <a href="https://www.aqa.org.uk/" rel="external" title="Go to AQA Website" target="_blank"
+        class="footer_button"><img src="./assets/images/aqa_logo.png"></a>
+      <a href="https://www.youtube.com/" rel="noopener" title="Go to Youtube" target="_blank" class="footer_button"><i
+          class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.instagram.com/" rel="noopener" title="Go to Instagram" target="_blank"
+        class="footer_button"><i class="fa-brands fa-instagram-square"></i></a>
+      <a href="https://en-gb.facebook.com/" rel="noopener" title="Go to Facebook" target="_blank"
+        class="footer_button"><i class="fa-brands fa-facebook-square"></i></a>
+      <a href="https://github.com/dlhamilton" rel="author" title="Go to D Hamilton Github" target="_blank"
+        class="footer_button">
+        <p>Made by D Hamilton</p>
+      </a>
+    </footer>
+  </main>
 
- <!-- font awesome script -->
- <script src="https://kit.fontawesome.com/372da758e4.js" crossorigin="anonymous"></script>
+  <!-- font awesome script -->
+  <script src="https://kit.fontawesome.com/372da758e4.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

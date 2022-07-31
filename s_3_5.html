@@ -1,216 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get ready to learn the GCSE theory topics">
-    <meta name="keywords" content="computer science, gcse, binary, base 2, computing">
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico" />
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>LPSB Computer Science</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get ready to learn the GCSE theory topics">
+  <meta name="keywords" content="computer science, gcse, binary, base 2, computing">
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>LPSB Computer Science</title>
 </head>
+
 <body>
 
   <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav id="large_nav">
-  <img src="./assets/images/logo_lpsb.png" style="width:100%">
-  <a href="lessons.html" title="Go to Lesson" class="nav-item active">
-    <i class="fa-solid fa-book-open"></i>
-    <p>Lessons</p>
-  </a>
-  <a href="exams.html" title="Go to Exam questions" class="nav-item">
-    <i class="fa-solid fa-pen-to-square"></i>
-    <p>Exam</p>
-  </a>
-  <a href="upload.html" title="Go to Upload" class="nav-item">
-    <i class="fa-solid fa-file-arrow-up"></i>
-    <p>Upload</p>
-  </a>
-  <a href="drop_in.html" title="Go to Drop in" class="nav-item">
-    <i class="fa-solid fa-person-chalkboard"></i>
-    <p>Drop In</p>
-  </a>
-</nav>
+  <nav id="large_nav">
+    <img src="./assets/images/logo_lpsb.png" style="width:100%">
+    <a href="lessons.html" title="Go to Lesson" class="nav-item active">
+      <i class="fa-solid fa-book-open"></i>
+      <p>Lessons</p>
+    </a>
+    <a href="exams.html" title="Go to Exam questions" class="nav-item">
+      <i class="fa-solid fa-pen-to-square"></i>
+      <p>Exam</p>
+    </a>
+    <a href="upload.html" title="Go to Upload" class="nav-item">
+      <i class="fa-solid fa-file-arrow-up"></i>
+      <p>Upload</p>
+    </a>
+    <a href="drop_in.html" title="Go to Drop in" class="nav-item">
+      <i class="fa-solid fa-person-chalkboard"></i>
+      <p>Drop In</p>
+    </a>
+  </nav>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<nav id="small_nav">
- <span class="active"><a href="lessons.html" title="Go to Lesson">Lessons</a></span> 
-<span><a href="exams.html"title="Go to Exam questions">Exam</a></span> 
-<span><a href="upload.html" title="Go to Upload" >Upload</a></span> 
-<span><a href="drop_in.html" title="Go to Drop in">Drop In</a></span> 
-</nav>
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <nav id="small_nav">
+    <span class="active"><a href="lessons.html" title="Go to Lesson">Lessons</a></span>
+    <span><a href="exams.html" title="Go to Exam questions">Exam</a></span>
+    <span><a href="upload.html" title="Go to Upload">Upload</a></span>
+    <span><a href="drop_in.html" title="Go to Drop in">Drop In</a></span>
+  </nav>
 
-<!-- Page Content -->
-<main id="main_content">
-
-
-
-<!-- Header/Home -->
-<header id="page_header">
-<h1>Character Encoding</h1>
-<p class="s_3_5_h">Computer Science Hub</p>
-</header>
-
-  <!-- Section -->
-  <article id="page_section">
- <!-- Lesson Content -->
- <div id="lesson_content">
-    <!-- Article title -->
-    <h1 class="s_3_5_b"><i class="fa-solid fa-keyboard s_3_5_h"></i> Lesson</h1>
-
-    <p>Character coding schemes allows text to be represented in the computer.  
-      One such coding scheme is <strong>ASCII</strong>. 
-      ASCII uses 7 bits to represent each character which means that a total of 128 characters can be represented.
-    </p><br>
-    <table class="spec_table">
-      <tr><td>Lower case letters</td><td>26</td></tr>
-      <tr><td>Upper case letters</td><td>26</td></tr>
-      <tr><td>Numbers</td><td>10</td></tr>
-      <tr><td>Symbols (e.g. comma, colon)</td><td>33</td></tr>
-      <tr><td>Control characters</td><td>33</td></tr>
-    </table>
-<br>
-<p><em>ASCII encoded values for some characters</em></p>
-<table class="spec_table">
-<tr><td>A</td><td>1000001<sub>2</sub></td><td>65<sub>10</sub></td></tr>
-<tr><td>B</td><td>1000010<sub>2</sub></td><td>66<sub>10</sub></td></tr>
-<tr><td>a</td><td>1100001<sub>2</sub></td><td>97<sub>10</sub></td></tr>
-<tr><td>b</td><td>1100010<sub>2</sub></td><td>98<sub>10</sub></td></tr>
-<tr><td>"0"</td><td>0110000<sub>2</sub></td><td>48<sub>10</sub></td></tr>
-<tr><td>"1"</td><td>0110001<sub>2</sub></td><td>49<sub>10</sub></td></tr>
-</table>
-<br>
-<ul>
-  <li>ASCII has a limited character set (7 bits, 128 characters), but <strong>Unicode</strong> has 16 bits and allows many more (65K) characters.</li>
-<li>Unicode provides a unique character for different languages and different platforms.</li>
-<li>It allows us to represent different alphabets for instance Greek, Mandarin, Japanese, Emojis etc. </li>
-<li>Unicode and ASCII are the same up to 127.</li>
-</ul>
-    </div>
+  <!-- Page Content -->
+  <main id="main_content">
 
 
-<!-- Question Content -->
-<div id="question_content">
-  <h1 class="s_3_5_b"><i class="fa-solid fa-circle-question s_3_5_h"></i> Questions</h1>
-  <ol>
- <li><div class="spec_question">
-    <p>Using the 8-bit ASCII set, what would be the total size in bytes of the characters </p>
-      <p>'Computer Science'? 
-      </p>
+
+    <!-- Header/Home -->
+    <header id="page_header">
+      <h1>Character Encoding</h1>
+      <p class="s_3_5_h">Computer Science Hub</p>
+    </header>
+
+    <!-- Section -->
+    <article id="page_section">
+      <!-- Lesson Content -->
+      <div id="lesson_content">
+        <!-- Article title -->
+        <h1 class="s_3_5_b"><i class="fa-solid fa-keyboard s_3_5_h"></i> Lesson</h1>
+
+        <p>Character coding schemes allows text to be represented in the computer.
+          One such coding scheme is <strong>ASCII</strong>.
+          ASCII uses 7 bits to represent each character which means that a total of 128 characters can be represented.
+        </p><br>
+        <table class="spec_table">
+          <tr>
+            <td>Lower case letters</td>
+            <td>26</td>
+          </tr>
+          <tr>
+            <td>Upper case letters</td>
+            <td>26</td>
+          </tr>
+          <tr>
+            <td>Numbers</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Symbols (e.g. comma, colon)</td>
+            <td>33</td>
+          </tr>
+          <tr>
+            <td>Control characters</td>
+            <td>33</td>
+          </tr>
+        </table>
+        <br>
+        <p><em>ASCII encoded values for some characters</em></p>
+        <table class="spec_table">
+          <tr>
+            <td>A</td>
+            <td>1000001<sub>2</sub></td>
+            <td>65<sub>10</sub></td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td>1000010<sub>2</sub></td>
+            <td>66<sub>10</sub></td>
+          </tr>
+          <tr>
+            <td>a</td>
+            <td>1100001<sub>2</sub></td>
+            <td>97<sub>10</sub></td>
+          </tr>
+          <tr>
+            <td>b</td>
+            <td>1100010<sub>2</sub></td>
+            <td>98<sub>10</sub></td>
+          </tr>
+          <tr>
+            <td>"0"</td>
+            <td>0110000<sub>2</sub></td>
+            <td>48<sub>10</sub></td>
+          </tr>
+          <tr>
+            <td>"1"</td>
+            <td>0110001<sub>2</sub></td>
+            <td>49<sub>10</sub></td>
+          </tr>
+        </table>
+        <br>
+        <ul>
+          <li>ASCII has a limited character set (7 bits, 128 characters), but <strong>Unicode</strong> has 16 bits and
+            allows many more (65K) characters.</li>
+          <li>Unicode provides a unique character for different languages and different platforms.</li>
+          <li>It allows us to represent different alphabets for instance Greek, Mandarin, Japanese, Emojis etc. </li>
+          <li>Unicode and ASCII are the same up to 127.</li>
+        </ul>
+      </div>
+
+
+      <!-- Question Content -->
+      <div id="question_content">
+        <h1 class="s_3_5_b"><i class="fa-solid fa-circle-question s_3_5_h"></i> Questions</h1>
+        <ol>
+          <li>
+            <div class="spec_question">
+              <p>Using the 8-bit ASCII set, what would be the total size in bytes of the characters </p>
+              <p>'Computer Science'?
+              </p>
+              <br>
+              <span class="show_answer">
+                <p></p>
+              </span>
+              <div class="spec_answer">
+                <p>16 (space is a character)</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="spec_question">
+              <p>How many bits would 'Computer Science' require in 7-bit ASCII? </p>
+              <br>
+              <span class="show_answer">
+                <p></p>
+              </span>
+              <div class="spec_answer">
+                <p>112 bits</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="spec_question">
+              <p>What is meant by a character set?</p>
+              <br>
+              <span class="show_answer">
+                <p></p>
+              </span>
+              <div class="spec_answer">
+                <p>All of the characters recognised/represented by a computer system.</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="spec_question">
+              <p>How many characters can be represented with the 7-bit ASCII character set? </p>
+              <br>
+              <span class="show_answer">
+                <p></p>
+              </span>
+              <div class="spec_answer">
+                <p>128</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="spec_question">
+              <p>The eighth bit is used to give an extra 128 characters. Any character in the ASCII table can be typed
+                using the ALT key in combination with its ASCII code.
+                For example, if you type ALT + 065 on the numeric keypad, the letter A will appear.</p>
+              <p> What is the binary representation of the letter A?
+              </p>
+              <br>
+              <span class="show_answer">
+                <p></p>
+              </span>
+              <div class="spec_answer">
+                <p>0100 0001</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="spec_question">
+              <p>The code word is represented on the disk in a binary format, saved as:</p>
+              <p> 1000011 1000001 1000010</p>
+              <p> Using the section of the ASCII table above, what is the code word? </p>
+              <br>
+              <span class="show_answer">
+                <p></p>
+              </span>
+              <div class="spec_answer">
+                <p>CAB</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="spec_question">
+              <p>What is the hexadecimal representation of the code word? </p>
+              <br>
+              <span class="show_answer">
+                <p></p>
+              </span>
+              <div class="spec_answer">
+                <p>434142</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="spec_question">
+              <p>Calculate the denary value representing the letter E.</p>
+              <br>
+              <span class="show_answer">
+                <p></p>
+              </span>
+              <div class="spec_answer">
+                <p>69</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="spec_question">
+              <p>Name one limitation of the 7-bit extended ASCII character set.</p>
+              <br>
+              <span class="show_answer">
+                <p></p>
+              </span>
+              <div class="spec_answer">
+                <p>Only 128 characters can be represented, so there is no way of representing characters from large
+                  character sets such as Japanese/Chinese.</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="spec_question">
+              <p>Explain how these limitations can be overcome.</p>
+              <br>
+              <span class="show_answer">
+                <p></p>
+              </span>
+              <div class="spec_answer">
+                <p>By using more bits for each character / Unicode which uses 16 bits</p>
+                <p> so that there are more available combinations to store the new characters</p>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
       <br>
-      <span class="show_answer"><p></p></span>
-    <div class="spec_answer">
-      <p>16 (space is a character)</p>
-    </div>
-  </div></li> 
-
-<li> <div class="spec_question">
-    <p>How many bits would 'Computer Science' require in 7-bit ASCII? </p>
-    <br>
-    <span class="show_answer"><p></p></span>
-    <div class="spec_answer">
-      <p>112 bits</p>
-    </div>
-  </div></li> 
-
-<li> <div class="spec_question">
-    <p>What is meant by a character set?</p>
-    <br>
-    <span class="show_answer"><p></p></span>
-    <div class="spec_answer">
-      <p>All of the characters recognised/represented by a computer system.</p>
-    </div>
-  </div></li> 
-
-<li> <div class="spec_question">
-    <p>How many characters can be represented with the 7-bit ASCII character set? </p>
-    <br>
-    <span class="show_answer"><p></p></span>
-    <div class="spec_answer">
-      <p>128</p>
-    </div>
-  </div></li> 
-
-<li>  <div class="spec_question">
-    <p>The eighth bit is used to give an extra 128 characters. Any character in the ASCII table can be typed using the ALT key in combination with its ASCII code. 
-      For example, if you type ALT + 065 on the numeric keypad, the letter A will appear.</p>
-     <p> What is the binary representation of the letter A?
-    </p>
-    <br>
-    <span class="show_answer"><p></p></span>
-    <div class="spec_answer">
-      <p>0100 0001</p>
-    </div>
-  </div></li> 
-
- <li>  <div class="spec_question">
-    <p>The code word is represented on the disk in a binary format, saved as:</p>
-    <p> 1000011   1000001   1000010</p>
-     <p> Using the section of the ASCII table above, what is the code word? </p>
-     <br>
-     <span class="show_answer"><p></p></span>
-    <div class="spec_answer">
-      <p>CAB</p>
-    </div>
-  </div></li> 
-
-<li> <div class="spec_question">
-    <p>What is the hexadecimal representation of the code word? </p>
-    <br>
-    <span class="show_answer"><p></p></span>
-    <div class="spec_answer">
-      <p>434142</p>
-    </div>
-  </div></li> 
-
-<li> <div class="spec_question">
-    <p>Calculate the denary value representing the letter E.</p>
-    <br>
-    <span class="show_answer"><p></p></span>
-    <div class="spec_answer">
-      <p>69</p>
-    </div>
-  </div></li> 
-
-<li> <div class="spec_question">
-    <p>Name one limitation of the 7-bit extended ASCII character set.</p>
-    <br>
-    <span class="show_answer"><p></p></span>
-    <div class="spec_answer">
-      <p>Only 128 characters can be represented, so there is no way of representing characters from large character sets such as Japanese/Chinese.</p>
-    </div>
-  </div></li> 
-
-<li> <div class="spec_question">
-    <p>Explain how these limitations can be overcome.</p>
-    <br>
-    <span class="show_answer"><p></p></span>
-    <div class="spec_answer">
-      <p>By using more bits for each character / Unicode which uses 16 bits</p>
-     <p>  so that there are more available combinations to store the new characters</p>
-    </div>
-  </div></li> 
-</ol>
-</div>
-<br>
-<br>
-<a href="lessons.html#s_3_3_5" title="Go to lessons page" class="spec_button">Go Back</a>
+      <br>
+      <a href="lessons.html#s_3_3_5" title="Go to lessons page" class="spec_button">Go Back</a>
 
 
-  </article>
-  <!-- Footer -->
-<footer id="page_footer">
-  <a href="https://www.lpsb.org.uk/" rel="external" title="Go to Langley Park School for boys page" target="_blank" class="footer_button"><img src="./assets/images/logo_lpsb_bw.png"></a>
-  <a href="https://www.aqa.org.uk/" rel="external" title="Go to AQA Website" target="_blank" class="footer_button"><img src="./assets/images/aqa_logo.png"></a>
-  <a href="https://www.youtube.com/" rel="noopener" title="Go to Youtube" target="_blank" class="footer_button"><i class="fa-brands fa-youtube"></i></a>
-  <a href="https://www.instagram.com/" rel="noopener" title="Go to Instagram" target="_blank" class="footer_button"><i class="fa-brands fa-instagram-square"></i></a>
-  <a href="https://en-gb.facebook.com/" rel="noopener" title="Go to Facebook" target="_blank" class="footer_button"><i class="fa-brands fa-facebook-square"></i></a>
-  <a href="https://github.com/dlhamilton" rel="author" title="Go to D Hamilton Github" target="_blank" class="footer_button"><p>Made by D Hamilton</p></a>
-</footer>
-</main>
+    </article>
+    <!-- Footer -->
+    <footer id="page_footer">
+      <a href="https://www.lpsb.org.uk/" rel="external" title="Go to Langley Park School for boys page" target="_blank"
+        class="footer_button"><img src="./assets/images/logo_lpsb_bw.png"></a>
+      <a href="https://www.aqa.org.uk/" rel="external" title="Go to AQA Website" target="_blank"
+        class="footer_button"><img src="./assets/images/aqa_logo.png"></a>
+      <a href="https://www.youtube.com/" rel="noopener" title="Go to Youtube" target="_blank" class="footer_button"><i
+          class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.instagram.com/" rel="noopener" title="Go to Instagram" target="_blank"
+        class="footer_button"><i class="fa-brands fa-instagram-square"></i></a>
+      <a href="https://en-gb.facebook.com/" rel="noopener" title="Go to Facebook" target="_blank"
+        class="footer_button"><i class="fa-brands fa-facebook-square"></i></a>
+      <a href="https://github.com/dlhamilton" rel="author" title="Go to D Hamilton Github" target="_blank"
+        class="footer_button">
+        <p>Made by D Hamilton</p>
+      </a>
+    </footer>
+  </main>
 
- <!-- font awesome script -->
- <script src="https://kit.fontawesome.com/372da758e4.js" crossorigin="anonymous"></script>
+  <!-- font awesome script -->
+  <script src="https://kit.fontawesome.com/372da758e4.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

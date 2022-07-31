@@ -1,191 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get ready to learn the GCSE theory topics">
-    <meta name="keywords" content="computer science, gcse, binary, base 2, computing">
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico" />
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>LPSB Computer Science</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get ready to learn the GCSE theory topics">
+  <meta name="keywords" content="computer science, gcse, binary, base 2, computing">
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>LPSB Computer Science</title>
 </head>
+
 <body>
 
   <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav id="large_nav">
-  <img src="./assets/images/logo_lpsb.png" style="width:100%">
-  <a href="lessons.html" title="Go to Lesson" class="nav-item active">
-    <i class="fa-solid fa-book-open"></i>
-    <p>Lessons</p>
-  </a>
-  <a href="exams.html" title="Go to Exam questions" class="nav-item">
-    <i class="fa-solid fa-pen-to-square"></i>
-    <p>Exam</p>
-  </a>
-  <a href="upload.html" title="Go to Upload" class="nav-item">
-    <i class="fa-solid fa-file-arrow-up"></i>
-    <p>Upload</p>
-  </a>
-  <a href="drop_in.html" title="Go to Drop in" class="nav-item">
-    <i class="fa-solid fa-person-chalkboard"></i>
-    <p>Drop In</p>
-  </a>
-</nav>
+  <nav id="large_nav">
+    <img src="./assets/images/logo_lpsb.png" style="width:100%">
+    <a href="lessons.html" title="Go to Lesson" class="nav-item active">
+      <i class="fa-solid fa-book-open"></i>
+      <p>Lessons</p>
+    </a>
+    <a href="exams.html" title="Go to Exam questions" class="nav-item">
+      <i class="fa-solid fa-pen-to-square"></i>
+      <p>Exam</p>
+    </a>
+    <a href="upload.html" title="Go to Upload" class="nav-item">
+      <i class="fa-solid fa-file-arrow-up"></i>
+      <p>Upload</p>
+    </a>
+    <a href="drop_in.html" title="Go to Drop in" class="nav-item">
+      <i class="fa-solid fa-person-chalkboard"></i>
+      <p>Drop In</p>
+    </a>
+  </nav>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<nav id="small_nav">
- <span class="active"><a href="lessons.html" title="Go to Lesson">Lessons</a></span> 
-<span><a href="exams.html"title="Go to Exam questions">Exam</a></span> 
-<span><a href="upload.html" title="Go to Upload" >Upload</a></span> 
-<span><a href="drop_in.html" title="Go to Drop in">Drop In</a></span> 
-</nav>
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <nav id="small_nav">
+    <span class="active"><a href="lessons.html" title="Go to Lesson">Lessons</a></span>
+    <span><a href="exams.html" title="Go to Exam questions">Exam</a></span>
+    <span><a href="upload.html" title="Go to Upload">Upload</a></span>
+    <span><a href="drop_in.html" title="Go to Drop in">Drop In</a></span>
+  </nav>
 
-<!-- Page Content -->
-<main id="main_content">
-
-
-
-<!-- Header/Home -->
-<header id="page_header">
-<h1>Binary arithmetic</h1>
-<p class="s_3_4_h">Computer Science Hub</p>
-</header>
-
-  <!-- Section -->
-  <article id="page_section">
- <!-- Lesson Content -->
- <div id="lesson_content">
-    <!-- Article title -->
-    <h1 class="s_3_4_b"><i class="fa-solid fa-calculator s_3_4_h"></i> Lesson</h1>
-    <h2><u>Binary addition</u></h2>
-    <div class="row">
-    <div class="two_column">
-<p><em>Binary addition rules</em></p>
-<p>0<sub>2</sub> + 0<sub>2</sub>  = 0<sub>2</sub> </p>
-<p>0<sub>2</sub> + 1<sub>2</sub>  = 1<sub>2</sub> </p>
-<p>1<sub>2</sub>  + 0<sub>2</sub>  = 1<sub>2</sub> </p>
-<p>1<sub>2</sub>  + 1<sub>2</sub>  = 10<sub>2</sub>  (carry 1)</p>
-<p>1<sub>2</sub>  + 1<sub>2</sub>  + 1<sub>2</sub> =11<sub>2</sub>  (carry 1)</p>
-<br>
-</div>
-<div class="two_column">
-<figure><img src="/assets/images/binary_add_img.png" width="300px" alt="Image showing an example of adding three bnary numbers together"></figure>
-<br>
-</div>
-</div>
-<h2><u>Binary Shift</u></h2>
-<p>The binary shift operator is used to perform multiplication and division of numbers by powers of 2</p>
-<br>
-<table class="spec_table">
-  <tr><th>multiply</th><td>x 16</td><td>x 8</td><td>x 4</td><td>x 2</td></tr>
-  <tr><th>shift</th><td>Left 4</td><td>Left 3</td><td>Left 2</td><td>Left 1</td></tr>
-</table>
-<br>
-<table class="spec_table">
-  <tr><th>divide</th><td>/ 2</td><td>/ 4</td><td>/ 8</td></tr>
-  <tr><th>shift</th><td>Right 1</td><td>Right 2</td><td>Right 3</td></tr>
-</table>
-<br>
-<br>
-<p><em>Example:</em> Apply shift operator to 1101<sub>2</sub> (13<sub>10</sub>)</p>
-<br>
-<table class="spec_table">
-  <tr><th>Shift</th><th>Result</th><th>denary</th></tr>
-  <tr><td>Left 1</td><td>11010<sub>2</sub></td><td>13<sub>10</sub> x 2<sub>10</sub> =26<sub>10</sub></td></tr>
-  <tr><td>Left 2</td><td>110100<sub>2</sub></td><td>13<sub>10</sub> x 4<sub>10</sub> =52<sub>10</sub></td></tr>
-  <tr><td>Right 1</td><td>110<sub>2</sub></td><td>13<sub>10</sub> /2<sub>10</sub> =6<sub>10</sub></td></tr>
-</table>
-<br>
-<p>Note that odd numbers are rounded down to the nearest integer when the right shift operator is applied.</p>
-
-    </div>
+  <!-- Page Content -->
+  <main id="main_content">
 
 
-<!-- Question Content -->
-<div id="question_content">
-  <h1 class="s_3_4_b"><i class="fa-solid fa-circle-question s_3_4_h"></i> Questions</h1>
-  <ol>
-    <li>
-  <div class="spec_question">
-    <p>Apply a right shift of one binary place on the following byte.</p>
-    <table class="spec_table"><tr><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td></tr></table>
-     <p>Convert the original and shifted binary numbers into decimal
-      What is the effect of the logical binary shift?</p> 
+
+    <!-- Header/Home -->
+    <header id="page_header">
+      <h1>Binary arithmetic</h1>
+      <p class="s_3_4_h">Computer Science Hub</p>
+    </header>
+
+    <!-- Section -->
+    <article id="page_section">
+      <!-- Lesson Content -->
+      <div id="lesson_content">
+        <!-- Article title -->
+        <h1 class="s_3_4_b"><i class="fa-solid fa-calculator s_3_4_h"></i> Lesson</h1>
+        <h2><u>Binary addition</u></h2>
+        <div class="row">
+          <div class="two_column">
+            <p><em>Binary addition rules</em></p>
+            <p>0<sub>2</sub> + 0<sub>2</sub> = 0<sub>2</sub> </p>
+            <p>0<sub>2</sub> + 1<sub>2</sub> = 1<sub>2</sub> </p>
+            <p>1<sub>2</sub> + 0<sub>2</sub> = 1<sub>2</sub> </p>
+            <p>1<sub>2</sub> + 1<sub>2</sub> = 10<sub>2</sub> (carry 1)</p>
+            <p>1<sub>2</sub> + 1<sub>2</sub> + 1<sub>2</sub> =11<sub>2</sub> (carry 1)</p>
+            <br>
+          </div>
+          <div class="two_column">
+            <figure><img src="/assets/images/binary_add_img.png" width="300px"
+                alt="Image showing an example of adding three bnary numbers together"></figure>
+            <br>
+          </div>
+        </div>
+        <h2><u>Binary Shift</u></h2>
+        <p>The binary shift operator is used to perform multiplication and division of numbers by powers of 2</p>
+        <br>
+        <table class="spec_table">
+          <tr>
+            <th>multiply</th>
+            <td>x 16</td>
+            <td>x 8</td>
+            <td>x 4</td>
+            <td>x 2</td>
+          </tr>
+          <tr>
+            <th>shift</th>
+            <td>Left 4</td>
+            <td>Left 3</td>
+            <td>Left 2</td>
+            <td>Left 1</td>
+          </tr>
+        </table>
+        <br>
+        <table class="spec_table">
+          <tr>
+            <th>divide</th>
+            <td>/ 2</td>
+            <td>/ 4</td>
+            <td>/ 8</td>
+          </tr>
+          <tr>
+            <th>shift</th>
+            <td>Right 1</td>
+            <td>Right 2</td>
+            <td>Right 3</td>
+          </tr>
+        </table>
+        <br>
+        <br>
+        <p><em>Example:</em> Apply shift operator to 1101<sub>2</sub> (13<sub>10</sub>)</p>
+        <br>
+        <table class="spec_table">
+          <tr>
+            <th>Shift</th>
+            <th>Result</th>
+            <th>denary</th>
+          </tr>
+          <tr>
+            <td>Left 1</td>
+            <td>11010<sub>2</sub></td>
+            <td>13<sub>10</sub> x 2<sub>10</sub> =26<sub>10</sub></td>
+          </tr>
+          <tr>
+            <td>Left 2</td>
+            <td>110100<sub>2</sub></td>
+            <td>13<sub>10</sub> x 4<sub>10</sub> =52<sub>10</sub></td>
+          </tr>
+          <tr>
+            <td>Right 1</td>
+            <td>110<sub>2</sub></td>
+            <td>13<sub>10</sub> /2<sub>10</sub> =6<sub>10</sub></td>
+          </tr>
+        </table>
+        <br>
+        <p>Note that odd numbers are rounded down to the nearest integer when the right shift operator is applied.</p>
+
+      </div>
+
+
+      <!-- Question Content -->
+      <div id="question_content">
+        <h1 class="s_3_4_b"><i class="fa-solid fa-circle-question s_3_4_h"></i> Questions</h1>
+        <ol>
+          <li>
+            <div class="spec_question">
+              <p>Apply a right shift of one binary place on the following byte.</p>
+              <table class="spec_table">
+                <tr>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>0</td>
+                </tr>
+              </table>
+              <p>Convert the original and shifted binary numbers into decimal
+                What is the effect of the logical binary shift?</p>
+              <br>
+              <span class="show_answer">
+                <p></p>
+              </span>
+              <div class="spec_answer">
+                <table class="spec_table">
+                  <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                </table>
+                <p>158 and 79</p>
+                <p>Division by two.</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="spec_question">
+              <p>Apply a right shift of one binary place on the following byte.</p>
+              <table class="spec_table">
+                <tr>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>0</td>
+                </tr>
+              </table>
+              <p>Convert the original and shifted binary numbers into decimal
+                What is the effect of the logical binary shift?</p>
+              <br>
+              <span class="show_answer">
+                <p></p>
+              </span>
+              <div class="spec_answer">
+                <table class="spec_table">
+                  <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                </table>
+                <p>90 and 180</p>
+                <p>Multiply by two.</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="spec_question">
+              <p>Add 00100111 to 00101010. You should include your working. </p>
+              <br>
+              <span class="show_answer">
+                <p></p>
+              </span>
+              <div class="spec_answer">
+                <p>0 1 0 1 0 0 0 1</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="spec_question">
+              <p>Add 00100111 to 00111010. You should include your working. </p>
+              <br>
+              <span class="show_answer">
+                <p></p>
+              </span>
+              <div class="spec_answer">
+                <p>0 1 1 0 0 0 0 1</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="spec_question">
+              <p>Show the result of adding the following three binary numbers.
+                110011
+                10111
+                101
+              </p>
+              <br>
+              <span class="show_answer">
+                <p></p>
+              </span>
+              <div class="spec_answer">
+                <p>1 0 0 1 1 1 1</p>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+
       <br>
-      <span class="show_answer"><p></p></span>
-    <div class="spec_answer">
-     <table class="spec_table"><tr><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td></tr></table>
-      <p>158 and 79</p>
-      <p>Division by two.</p>
-    </div>
-  </div></li>
-
-<li><div class="spec_question">
-    <p>Apply a right shift of one binary place on the following byte.</p>
-    <table class="spec_table"><tr><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td></tr></table>
-     <p>Convert the original and shifted binary numbers into decimal
-      What is the effect of the logical binary shift?</p> 
       <br>
-      <span class="show_answer"><p></p></span>
-    <div class="spec_answer">
-      <table class="spec_table"><tr><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td></tr></table>
-      <p>90 and 180</p>
-      <p>Multiply by two.</p>
-    </div>
-  </div></li>
+      <a href="lessons.html#s_3_3_4" title="Go to lessons page" class="spec_button">Go Back</a>
 
-<li><div class="spec_question">
-    <p>Add 00100111 to 00101010. You should include your working. </p>
-    <br>
-    <span class="show_answer"><p></p></span>
-    <div class="spec_answer">
-      <p>0 1 0 1 0 0 0 1</p>
-    </div>
-  </div></li>
+    </article>
+    <!-- Footer -->
+    <footer id="page_footer">
+      <a href="https://www.lpsb.org.uk/" rel="external" title="Go to Langley Park School for boys page" target="_blank"
+        class="footer_button"><img src="./assets/images/logo_lpsb_bw.png"></a>
+      <a href="https://www.aqa.org.uk/" rel="external" title="Go to AQA Website" target="_blank"
+        class="footer_button"><img src="./assets/images/aqa_logo.png"></a>
+      <a href="https://www.youtube.com/" rel="noopener" title="Go to Youtube" target="_blank" class="footer_button"><i
+          class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.instagram.com/" rel="noopener" title="Go to Instagram" target="_blank"
+        class="footer_button"><i class="fa-brands fa-instagram-square"></i></a>
+      <a href="https://en-gb.facebook.com/" rel="noopener" title="Go to Facebook" target="_blank"
+        class="footer_button"><i class="fa-brands fa-facebook-square"></i></a>
+      <a href="https://github.com/dlhamilton" rel="author" title="Go to D Hamilton Github" target="_blank"
+        class="footer_button">
+        <p>Made by D Hamilton</p>
+      </a>
+    </footer>
+  </main>
 
-<li><div class="spec_question">
-    <p>Add 00100111 to 00111010. You should include your working. </p>
-    <br>
-    <span class="show_answer"><p></p></span>
-    <div class="spec_answer">
-      <p>0 1 1 0 0 0 0 1</p>
-    </div>
-  </div></li>
-
-<li><div class="spec_question">
-    <p>Show the result of adding the following three binary numbers. 
-      110011
-      10111
-      101
-    </p>
-    <br>
-    <span class="show_answer"><p></p></span>
-    <div class="spec_answer">
-      <p>1 0 0 1 1 1 1</p>
-    </div>
-  </div>
-</li>
-</ol>
-</div>
-
-<br>
-<br>
-<a href="lessons.html#s_3_3_4" title="Go to lessons page" class="spec_button">Go Back</a>
-
-  </article>
-  <!-- Footer -->
-<footer id="page_footer">
-  <a href="https://www.lpsb.org.uk/" rel="external" title="Go to Langley Park School for boys page" target="_blank" class="footer_button"><img src="./assets/images/logo_lpsb_bw.png"></a>
-  <a href="https://www.aqa.org.uk/" rel="external" title="Go to AQA Website" target="_blank" class="footer_button"><img src="./assets/images/aqa_logo.png"></a>
-  <a href="https://www.youtube.com/" rel="noopener" title="Go to Youtube" target="_blank" class="footer_button"><i class="fa-brands fa-youtube"></i></a>
-  <a href="https://www.instagram.com/" rel="noopener" title="Go to Instagram" target="_blank" class="footer_button"><i class="fa-brands fa-instagram-square"></i></a>
-  <a href="https://en-gb.facebook.com/" rel="noopener" title="Go to Facebook" target="_blank" class="footer_button"><i class="fa-brands fa-facebook-square"></i></a>
-  <a href="https://github.com/dlhamilton" rel="author" title="Go to D Hamilton Github" target="_blank" class="footer_button"><p>Made by D Hamilton</p></a>
-</footer>
-</main>
-
- <!-- font awesome script -->
- <script src="https://kit.fontawesome.com/372da758e4.js" crossorigin="anonymous"></script>
+  <!-- font awesome script -->
+  <script src="https://kit.fontawesome.com/372da758e4.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
