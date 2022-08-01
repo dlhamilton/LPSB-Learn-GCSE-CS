@@ -489,7 +489,7 @@ body {
   font-size: x-large;
 }
 
-details>summary {
+.lesson_details>.lesson_summary {
   /* padding: 4px;
     width: 200px;
     
@@ -500,14 +500,14 @@ details>summary {
   background-color: #eeeeee;
 }
 
-details {
+.lesson_details {
 
   overflow-x: auto !important;
   overflow-y: hidden !important;
 
 }
 
-details>table {
+.lesson_details>table {
   /* 
     padding: 4px;
     margin: 0;
@@ -518,25 +518,25 @@ details>table {
   border: 2px solid black;
 }
 
-details td,
-details th {
+.lesson_details td,
+.lesson_details th {
   padding: 5px;
   width: 50%;
 }
 
-details th {
+.lesson_details th {
   background-color: #9a4e98;
 }
 
-details td {
+.lesson_details td {
   background-color: #ffffff;
 }
 
-details li {
+.lesson_details li {
   list-style-position: inside;
 }
 
-details table,
+.lesson_details table,
 th,
 td {
   border: 1px solid black;
@@ -544,11 +544,11 @@ td {
 
 }
 
-details[open] summary::before {
+.lesson_details[open] .lesson_summary::before {
   content: "Hide Specification Content";
 }
 
-details:not([open]) summary::after {
+.lesson_details:not([open]) .lesson_summary::after {
   content: "Show Specification Content";
 }
 
@@ -849,7 +849,7 @@ details:not([open]) summary::after {
 }
 
 @media screen and (max-width:600px) {
-  details td {
+  .lesson_details td {
     width: 100vw;
   }
 
@@ -858,7 +858,7 @@ details:not([open]) summary::after {
   }
 
 
-  details>table {
+  .lesson_details>table {
     width: 100%;
     min-width: 200%;
     overflow-x: scroll;
