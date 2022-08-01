@@ -726,7 +726,7 @@ td {
 }
 
 .spec_answer {
-  display: none;
+  /* display: none; */
   padding: 5px;
   border: 2px solid red;
   border-radius: 10px;
@@ -736,10 +736,10 @@ td {
   content: "Place mouse here to see answers";
 }
 
-.show_answer:hover+.spec_answer {
+/* .show_answer:hover+.spec_answer {
   display: block;
 
-}
+} */
 
 .show_answer:hover {
   cursor: s-resize;
