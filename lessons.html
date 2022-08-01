@@ -106,7 +106,7 @@
           </ul>
         </section>
         <footer>
-          <input type="checkbox" id="cb_s_3_3_1" value="cb_val" name="cb_s_3_3_1">
+          <input type="checkbox" id="cb_s_3_3_1" value="cb_val" name="cb_s_3_3_1" onclick="completeSection()">
           <label for="cb_s_3_3_1">
             Mark section as complete
           </label>
@@ -168,7 +168,7 @@
             </a>
           </ul>
         </section>
-        <footer> <input type="checkbox" id="cb_s_3_3_2" value="cb_val" name="cb_s_3_3_2">
+        <footer> <input type="checkbox" id="cb_s_3_3_2" value="cb_val" name="cb_s_3_3_2" onclick="completeSection()">
           <label for="cb_s_3_3_2">
             Mark section as complete
           </label></footer>
@@ -225,7 +225,7 @@
             </a>
           </ul>
         </section>
-        <footer> <input type="checkbox" id="cb_s_3_3_3" value="cb_val" name="cb_s_3_3_3">
+        <footer> <input type="checkbox" id="cb_s_3_3_3" value="cb_val" name="cb_s_3_3_3" onclick="completeSection()">
           <label for="cb_s_3_3_3">
             Mark section as complete
           </label></footer>
@@ -278,7 +278,7 @@
             </a>
           </ul>
         </section>
-        <footer> <input type="checkbox" id="cb_s_3_3_4" value="cb_val" name="cb_s_3_3_4">
+        <footer> <input type="checkbox" id="cb_s_3_3_4" value="cb_val" name="cb_s_3_3_4" onclick="completeSection()">
           <label for="cb_s_3_3_4">
             Mark section as complete
           </label></footer>
@@ -342,7 +342,7 @@
             </a>
           </ul>
         </section>
-        <footer> <input type="checkbox" id="cb_s_3_3_5" value="cb_val" name="cb_s_3_3_5">
+        <footer> <input type="checkbox" id="cb_s_3_3_5" value="cb_val" name="cb_s_3_3_5" onclick="completeSection()">
           <label for="cb_s_3_3_5">
             Mark section as complete
           </label></footer>
@@ -429,7 +429,7 @@
             </a>
           </ul>
         </section>
-        <footer> <input type="checkbox" id="cb_s_3_3_6" value="cb_val" name="cb_s_3_3_6">
+        <footer> <input type="checkbox" id="cb_s_3_3_6" value="cb_val" name="cb_s_3_3_6" onclick="completeSection()">
           <label for="cb_s_3_3_6">
             Mark section as complete
           </label></footer>
@@ -491,7 +491,7 @@
             </a>
           </ul>
         </section>
-        <footer> <input type="checkbox" id="cb_s_3_3_7" value="cb_val" name="cb_s_3_3_7">
+        <footer> <input type="checkbox" id="cb_s_3_3_7" value="cb_val" name="cb_s_3_3_7" onclick="completeSection()">
           <label for="cb_s_3_3_7">
             Mark section as complete
           </label></footer>
@@ -556,7 +556,7 @@
             </a>
           </ul>
         </section>
-        <footer> <input type="checkbox" id="cb_s_3_3_8" value="cb_val" name="cb_s_3_3_8">
+        <footer> <input type="checkbox" id="cb_s_3_3_8" value="cb_val" name="cb_s_3_3_8" onclick="completeSection()">
           <label for="cb_s_3_3_8">
             Mark section as complete
           </label></footer>
@@ -587,6 +587,79 @@
 
   <!-- font awesome script -->
   <script src="https://kit.fontawesome.com/372da758e4.js" crossorigin="anonymous"></script>
+  <script>
+    loadCompleteSection();
+
+    function loadCompleteSection(){
+      if (localStorage.getItem("s_3_1") == 1){
+        document.getElementById("cb_s_3_3_1").checked = true;
+      }
+      if (localStorage.getItem("s_3_2") == 1){
+        document.getElementById("cb_s_3_3_2").checked = true;
+      }
+      if (localStorage.getItem("s_3_3") == 1){
+        document.getElementById("cb_s_3_3_3").checked = true;
+      }
+      if (localStorage.getItem("s_3_4") == 1){
+        document.getElementById("cb_s_3_3_4").checked = true;
+      }
+      if (localStorage.getItem("s_3_5") == 1){
+        document.getElementById("cb_s_3_3_5").checked = true;
+      }
+      if (localStorage.getItem("s_3_6") == 1){
+        document.getElementById("cb_s_3_3_6").checked = true;
+      }
+      if (localStorage.getItem("s_3_7") == 1){
+        document.getElementById("cb_s_3_3_7").checked = true;
+      }
+      if (localStorage.getItem("s_3_8") == 1){
+        document.getElementById("cb_s_3_3_8").checked = true;
+      }
+    }
+
+    function completeSection() {
+      if (document.getElementById("cb_s_3_3_1").checked == false) {
+        localStorage.setItem("s_3_1", 0 );
+      } else {
+        localStorage.setItem("s_3_1", 1 );
+      }
+      if (document.getElementById("cb_s_3_3_2").checked == false) {
+        localStorage.setItem("s_3_2", 0 );
+      } else {
+        localStorage.setItem("s_3_2", 1 );
+      }
+      if (document.getElementById("cb_s_3_3_3").checked == false) {
+        localStorage.setItem("s_3_3", 0 );
+      } else {
+        localStorage.setItem("s_3_3", 1 );
+      }
+      if (document.getElementById("cb_s_3_3_4").checked == false) {
+        localStorage.setItem("s_3_4", 0 );
+      } else {
+        localStorage.setItem("s_3_4", 1 );
+      }
+      if (document.getElementById("cb_s_3_3_5").checked == false) {
+        localStorage.setItem("s_3_5", 0 );
+      } else {
+        localStorage.setItem("s_3_5", 1 );
+      }
+      if (document.getElementById("cb_s_3_3_6").checked == false) {
+        localStorage.setItem("s_3_6", 0 );
+      } else {
+        localStorage.setItem("s_3_6", 1 );
+      }
+      if (document.getElementById("cb_s_3_3_7").checked == false) {
+        localStorage.setItem("s_3_7", 0 );
+      } else {
+        localStorage.setItem("s_3_7", 1 );
+      }
+      if (document.getElementById("cb_s_3_3_8").checked == false) {
+        localStorage.setItem("s_3_8", 0 );
+      } else {
+        localStorage.setItem("s_3_8", 1 );
+      }
+    }
+    </script>
 </body>
 
 </html>
