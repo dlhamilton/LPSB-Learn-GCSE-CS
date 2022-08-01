@@ -76,7 +76,7 @@ body {
 }
 
 #school_logo {
-  background-image: url(../images/logo_lpsb.png);
+  background-image: url(../images/logo_lpsb.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -825,7 +825,7 @@ details:not([open]) summary::after {
 .dropin-form-section {
 
   clear: left;
-  background: url("/assets/images/classroom.jpeg") no-repeat center center !important;
+  background: url("/assets/images/classroom.webp") no-repeat center center !important;
   background-size: cover;
   background-position: center;
   height: fit-content !important;
