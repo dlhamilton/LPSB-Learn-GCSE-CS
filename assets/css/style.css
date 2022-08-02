@@ -75,6 +75,48 @@ body {
   background-color: #696969;
 }
 
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: #696969;
+  color: rgb(255, 230, 230) ;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -50px;
+left:0;
+  box-sizing: border-box;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #696969 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.lesson_tooltiptext::after {
+  left: 12%!important;
+}
+.exam_tooltiptext::after {
+  left: 37%!important;
+}
+.upload_tooltiptext::after {
+  left: 62%!important;
+}
+.dropin_tooltiptext::after {
+  left: 87%!important;
+}
+
 #school_logo {
   background-image: url(../images/logo_lpsb.webp);
   background-position: center;
