@@ -760,6 +760,23 @@ td {
   margin-bottom: 32px;
 }
 
+.lesson_video{
+  width:100% ;
+  height:315px;
+  max-width: 560px;
+}
+
+.lesson_video_details{
+  padding: 5px;
+  border: 2px solid;
+  box-sizing: border-box;
+}
+
+.lesson_video_details:hover {
+  cursor:pointer;
+  font-weight: bold;
+}
+
 .spec_question {
   border: 2px solid black;
   margin: 20px 0;
@@ -891,6 +908,11 @@ td {
 }
 
 @media screen and (max-width:600px) {
+
+  .lesson_video{
+    width:100%;
+  }
+
   .lesson_details td {
     width: 100vw;
   }
