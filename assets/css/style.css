@@ -792,9 +792,17 @@ td {
 }
 
 .show_answer::before {
-  content: "Place mouse here to see answers";
+  content: "Click here to see answers";
+  text-decoration: underline;
+
 }
 
+.spec_question details summary{
+  list-style: none;
+}
+.spec_question details summary::-webkit-details-marker{
+  display:none;
+}
 /* .show_answer:hover+.spec_answer {
   display: block;
 
