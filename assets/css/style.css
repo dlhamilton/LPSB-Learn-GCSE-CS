@@ -919,7 +919,7 @@ td {
   background-color: #696969;
   border: 2px solid maroon;
   border-radius: 20px;
-  padding: 5px;
+  padding: 20px;
   box-sizing: border-box;
 }
 #form_details span{
@@ -932,6 +932,9 @@ color:white;
   font-size: larger;
   font-weight: bold;
   text-decoration: underline;
+}
+.item_data{
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width:600px) {
