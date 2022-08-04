@@ -601,9 +601,10 @@
 
   <!-- font awesome script -->
   <script src="https://kit.fontawesome.com/372da758e4.js" crossorigin="anonymous"></script>
+ 
   <script>
     loadCompleteSection();
-
+    // load in local storage to fill in checkboxes
     function loadCompleteSection(){
       if (localStorage.getItem("s_3_1") == 1){
         document.getElementById("cb_s_3_3_1").checked = true;
@@ -630,7 +631,7 @@
         document.getElementById("cb_s_3_3_8").checked = true;
       }
     }
-
+// on click set local storage for the checkboxes
     function completeSection() {
       if (document.getElementById("cb_s_3_3_1").checked == false) {
         localStorage.setItem("s_3_1", 0 );
