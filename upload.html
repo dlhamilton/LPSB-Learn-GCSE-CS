@@ -65,7 +65,7 @@
 
 
       <section>
-        <form method="POST" action="https://formdump.codeinstitute.net/" class="upload-form">
+        <form method="" action="form_confirmation.html" class="upload-form"><!-- https://formdump.codeinstitute.net/ -->
           <label for="fname">First Name</label>
           <input class="text-input" id="fname" name="first_name" type="text" required>
 
@@ -93,7 +93,7 @@
           <label for="studentFile">Attach work here</label>
           <input class="text-input" type="file" id="studentFile" name="filename">
 
-          <input class="upload-button" type="submit" value="Send Off!">
+          <input class="upload-button" onclick="ShareData();" type="submit" value="Send Off!">
         </form>
       </section>
       <!-- form code end -->
@@ -122,6 +122,24 @@
 
   <!-- font awesome script -->
   <script src="https://kit.fontawesome.com/372da758e4.js" crossorigin="anonymous"></script>
+  <script>
+    var myFormArray = new Array();
+    function ShareData(){
+      myFormArray[0] = "First Name"
+      myFormArray[1] = document.getElementById('fname').value;
+      myFormArray[2] = "Last Name"
+     myFormArray[3] = document.getElementById('lname').value;
+     myFormArray[4] = "Student Number"
+     myFormArray[5] = document.getElementById('snumber').value; 
+     myFormArray[6] = "Email"
+     myFormArray[7] = document.getElementById('email').value;
+     myFormArray[8] = "Specification Unit"
+     myFormArray[9] = document.getElementById('unit').value;
+     myFormArray[10] = "File Uploaded"
+     myFormArray[11] = document.getElementById('studentFile').value;
+     sessionStorage.setItem("myFormArray", JSON.stringify(myFormArray));
+    }
+  </script>
 </body>
 
 </html>

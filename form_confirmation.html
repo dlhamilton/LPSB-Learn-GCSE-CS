@@ -9,6 +9,8 @@
   <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico" />
   <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <meta http-equiv="refresh" content="11;url=index.html" />
   <title>LPSB Computer Science</title>
 </head>
 
@@ -57,9 +59,17 @@
     <!-- Section -->
     <article id="page_section">
       <!-- Article title -->
-      
-
-
+      <h1>Message Sent</h1>
+      <p>Thank you for your message. The data sent is shown below:
+      Please  <a href="index.html" title="Go to home page">click here</a> to go back to the home page if you are not automatically redirected after <strong>10 seconds</strong></p>
+<div id="form_details">
+  <span id="header_one" class="item_label"></span><span id="item_one"></span><br>
+  <span id="header_two" class="item_label"></span><span id="item_two"></span><br>
+  <span id="header_three" class="item_label"></span><span id="item_three"></span><br>
+  <span id="header_four" class="item_label"></span><span id="item_four"></span><br>
+  <span id="header_five" class="item_label"></span><span id="item_five"></span><br>
+  <span id="header_six" class="item_label"></span><span id="item_six"></span><br>
+    </div>
       </article>
       <!-- Specification item 3.8 end -->
       <br>
@@ -87,6 +97,22 @@
 
   <!-- font awesome script -->
   <script src="https://kit.fontawesome.com/372da758e4.js" crossorigin="anonymous"></script>
+  <script>
+var myFormArray = new Array();
+myFormArray = JSON.parse(sessionStorage.getItem("myFormArray"));
+document.getElementById("header_one").innerHTML = myFormArray[0];
+document.getElementById("item_one").innerHTML = myFormArray[1];
+document.getElementById("header_two").innerHTML = myFormArray[2];
+document.getElementById("item_two").innerHTML = myFormArray[3];
+document.getElementById("header_three").innerHTML = myFormArray[4];
+document.getElementById("item_three").innerHTML = myFormArray[5];
+document.getElementById("header_four").innerHTML = myFormArray[6];
+document.getElementById("item_four").innerHTML = myFormArray[7];
+document.getElementById("header_five").innerHTML = myFormArray[8];
+document.getElementById("item_five").innerHTML = myFormArray[9];
+document.getElementById("header_six").innerHTML = myFormArray[10];
+document.getElementById("item_six").innerHTML = myFormArray[11];
+  </script>
 </body>
 
 </html>

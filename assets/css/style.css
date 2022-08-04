@@ -915,6 +915,25 @@ td {
   color: white;
 }
 
+#form_details{
+  background-color: #696969;
+  border: 2px solid maroon;
+  border-radius: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+#form_details span{
+display: block;
+font-size: large;
+color:white;
+}
+
+.item_label{
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 @media screen and (max-width:600px) {
 
   .lesson_video{
