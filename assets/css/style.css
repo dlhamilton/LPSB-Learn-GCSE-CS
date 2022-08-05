@@ -1,3 +1,8 @@
+/* ----------------------------------- */
+/* |                                 | */
+/* |       all page styles           | */
+/* |                                 | */
+/* ----------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -11,15 +16,70 @@ html {
 body {
   font-family: "Lucida Console", "Courier New", "monospace";
   background: #696969;
-  /* background: linear-gradient(180deg, rgb(14, 0, 255) 0%, rgb(46, 46, 255) 0%, rgba(255,255,255,1) 100%); */
   background: linear-gradient(180deg, rgb(105, 105, 105) 0%, rgb(255, 255, 255) 100%, rgba(255, 255, 255, 1) 100%);
-  /* height: 100%; */
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
   animation-name: fadein;
   animation-duration: 2s;
 }
+
+/* fade in for pages  */
+@keyframes fadein {
+  0% {
+    opacity: 0.0;
+  }
+
+  10% {
+    opacity: 0.1;
+  }
+
+  20% {
+    opacity: 0.2;
+  }
+
+  30% {
+    opacity: 0.3;
+  }
+
+  40% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  90% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ================================ End of all page styling ======================================== */
+/* ================================================================================================= */
+/* ================================================================================================= */
+
+/* ----------------------------------- */
+/* |                                 | */
+/* |          index page             | */
+/* |                                 | */
+/* ----------------------------------- */
 
 #intro {
   position: absolute;
@@ -42,7 +102,7 @@ body {
   font-size: 4.5em;
 }
 
-/*nav*/
+/*navigation for index page (4 buttons) */
 #menu {
   position: relative;
   top: 6vh;
@@ -75,18 +135,19 @@ body {
   background-color: #696969;
 }
 
+/* feature: tool tip for index page  */
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 100%;
   background-color: #696969;
-  color: rgb(255, 230, 230) ;
+  color: rgb(255, 230, 230);
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
   z-index: 1;
   top: -50px;
-left:0;
+  left: 0;
   box-sizing: border-box;
 }
 
@@ -104,19 +165,24 @@ left:0;
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
 .lesson_tooltiptext::after {
-  left: 12%!important;
-}
-.exam_tooltiptext::after {
-  left: 37%!important;
-}
-.upload_tooltiptext::after {
-  left: 62%!important;
-}
-.dropin_tooltiptext::after {
-  left: 87%!important;
+  left: 12% !important;
 }
 
+.exam_tooltiptext::after {
+  left: 37% !important;
+}
+
+.upload_tooltiptext::after {
+  left: 62% !important;
+}
+
+.dropin_tooltiptext::after {
+  left: 87% !important;
+}
+
+/* school badge link on index page */
 #school_logo {
   background-image: url(../images/logo_lpsb.webp);
   background-position: center;
@@ -124,8 +190,6 @@ left:0;
   background-size: contain;
   top: 0;
   right: 0;
-  /* max-width: 10em;
-    max-height: 10em; */
   position: absolute;
   min-height: 5em;
   min-width: 5em;
@@ -137,84 +201,14 @@ left:0;
   height: 7em;
 }
 
+/* signpost for index page */
 #intro_instructions {
   margin-top: 50px;
   text-align: center;
   font-size: 1.45em;
 }
 
-@keyframes fadein {
-  0% {
-    opacity: 0.0;
-  }
-
-  10% {
-    opacity: 0.1;
-  }
-
-  20% {
-    opacity: 0.2;
-  }
-
-  30% {
-    opacity: 0.3;
-  }
-
-  40% {
-    opacity: 0.4;
-  }
-
-  500% {
-    opacity: 0.5;
-  }
-
-  60% {
-    opacity: 0.6;
-  }
-
-  70% {
-    opacity: 0.7;
-  }
-
-  80% {
-    opacity: 0.8;
-  }
-
-  90% {
-    opacity: 0.9;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-/* for medium screen sizes from 950px */
-@media screen and (max-width: 950px) {
-  #intro_title {
-    width: 90%;
-    top: 20%;
-  }
-
-  #menu li {
-    padding: 20px;
-    margin: 2% 0;
-    clear: both;
-    width: 100%;
-  }
-
-  #intro {
-    height: fit-content;
-  }
-
-  #intro_title h1 {
-    max-width: 80vw;
-    margin: 0 auto;
-    font-size: 3.5em;
-  }
-}
-
-/* Spinner */
+/* Spinner  animation for index page */
 .spinner {
   position: absolute;
   left: 0;
@@ -251,6 +245,35 @@ left:0;
   }
 }
 
+/* -------------------------------
+Media 
+=================================*/
+/* for medium screen sizes from 950px */
+@media screen and (max-width: 950px) {
+  #intro_title {
+    width: 90%;
+    top: 20%;
+  }
+
+  #menu li {
+    padding: 20px;
+    margin: 2% 0;
+    clear: both;
+    width: 100%;
+  }
+
+  #intro {
+    height: fit-content;
+  }
+
+  #intro_title h1 {
+    max-width: 80vw;
+    margin: 0 auto;
+    font-size: 3.5em;
+  }
+}
+
+/* for the height of the window */
 @media screen and (max-height: 680px) {
   #intro_title {
     margin-bottom: 50px;
@@ -266,7 +289,17 @@ left:0;
   }
 }
 
-/* the page styling */
+/* ================================= End of index page styling ===================================== */
+/* ================================================================================================= */
+/* ================================================================================================= */
+
+/* ----------------------------------- */
+/* |                                 | */
+/* |          Page template          | */
+/* |                                 | */
+/* ----------------------------------- */
+
+/* large left hand side navigation */
 #large_nav {
   background-color: rgb(110, 110, 110);
   height: 100%;
@@ -291,7 +324,6 @@ left:0;
   float: none;
   outline: 0;
   box-sizing: border-box;
-
 }
 
 .nav-item {
@@ -300,7 +332,6 @@ left:0;
   border: none;
   margin: 10px 0;
   display: inline-block;
-  /* padding:8px 16px; */
   vertical-align: middle;
   overflow: hidden;
   text-decoration: none;
@@ -310,8 +341,6 @@ left:0;
   white-space: nowrap;
   font-size: 14px;
   color: white;
-
-
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -320,19 +349,13 @@ left:0;
   user-select: none;
 }
 
-.nav-item:disabled {
-  cursor: not-allowed;
-  opacity: 0.3;
-}
-
 .nav-item:hover,
 #large_nav .active {
-  /* color:#000!important; */
   color: #696969;
   background-color: white !important;
-  /* background-color: rgba(200, 200, 200,0.5)!important;  */
 }
 
+/* small top fixed navigation */
 #small_nav {
   background-color: #696969;
   opacity: 0.8;
@@ -346,7 +369,6 @@ left:0;
 #small_nav span {
   padding: 8px 0px;
   float: left;
-  /* width:auto; */
   border: none;
   display: block;
   outline: 0;
@@ -376,29 +398,25 @@ left:0;
   color: #696969;
 }
 
+/* page content */
 #main_content {
   background: white;
-  /* background: linear-gradient(180deg, rgb(200, 200, 200) 0%, rgb(255, 255, 255) 100%, rgba(255,255,255,1) 100%);  */
   margin-left: 120px;
   transition: margin-left 1s;
   padding: 12px 24px !important;
-  /* flex */
   display: flex;
   flex-flow: column;
   height: 100%;
   box-sizing: border-box;
 }
 
+/* page header inside the main content */
 #page_header {
   padding: 0.01em 16px;
   padding-top: 32px !important;
-
   text-align: center !important;
-  /* flex */
   flex: 0 1 auto;
-  /* color:rgb(110, 110, 110); */
   color: black;
-
 }
 
 #page_header h1 {
@@ -418,14 +436,13 @@ left:0;
   clear: both;
 }
 
+/* below the header in main page content */
 #page_section {
   margin-left: auto;
   margin-right: auto;
   max-width: 980px;
   text-align: justify;
   padding-top: 0px !important;
-
-  /* flex */
   flex: 1 1 auto;
   width: 100%;
 }
@@ -443,7 +460,6 @@ left:0;
   border-bottom: none;
   padding-bottom: 12px !important;
   margin-bottom: 0 !important;
-
 }
 
 #page_section>p {
@@ -452,6 +468,11 @@ left:0;
   padding-bottom: 12px !important;
 }
 
+#page_section {
+  text-align: left;
+}
+
+/* page footer below page section inside main content */
 #page_footer {
   margin-left: auto;
   margin-right: auto;
@@ -459,20 +480,17 @@ left:0;
   padding-top: 32px !important;
   padding-bottom: 32px !important;
   font-size: 24px !important;
-  /* flex */
   flex: 0 1 auto;
   width: 100%;
   align-items: center;
   text-align: center;
   word-spacing: 20px;
-
 }
 
 #page_footer i {
   color: black !important;
   list-style: none;
   text-decoration: none;
-
 }
 
 #page_footer p {
@@ -482,8 +500,6 @@ left:0;
 #page_footer img {
   width: 22px;
   height: 22px;
-
-
 }
 
 #page_footer img:hover {
@@ -494,6 +510,11 @@ left:0;
   background-color: rgba(105, 105, 105, 0.5);
 }
 
+/* -------------------------------
+Media 
+=================================*/
+/* for medium/ small screen sizes from 600px */
+/* hide large nav */
 @media screen and (max-width:600px) {
   #large_nav {
     display: none !important;
@@ -504,24 +525,24 @@ left:0;
   }
 }
 
-@media (min-width:993px) {
+/* hide small nav */
+@media (min-width:601px) {
   #small_nav {
     display: none !important
   }
 }
 
-@media (max-width:992px) and (min-width:601px) {
-  #small_nav {
-    display: none !important
-  }
-}
+/* =============================== End of template page styling ==================================== */
+/* ================================================================================================= */
+/* ================================================================================================= */
 
-#page_section {
-  text-align: left;
-}
+/* ----------------------------------- */
+/* |                                 | */
+/* |          lesson page            | */
+/* |                                 | */
+/* ----------------------------------- */
 
 .spec_item {
-  /* background-color: lightblue; */
   border-bottom: 2px solid black;
   padding: 5px;
   padding-top: 29px;
@@ -532,13 +553,6 @@ left:0;
 }
 
 .lesson_details>.lesson_summary {
-  /* padding: 4px;
-    width: 200px;
-    
-    border: none;
-    box-shadow: 1px 1px 2px #bbbbbb;
-    cursor: pointer; */
-  /* border: 2px solid black; */
   background-color: #eeeeee;
 }
 
@@ -546,17 +560,11 @@ left:0;
 
   overflow-x: auto !important;
   overflow-y: hidden !important;
-
 }
 
 .lesson_details>table {
-  /* 
-    padding: 4px;
-    margin: 0;
-    box-shadow: 1px 1px 2px #bbbbbb; */
   margin: 0 auto;
   width: 90%;
-  /* min-width: 800px; */
   border: 2px solid black;
 }
 
@@ -705,7 +713,11 @@ td {
   color: green;
 }
 
-/* spec pages */
+/* ----------------------------------- */
+/* |       specification pages       | */
+/* |           & exam page           | */
+/* |                                 | */
+/* ----------------------------------- */
 .two_column {
   width: 40%;
   padding: 5px;
@@ -760,20 +772,20 @@ td {
   margin-bottom: 32px;
 }
 
-.lesson_video{
-  width:100% ;
-  height:315px;
+.lesson_video {
+  width: 100%;
+  height: 315px;
   max-width: 560px;
 }
 
-.lesson_video_details{
+.lesson_video_details {
   padding: 5px;
   border: 2px solid;
   box-sizing: border-box;
 }
 
 .lesson_video_details:hover {
-  cursor:pointer;
+  cursor: pointer;
   font-weight: bold;
 }
 
@@ -797,12 +809,14 @@ td {
 
 }
 
-.spec_question details summary{
+.spec_question details summary {
   list-style: none;
 }
-.spec_question details summary::-webkit-details-marker{
-  display:none;
+
+.spec_question details summary::-webkit-details-marker {
+  display: none;
 }
+
 /* .show_answer:hover+.spec_answer {
   display: block;
 
@@ -835,7 +849,11 @@ td {
   padding: 5px 0;
 }
 
-/* Upload form */
+/* ----------------------------------- */
+/* |                                 | */
+/* |          upload page            | */
+/* |                                 | */
+/* ----------------------------------- */
 
 .text-input {
   background: white;
@@ -869,6 +887,19 @@ td {
   display: block;
 }
 
+
+.upload-button:hover {
+  background-color: maroon;
+  color: white;
+}
+
+/* ----------------------------------- */
+/* |                                 | */
+/* |         drop-in page            | */
+/* |                                 | */
+/* ----------------------------------- */
+
+
 .dropin-button {
   margin-top: 20px;
   border: 2px solid black;
@@ -881,13 +912,6 @@ td {
   display: block;
   width: 100%;
 }
-
-.upload-button:hover {
-  background-color: maroon;
-  color: white;
-}
-
-/* drop in form */
 
 .dropin-form-section {
 
@@ -915,32 +939,40 @@ td {
   color: white;
 }
 
-#form_details{
+/* ----------------------------------- */
+/* |                                 | */
+/* |     form confirmation page      | */
+/* |                                 | */
+/* ----------------------------------- */
+
+#form_details {
   background-color: #696969;
   border: 2px solid maroon;
   border-radius: 20px;
   padding: 20px;
   box-sizing: border-box;
 }
-#form_details span{
-display: block;
-font-size: large;
-color:white;
+
+#form_details span {
+  display: block;
+  font-size: large;
+  color: white;
 }
 
-.item_label{
+.item_label {
   font-size: larger;
   font-weight: bold;
   text-decoration: underline;
 }
-.item_data{
+
+.item_data {
   margin-bottom: 15px;
 }
 
 @media screen and (max-width:600px) {
 
-  .lesson_video{
-    width:100%;
+  .lesson_video {
+    width: 100%;
   }
 
   .lesson_details td {
