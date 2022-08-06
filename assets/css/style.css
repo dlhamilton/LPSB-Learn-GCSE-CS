@@ -510,6 +510,24 @@ Media
   background-color: rgba(105, 105, 105, 0.5);
 }
 
+.spec_button {
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid black;
+  list-style: none;
+  text-decoration: none;
+  width: 12em;
+  text-align: center;
+  margin: 20px 2px;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+
+.spec_button:hover {
+  background-color: #696969;
+}
+
 /* -------------------------------
 Media 
 =================================*/
@@ -522,6 +540,15 @@ Media
 
   #main_content {
     margin-left: 0;
+  }
+
+  #page_header h1 {
+    font-size: 40px !important;
+  }
+
+  .spec_button {
+    width: 100%;
+    margin: 10px 2px;
   }
 }
 
@@ -602,6 +629,11 @@ td {
   content: "Show Specification Content";
 }
 
+/* Color for each item in the specification 
+i = icon
+h = heading
+b = border */
+/* item 3.1 */
 .s_3_3_1 i,
 .s_3_1_h,
 .s_3_3_1 .spec_button:hover {
@@ -612,6 +644,7 @@ td {
   border-color: #ffabab !important;
 }
 
+/* item 3.2 */
 .s_3_3_2 i,
 .s_3_2_h,
 .s_3_3_2 .spec_button:hover {
@@ -622,6 +655,7 @@ td {
   border-color: #ffcba9 !important;
 }
 
+/* item 3.3 */
 .s_3_3_3 i,
 .s_3_3_h,
 .s_3_3_3 .spec_button:hover {
@@ -632,6 +666,7 @@ td {
   border-color: #ffff70 !important;
 }
 
+/* item 3.4 */
 .s_3_3_4 i,
 .s_3_4_h,
 .s_3_3_4 .spec_button:hover {
@@ -642,6 +677,7 @@ td {
   border-color: #c5ffbd !important;
 }
 
+/* item 3.5 */
 .s_3_3_5 i,
 .s_3_5_h,
 .s_3_3_5 .spec_button:hover {
@@ -652,6 +688,7 @@ td {
   border-color: #ace7f8 !important;
 }
 
+/* item 3.6 */
 .s_3_3_6 i,
 .s_3_6_h,
 .s_3_3_6 .spec_button:hover {
@@ -662,6 +699,7 @@ td {
   border-color: #afcbff !important;
 }
 
+/* item 3.7 */
 .s_3_3_7 i,
 .s_3_7_h,
 .s_3_3_7 .spec_button:hover {
@@ -672,6 +710,7 @@ td {
   border-color: #d5aaff !important;
 }
 
+/* item 3.8 */
 .s_3_3_8 i,
 .s_3_8_h,
 .s_3_3_8 .spec_button:hover {
@@ -682,25 +721,6 @@ td {
   border-color: #ffccf9 !important;
 }
 
-.spec_button {
-  display: inline-block;
-  padding: 10px;
-  border: 2px solid black;
-  list-style: none;
-  text-decoration: none;
-  width: 12em;
-  text-align: center;
-  margin: 20px 2px;
-  box-sizing: border-box;
-  background-color: black;
-  color: white;
-}
-
-.spec_button:hover {
-  background-color: #696969;
-  /* color:#ffabab; */
-}
-
 .question_button {
   display: inline-block;
 }
@@ -709,9 +729,31 @@ td {
   color: #000;
 }
 
+/* when checked turn color green */
 .spec_item input[type="checkbox"]:checked+label {
   color: green;
 }
+
+/* -------------------------------
+Media 
+=================================*/
+
+@media screen and (max-width:600px) {
+
+  .lesson_details td {
+    width: 100vw;
+  }
+
+  .lesson_details>table {
+    width: 100%;
+    min-width: 200%;
+    overflow-x: scroll;
+  }
+}
+
+/* ================================= End of lesson page styling ==================================== */
+/* ================================================================================================= */
+/* ================================================================================================= */
 
 /* ----------------------------------- */
 /* |       specification pages       | */
@@ -724,13 +766,14 @@ td {
   float: left;
 }
 
-/* Clearfix (clear floats) */
+/* for two items on the same row */
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
 
+/* Style for any tables in the specification pages */
 .spec_table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -754,12 +797,12 @@ td {
   width: 100%;
 }
 
+/* for the images on page s_3_7 */
 .spec_img_border {
   border: 2px solid black;
 }
 
 .figure_border {
-  /* border:2px solid black; */
   margin: 5px;
 }
 
@@ -772,6 +815,7 @@ td {
   margin-bottom: 32px;
 }
 
+/* The style for the lesson videos */
 .lesson_video {
   width: 100%;
   height: 315px;
@@ -789,6 +833,8 @@ td {
   font-weight: bold;
 }
 
+/* code for the question section of the spec pages */
+/* the click to show answer styling */
 .spec_question {
   border: 2px solid black;
   margin: 20px 0;
@@ -797,7 +843,6 @@ td {
 }
 
 .spec_answer {
-  /* display: none; */
   padding: 5px;
   border: 2px solid red;
   border-radius: 10px;
@@ -806,7 +851,6 @@ td {
 .show_answer::before {
   content: "Click here to see answers";
   text-decoration: underline;
-
 }
 
 .spec_question details summary {
@@ -817,16 +861,12 @@ td {
   display: none;
 }
 
-/* .show_answer:hover+.spec_answer {
-  display: block;
-
-} */
-
 .show_answer:hover {
   cursor: s-resize;
   font-weight: bold;
 }
 
+/* page s_3_6 has a pixels question which require colors in the table */
 .y_pixel {
   background-color: yellow;
 }
@@ -843,19 +883,48 @@ td {
   background-color: green;
 }
 
+/* styling the question numbers */
 #question_content li {
   list-style: inside;
   list-style-type: decimal;
   padding: 5px 0;
 }
 
+/* -------------------------------
+Media 
+=================================*/
+
+@media screen and (max-width:600px) {
+
+  /* make the videos full width  */
+  .lesson_video {
+    width: 100%;
+  }
+
+  /* turn the two columns into one */
+  .two_column {
+    width: 100%;
+    float: none;
+  }
+
+  /* give a one column object a whole screen effect  */
+  .one_column_width {
+    width: 80%;
+    margin: 0 10%;
+  }
+}
+
+/* ================================= End of spec page styling ==================================== */
+/* ================================================================================================= */
+/* ================================================================================================= */
+
 /* ----------------------------------- */
 /* |                                 | */
-/* |          upload page            | */
+/* |      upload and dropin page     | */
 /* |                                 | */
 /* ----------------------------------- */
 
-.text-input {
+.text_input {
   background: white;
   color: #696969;
   width: 100%;
@@ -867,15 +936,15 @@ td {
   box-sizing: border-box;
 }
 
-.text-input_height {
+.text_input_height {
   height: 60px !important;
 }
 
-.text-input:hover {
+.text_input:hover {
   border: 3px solid maroon;
 }
 
-.upload-button {
+.upload_button {
   margin-top: 20px;
   border: 2px solid black;
   border-radius: 2px;
@@ -887,18 +956,10 @@ td {
   display: block;
 }
 
-
-.upload-button:hover {
+.upload_button:hover {
   background-color: maroon;
   color: white;
 }
-
-/* ----------------------------------- */
-/* |                                 | */
-/* |         drop-in page            | */
-/* |                                 | */
-/* ----------------------------------- */
-
 
 .dropin-button {
   margin-top: 20px;
@@ -913,21 +974,29 @@ td {
   width: 100%;
 }
 
-.dropin-form-section {
+.dropin-button:hover {
+  background-color: maroon;
+}
 
+/* =========================== End of upload and dropin page styling =============================== */
+/* ================================================================================================= */
+/* ================================================================================================= */
+
+/* ----------------------------------- */
+/* |                                 | */
+/* |         drop-in page            | */
+/* |                                 | */
+/* ----------------------------------- */
+
+.dropin_form_section {
   clear: left;
   background: url("/assets/images/classroom.webp") no-repeat center center !important;
   background-size: cover;
   background-position: center;
   height: fit-content !important;
-
 }
 
-.dropin-button:hover {
-  background-color: maroon;
-}
-
-.form-section {
+.form_section {
   width: 20em;
   margin: 0 auto;
   padding: 20px;
@@ -938,6 +1007,21 @@ td {
 .dropin-form label {
   color: white;
 }
+
+/* -------------------------------
+Media 
+=================================*/
+/* Make the form full width */
+@media screen and (max-width:600px) {
+
+  .form_section {
+    width: 100%;
+  }
+}
+
+/* ================================= End of dropin page styling ==================================== */
+/* ================================================================================================= */
+/* ================================================================================================= */
 
 /* ----------------------------------- */
 /* |                                 | */
@@ -969,43 +1053,6 @@ td {
   margin-bottom: 15px;
 }
 
-@media screen and (max-width:600px) {
-
-  .lesson_video {
-    width: 100%;
-  }
-
-  .lesson_details td {
-    width: 100vw;
-  }
-
-  #page_header h1 {
-    font-size: 40px !important;
-  }
-
-
-  .lesson_details>table {
-    width: 100%;
-    min-width: 200%;
-    overflow-x: scroll;
-  }
-
-  .spec_button {
-    width: 100%;
-    margin: 10px 2px;
-  }
-
-  .form-section {
-    width: 100%;
-  }
-
-  .two_column {
-    width: 100%;
-    float: none;
-  }
-
-  .one_column_width {
-    width: 80%;
-    margin: 0 10%;
-  }
-}
+/* =========================== End of form confirmation page styling =============================== */
+/* ================================================================================================= */
+/* ================================================================================================= */
