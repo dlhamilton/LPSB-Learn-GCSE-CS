@@ -58,7 +58,8 @@
       <!-- Article title -->
       <h1>Request a sesssion with a teacher</h1>
       <p>Struggling with a topic? Book a session with a teacher. Request a time and you will receive an email with a
-        confirmation or alternitive times.  <a href="index.html" title="Go to index page">Click here</a> to go back to the home page.</p>
+        confirmation or alternitive times. <a href="index.html" title="Go to index page">Click here</a> to go back to
+        the home page.</p>
       <br>
       <!-- Form code start -->
 
@@ -111,18 +112,19 @@
   <!-- passing data to form-confirmation page script -->
   <script>
     var myFormArray = new Array();
-    function ShareData(){
+
+    function ShareData() {
       myFormArray[0] = "First Name"
       myFormArray[1] = document.getElementById('fname').value;
       myFormArray[2] = "Last Name"
-     myFormArray[3] = document.getElementById('lname').value;
-     myFormArray[4] = "Email"
-     myFormArray[5] = document.getElementById('email').value;
-     myFormArray[6] = "Appointment Time"
-     myFormArray[7] = document.getElementById('appointmenttime').value;
-     myFormArray[8] = "Session Notes"
-     myFormArray[9] = document.getElementById('session_notes').value;
-     sessionStorage.setItem("myFormArray", JSON.stringify(myFormArray));
+      myFormArray[3] = document.getElementById('lname').value;
+      myFormArray[4] = "Email"
+      myFormArray[5] = document.getElementById('email').value;
+      myFormArray[6] = "Appointment Time"
+      myFormArray[7] = document.getElementById('appointmenttime').value;
+      myFormArray[8] = "Session Notes"
+      myFormArray[9] = document.getElementById('session_notes').value;
+      sessionStorage.setItem("myFormArray", JSON.stringify(myFormArray));
     }
   </script>
 </body>

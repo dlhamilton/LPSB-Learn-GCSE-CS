@@ -611,7 +611,7 @@ Media
 
 .lesson_details th {
   background-color: #9a4e98;
-  font-weight:bolder;
+  font-weight: bolder;
 }
 
 .lesson_details td {
@@ -899,7 +899,12 @@ Media
   padding: 5px 0;
 }
 
-#lesson_content p, #lesson_content th , #lesson_content li, .lesson_video_details, .spec_question  {
+#lesson_content p,
+#lesson_content th,
+#lesson_content li,
+.lesson_video_details,
+.spec_question,
+.spec_item>section>p {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -991,7 +996,7 @@ Media
   background-color: maroon;
 }
 
-.upload_form{
+.upload_form {
   font-family: 'Lato', sans-serif;
 }
 
@@ -1024,7 +1029,8 @@ Media
 .dropin_form label {
   color: white;
 }
-.dropin_form{
+
+.dropin_form {
   font-family: 'Lato', sans-serif;
 }
 
@@ -1056,6 +1062,7 @@ Media
   border-radius: 20px;
   padding: 20px;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
 #form_details span {

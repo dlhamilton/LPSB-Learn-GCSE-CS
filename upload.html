@@ -59,7 +59,8 @@
       <!-- Article title -->
       <h1>Fill out the form below</h1>
       <p>If you want to get your answers marked or get some feedback on your work then complete the form below. A
-        teacher will contact you within 3 working days.  <a href="index.html" title="Go to index page">Click here</a> to go back to the home page.</p>
+        teacher will contact you within 3 working days. <a href="index.html" title="Go to index page">Click here</a> to
+        go back to the home page.</p>
 
       <!-- Form code start -->
 
@@ -122,23 +123,24 @@
 
   <!-- font awesome script -->
   <script src="https://kit.fontawesome.com/372da758e4.js" crossorigin="anonymous"></script>
-   <!-- passing data to form-confirmation page script -->
+  <!-- passing data to form-confirmation page script -->
   <script>
     var myFormArray = new Array();
-    function ShareData(){
+
+    function ShareData() {
       myFormArray[0] = "First Name"
       myFormArray[1] = document.getElementById('fname').value;
       myFormArray[2] = "Last Name"
-     myFormArray[3] = document.getElementById('lname').value;
-     myFormArray[4] = "Student Number"
-     myFormArray[5] = document.getElementById('snumber').value; 
-     myFormArray[6] = "Email"
-     myFormArray[7] = document.getElementById('email').value;
-     myFormArray[8] = "Specification Unit"
-     myFormArray[9] = document.getElementById('unit').value;
-     myFormArray[10] = "File Uploaded"
-     myFormArray[11] = document.getElementById('studentFile').value;
-     sessionStorage.setItem("myFormArray", JSON.stringify(myFormArray));
+      myFormArray[3] = document.getElementById('lname').value;
+      myFormArray[4] = "Student Number"
+      myFormArray[5] = document.getElementById('snumber').value;
+      myFormArray[6] = "Email"
+      myFormArray[7] = document.getElementById('email').value;
+      myFormArray[8] = "Specification Unit"
+      myFormArray[9] = document.getElementById('unit').value;
+      myFormArray[10] = "File Uploaded"
+      myFormArray[11] = document.getElementById('studentFile').value;
+      sessionStorage.setItem("myFormArray", JSON.stringify(myFormArray));
     }
   </script>
 </body>
