@@ -3,6 +3,9 @@
 /* |       all page styles           | */
 /* |                                 | */
 /* ----------------------------------- */
+/* fonts - Lato - Noto Sans - Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -149,6 +152,7 @@ body {
   top: -50px;
   left: 0;
   box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .tooltip .tooltiptext::after {
@@ -206,6 +210,7 @@ body {
   margin-top: 50px;
   text-align: center;
   font-size: 1.45em;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 /* Spinner  animation for index page */
@@ -466,6 +471,7 @@ Media
   border-bottom: 2px solid black;
   margin-bottom: 32px;
   padding-bottom: 12px !important;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 #page_section {
@@ -580,7 +586,8 @@ Media
 }
 
 .lesson_details>.lesson_summary {
-  background-color: #eeeeee;
+  background-color: rgb(255, 230, 230);
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .lesson_details {
@@ -593,6 +600,7 @@ Media
   margin: 0 auto;
   width: 90%;
   border: 2px solid black;
+  font-family: 'Lato', sans-serif;
 }
 
 .lesson_details td,
@@ -603,6 +611,7 @@ Media
 
 .lesson_details th {
   background-color: #9a4e98;
+  font-weight:bolder;
 }
 
 .lesson_details td {
@@ -622,11 +631,11 @@ td {
 }
 
 .lesson_details[open] .lesson_summary::before {
-  content: "Hide Specification Content";
+  content: "Click here to hide specification content";
 }
 
 .lesson_details:not([open]) .lesson_summary::after {
-  content: "Show Specification Content";
+  content: "Click here to show specification content";
 }
 
 /* Color for each item in the specification 
@@ -890,6 +899,10 @@ Media
   padding: 5px 0;
 }
 
+#lesson_content p, #lesson_content th , #lesson_content li, .lesson_video_details, .spec_question  {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* -------------------------------
 Media 
 =================================*/
@@ -961,7 +974,7 @@ Media
   color: white;
 }
 
-.dropin-button {
+.dropin_button {
   margin-top: 20px;
   border: 2px solid black;
   border-radius: 2px;
@@ -974,8 +987,12 @@ Media
   width: 100%;
 }
 
-.dropin-button:hover {
+.dropin_button:hover {
   background-color: maroon;
+}
+
+.upload_form{
+  font-family: 'Lato', sans-serif;
 }
 
 /* =========================== End of upload and dropin page styling =============================== */
@@ -1004,9 +1021,13 @@ Media
   box-sizing: border-box;
 }
 
-.dropin-form label {
+.dropin_form label {
   color: white;
 }
+.dropin_form{
+  font-family: 'Lato', sans-serif;
+}
+
 
 /* -------------------------------
 Media 
