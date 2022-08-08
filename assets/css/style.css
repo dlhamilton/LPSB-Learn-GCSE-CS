@@ -457,7 +457,7 @@ Media
   width: 100%;
 }
 
-#page_section h1 {
+#page_section h2 {
   font-size: 32px !important;
   border-bottom: 2px solid black;
   padding-bottom: 12px !important;
@@ -465,7 +465,7 @@ Media
   padding-top: 32px !important;
 }
 
-#page_section>h1 {
+#page_section>h2 {
   font-size: 32px !important;
   border-bottom: none;
   padding-bottom: 12px !important;
@@ -539,6 +539,10 @@ Media
   background-color: #696969;
 }
 
+h4{
+  font-size: 1.17em;
+}
+
 /* -------------------------------
 Media 
 =================================*/
@@ -586,7 +590,7 @@ Media
   padding-top: 29px;
 }
 
-.spec_item h2 {
+.spec_item h3 {
   font-size: x-large;
 }
 
