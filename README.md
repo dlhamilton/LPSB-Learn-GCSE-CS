@@ -129,8 +129,9 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
 ### Validator Testing
 
 - HTML
-    - Index: No errors were returned when passing through the official W3C validator<br>
-   https://validator.w3.org/nu/?doc=https%3A%2F%2Fdlhamilton.github.io%2FLPSB-Learn-GCSE-CS%2Findex.html
+    - Index: No errors were returned when passing through the official W3C validator<br> https://validator.w3.org/nu/?doc=https%3A%2F%2Fdlhamilton.github.io%2FLPSB-Learn-GCSE-CS%2Findex.html
+
+   - Lessons: No errors were returned when passing through the official W3C validator<br> https://validator.w3.org/nu/?doc=https%3A%2F%2Fdlhamilton.github.io%2FLPSB-Learn-GCSE-CS%2Flessons.html
 
 - CSS
     - No errors were found when passing through the official Jigsaw validator
