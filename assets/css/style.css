@@ -197,7 +197,7 @@ body {
   position: absolute;
   min-height: 5em;
   min-width: 5em;
-  transition: width 2s, height 2s,
+  transition: width 2s,height 2s;
 }
 
 #school_logo:hover {
