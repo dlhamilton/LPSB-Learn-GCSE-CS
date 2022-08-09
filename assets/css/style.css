@@ -1021,7 +1021,7 @@ Media
 
 .dropin_form_section {
   clear: left;
-  background: url("/assets/images/classroom.webp") no-repeat center center !important;
+  background: url("../images/classroom.webp") no-repeat center center !important;
   background-size: cover;
   background-position: center;
   height: fit-content !important;
