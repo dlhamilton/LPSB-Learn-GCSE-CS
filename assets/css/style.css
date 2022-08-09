@@ -524,7 +524,7 @@ Media
 .spec_button {
   display: inline-block;
   padding: 10px;
-  border: 2px solid black;
+  border: 2px solid #696969;
   list-style: none;
   text-decoration: none;
   width: 12em;
@@ -537,6 +537,7 @@ Media
 
 .spec_button:hover {
   background-color: #696969;
+  border-color: black;
 }
 
 h4{
@@ -973,7 +974,7 @@ Media
 
 .upload_button {
   margin-top: 20px;
-  border: 2px solid black;
+  border: 2px solid #696969;
   border-radius: 2px;
   padding: 15px 32px;
   text-align: center;
@@ -985,12 +986,13 @@ Media
 
 .upload_button:hover {
   background-color: maroon;
+  border-color: black;
   color: white;
 }
 
 .dropin_button {
   margin-top: 20px;
-  border: 2px solid black;
+  border: 2px solid #696969;
   border-radius: 2px;
   padding: 15px 32px;
   text-align: center;
@@ -1003,6 +1005,7 @@ Media
 
 .dropin_button:hover {
   background-color: maroon;
+  border-color: black;
 }
 
 .upload_form {
