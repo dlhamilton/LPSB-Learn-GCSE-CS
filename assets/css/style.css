@@ -190,7 +190,7 @@ body {
 
 /* school badge link on index page */
 #school_logo {
-  background-image: url(./images/logo_lpsb.webp);
+  background-image: url("../images/logo_lpsb.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

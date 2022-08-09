@@ -13,11 +13,11 @@
 </head>
 
 <body>
-
   <!-- Icon Bar (Sidebar - hidden on small screens) -->
   <nav id="large_nav">
     <a href="https://www.lpsb.org.uk/" rel="external" title="Go to Langley Park School for boys page" target="_blank"
-      class="side_button"><img src="assets/images/logo_lpsb.webp" style="width:100%" alt="Langley Park School for Boys Logo, Go to site"></a>
+      class="side_button"><img src="assets/images/logo_lpsb.webp" style="width:100%"
+        alt="Langley Park School for Boys Logo, Go to site"></a>
     <a href="lessons.html" title="Go to Lesson" class="nav-item">
       <i class="fa-solid fa-book-open"></i>
       <p>Lessons</p>
@@ -35,7 +35,6 @@
       <p>Drop In</p>
     </a>
   </nav>
-
   <!-- Navbar on small screens (Hidden on medium and large screens) -->
   <nav id="small_nav">
     <span><a href="lessons.html" title="Go to Lesson">Lessons</a></span>
@@ -43,18 +42,13 @@
     <span class="active"><a href="upload.html" title="Go to Upload">Upload</a></span>
     <span><a href="drop_in.html" title="Go to Drop in">Drop In</a></span>
   </nav>
-
   <!-- Page Content -->
   <main id="main_content">
-
-
-
     <!-- Header/Home -->
     <header id="page_header">
       <h1>Upload Work</h1>
       <p>Computer Science Hub</p>
     </header>
-
     <!-- Section -->
     <article id="page_section">
       <!-- Article title -->
@@ -62,45 +56,38 @@
       <p>If you want to get your answers marked or get some feedback on your work then complete the form below. A
         teacher will contact you within 3 working days. <a href="index.html" title="Go to index page">Click here</a> to
         go back to the home page.</p>
-
       <!-- Form code start -->
+      <form action="form_confirmation.html" class="upload_form">
+        <label for="fname">First Name</label>
+        <input class="text_input" id="fname" name="first_name" type="text" required>
 
+        <label for="lname">Last Name</label>
+        <input class="text_input" id="lname" name="last_name" type="text" required>
 
-      
-        <form action="form_confirmation.html" class="upload_form">
-          <label for="fname">First Name</label>
-          <input class="text_input" id="fname" name="first_name" type="text" required>
+        <label for="snumber">Student ID Number</label>
+        <input class="text_input" id="snumber" name="student_number" type="text" required>
 
-          <label for="lname">Last Name</label>
-          <input class="text_input" id="lname" name="last_name" type="text" required>
+        <label for="email">School Email Address</label>
+        <input class="text_input" type="email" id="email" name="school_email_address"
+          pattern="[a-z0-9._%+-]+@lpsb.org.uk" title="You must be a current student with a valid lpsb email address"
+          required>
 
-          <label for="snumber">Student ID Number</label>
-          <input class="text_input" id="snumber" name="student_number" type="text" required>
-
-          <label for="email">School Email Address</label>
-          <input class="text_input" type="email" id="email" name="school_email_address"
-            pattern="[a-z0-9._%+-]+@lpsb.org.uk" title="You must be a current student with a valid lpsb email address"
-            required>
-
-          <label for="unit">Specification Number</label>
-          <select id="unit" name="unit" class="text_input" size="3.8" required>
-            <option value="">None</option>
-            <option value="3.1">3.3.1 Number bases</option>
-            <option value="3.2">3.3.2 Converting between number bases</option>
-            <option value="3.3">3.3.3 Units of information</option>
-            <option value="3.4">3.3.4 Binary arithmetic</option>
-            <option value="3.5">3.3.5 Character encoding</option>
-            <option value="3.6">3.3.6 Representing images</option>
-            <option value="3.7">3.3.7 Representing sound</option>
-            <option value="3.8">3.3.8 Data compression</option>
-          </select>
-
-          <label for="studentFile">Attach work here</label>
-          <input class="text_input" type="file" id="studentFile" name="filename">
-
-          <input class="upload_button" onclick="ShareData();" type="submit" value="Send Off!">
-        </form>
-     
+        <label for="unit">Specification Number</label>
+        <select id="unit" name="unit" class="text_input" size="3.8" required>
+          <option value="">None</option>
+          <option value="3.1">3.3.1 Number bases</option>
+          <option value="3.2">3.3.2 Converting between number bases</option>
+          <option value="3.3">3.3.3 Units of information</option>
+          <option value="3.4">3.3.4 Binary arithmetic</option>
+          <option value="3.5">3.3.5 Character encoding</option>
+          <option value="3.6">3.3.6 Representing images</option>
+          <option value="3.7">3.3.7 Representing sound</option>
+          <option value="3.8">3.3.8 Data compression</option>
+        </select>
+        <label for="studentFile">Attach work here</label>
+        <input class="text_input" type="file" id="studentFile" name="filename">
+        <input class="upload_button" onclick="ShareData();" type="submit" value="Send Off!">
+      </form>
       <!-- form code end -->
       <br>
       <br>
@@ -125,7 +112,6 @@
       </a>
     </footer>
   </main>
-
   <!-- font awesome script -->
   <script src="https://kit.fontawesome.com/372da758e4.js" crossorigin="anonymous"></script>
   <!-- passing data to form-confirmation page script -->
