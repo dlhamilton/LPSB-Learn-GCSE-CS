@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Get ready to learn the GCSE theory topics">
   <meta name="keywords" content="computer science, gcse, binary, base 2, computing">
-  <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico" />
-  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
   <link rel="stylesheet" href="assets/css/style.css">
   <title>LPSB Computer Science</title>
 </head>
@@ -17,7 +17,7 @@
   <!-- Icon Bar (Sidebar - hidden on small screens) -->
   <nav id="large_nav">
     <a href="https://www.lpsb.org.uk/" rel="external" title="Go to Langley Park School for boys page" target="_blank"
-      class="side_button"><img src="./assets/images/logo_lpsb.webp" style="width:100%" alt="Langley Park School for Boys Logo, Go to site"></a>
+      class="side_button"><img src="/assets/images/logo_lpsb.webp" style="width:100%" alt="Langley Park School for Boys Logo, Go to site"></a>
     <a href="lessons.html" title="Go to Lesson" class="nav-item">
       <i class="fa-solid fa-book-open"></i>
       <p>Lessons</p>
@@ -66,8 +66,8 @@
       <!-- Form code start -->
 
 
-      <section>
-        <form method="" action="form_confirmation.html" class="upload_form">
+      
+        <form action="form_confirmation.html" class="upload_form">
           <label for="fname">First Name</label>
           <input class="text_input" id="fname" name="first_name" type="text" required>
 
@@ -83,7 +83,8 @@
             required>
 
           <label for="unit">Specification Number</label>
-          <select id="unit" name="unit" class="text_input" required>
+          <select id="unit" name="unit" class="text_input" size="3.8" required>
+            <option value="">None</option>
             <option value="3.1">3.3.1 Number bases</option>
             <option value="3.2">3.3.2 Converting between number bases</option>
             <option value="3.3">3.3.3 Units of information</option>
@@ -99,7 +100,7 @@
 
           <input class="upload_button" onclick="ShareData();" type="submit" value="Send Off!">
         </form>
-      </section>
+     
       <!-- form code end -->
       <br>
       <br>
@@ -108,10 +109,10 @@
     <!-- Footer -->
     <footer id="page_footer">
       <a href="https://www.lpsb.org.uk/" rel="external" title="Go to Langley Park School for boys page" target="_blank"
-        class="footer_button"><img src="./assets/images/logo_lpsb_bw.webp"
+        class="footer_button"><img src="/assets/images/logo_lpsb_bw.webp"
           alt="Langley Park School for Boys Logo, Go to school site"></a>
       <a href="https://www.aqa.org.uk/" rel="external" title="Go to AQA Website" target="_blank"
-        class="footer_button"><img src="./assets/images/aqa_logo.webp" alt="AQA Exam board Logo, Go to AQA site"></a>
+        class="footer_button"><img src="/assets/images/aqa_logo.webp" alt="AQA Exam board Logo, Go to AQA site"></a>
       <a href="https://www.youtube.com/" rel="noopener" title="Go to Youtube" target="_blank" class="footer_button"><i
           class="fa-brands fa-youtube"></i></a>
       <a href="https://www.instagram.com/" rel="noopener" title="Go to Instagram" target="_blank"
