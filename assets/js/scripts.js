@@ -1,6 +1,4 @@
-
 // ------------------------------lesson----------------------------------
-loadCompleteSection();
 // load in local storage to fill in checkboxes
 function loadCompleteSection() {
   if (localStorage.getItem("s_3_1") == 1) {
@@ -74,9 +72,8 @@ function completeSection() {
 
 // ------------------drop in--------------------------
 // passing data to form-confirmation page script
-var myFormArray = new Array();
-
 function ShareData_dropin() {
+  var myFormArray = new Array();
   myFormArray[0] = "First Name"
   myFormArray[1] = document.getElementById('fname').value;
   myFormArray[2] = "Last Name"
@@ -89,42 +86,42 @@ function ShareData_dropin() {
   myFormArray[9] = document.getElementById('session_notes').value;
   sessionStorage.setItem("myFormArray", JSON.stringify(myFormArray));
 }
-var myFormArray = new Array();
-myFormArray = JSON.parse(sessionStorage.getItem("myFormArray"));
-
 
 // ------------------------form_confirmation-------------------------------
-for (let step = 0; step < myFormArray.length; step++) {
-  var tag = document.createElement("span");
-  var text = document.createTextNode(myFormArray[step]);
-  tag.appendChild(text);
-  if (step % 2 == 0) {
-    tag.classList.add("item_label");
-  } else {
-    tag.classList.add("item_data");
+function form_confirmation_start() {
+  var myFormArray = new Array();
+  myFormArray = JSON.parse(sessionStorage.getItem("myFormArray"));
+
+  for (let step = 0; step < myFormArray.length; step++) {
+    var tag = document.createElement("span");
+    var text = document.createTextNode(myFormArray[step]);
+    tag.appendChild(text);
+    if (step % 2 == 0) {
+      tag.classList.add("item_label");
+    } else {
+      tag.classList.add("item_data");
+    }
+    var element = document.getElementById("form_details");
+    element.appendChild(tag);
   }
-  var element = document.getElementById("form_details");
-  element.appendChild(tag);
+
+  var timeleft = 10;
+  var downloadTimer = setInterval(function () {
+    if (timeleft <= 0) {
+      clearInterval(downloadTimer);
+      document.getElementById("countdown").innerHTML = "Back to home page";
+    } else {
+      document.getElementById("countdown").innerHTML = timeleft + " seconds";
+    }
+    timeleft -= 1;
+  }, 1000);
+
 }
-
-var timeleft = 10;
-var downloadTimer = setInterval(function () {
-  if (timeleft <= 0) {
-    clearInterval(downloadTimer);
-    document.getElementById("countdown").innerHTML = "Back to home page";
-  } else {
-    document.getElementById("countdown").innerHTML = timeleft + " seconds";
-  }
-  timeleft -= 1;
-}, 1000);
-
-
 
 //--------------------------------upload--------------------------------------
 //passing data to form-confirmation page script
-var myFormArray = new Array();
-
 function ShareData_upload() {
+  var myFormArray = new Array();
   myFormArray[0] = "First Name"
   myFormArray[1] = document.getElementById('fname').value;
   myFormArray[2] = "Last Name"

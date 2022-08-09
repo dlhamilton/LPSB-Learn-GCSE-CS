@@ -550,7 +550,7 @@ Media
 =================================*/
 /* for medium/ small screen sizes from 600px */
 /* hide large nav */
-@media screen and (max-width:600px) {
+@media screen and (max-width:950px) {
   #large_nav {
     display: none !important;
   }
@@ -570,7 +570,7 @@ Media
 }
 
 /* hide small nav */
-@media (min-width:601px) {
+@media (min-width:951px) {
   #small_nav {
     display: none !important
   }
