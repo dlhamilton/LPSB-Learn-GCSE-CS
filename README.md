@@ -161,7 +161,7 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
 
 - CSS
     - No errors were found when passing through the official Jigsaw validator
-    ![CSS Result](assets/media/css_results.png)
+    https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdlhamilton.github.io%2FLPSB-Learn-GCSE-CS%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
 
 ### Functionaility Testing
 - I have tested that this page works in diffeent web browsers.

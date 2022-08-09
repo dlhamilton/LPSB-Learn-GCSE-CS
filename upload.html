@@ -86,7 +86,7 @@
         </select>
         <label for="studentFile">Attach work here</label>
         <input class="text_input" type="file" id="studentFile" name="filename">
-        <input class="upload_button" onclick="ShareData();" type="submit" value="Send Off!">
+        <input class="upload_button" onclick="ShareData_upload();" type="submit" value="Send Off!">
       </form>
       <!-- form code end -->
       <br>
@@ -114,26 +114,7 @@
   </main>
   <!-- font awesome script -->
   <script src="https://kit.fontawesome.com/372da758e4.js" crossorigin="anonymous"></script>
-  <!-- passing data to form-confirmation page script -->
-  <script>
-    var myFormArray = new Array();
-
-    function ShareData() {
-      myFormArray[0] = "First Name"
-      myFormArray[1] = document.getElementById('fname').value;
-      myFormArray[2] = "Last Name"
-      myFormArray[3] = document.getElementById('lname').value;
-      myFormArray[4] = "Student Number"
-      myFormArray[5] = document.getElementById('snumber').value;
-      myFormArray[6] = "Email"
-      myFormArray[7] = document.getElementById('email').value;
-      myFormArray[8] = "Specification Unit"
-      myFormArray[9] = document.getElementById('unit').value;
-      myFormArray[10] = "File Uploaded"
-      myFormArray[11] = document.getElementById('studentFile').value;
-      sessionStorage.setItem("myFormArray", JSON.stringify(myFormArray));
-    }
-  </script>
+  <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>

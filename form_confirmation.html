@@ -94,35 +94,7 @@
 
   <!-- font awesome script -->
   <script src="https://kit.fontawesome.com/372da758e4.js" crossorigin="anonymous"></script>
-  <!-- show the data to the html page by creating a span element script -->
-  <script>
-    var myFormArray = new Array();
-    myFormArray = JSON.parse(sessionStorage.getItem("myFormArray"));
-
-    for (let step = 0; step < myFormArray.length; step++) {
-      var tag = document.createElement("span");
-      var text = document.createTextNode(myFormArray[step]);
-      tag.appendChild(text);
-      if (step % 2 == 0) {
-        tag.classList.add("item_label");
-      } else {
-        tag.classList.add("item_data");
-      }
-      var element = document.getElementById("form_details");
-      element.appendChild(tag);
-    }
-
-    var timeleft = 10;
-    var downloadTimer = setInterval(function () {
-      if (timeleft <= 0) {
-        clearInterval(downloadTimer);
-        document.getElementById("countdown").innerHTML = "Back to home page";
-      } else {
-        document.getElementById("countdown").innerHTML = timeleft + " seconds";
-      }
-      timeleft -= 1;
-    }, 1000);
-  </script>
+  <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>

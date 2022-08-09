@@ -83,7 +83,7 @@
           <p><label for="session_notes">Note for session</label></p>
           <textarea class="text_input text_input_height" id="session_notes" name="session_notes" rows="4"></textarea>
 
-          <input class="dropin_button" onclick="ShareData();" type="submit" value="Make request">
+          <input class="dropin_button" onclick="ShareData_dropin();" type="submit" value="Make request">
         </form>
       </div>
       <!-- form code end -->
@@ -113,24 +113,7 @@
 
   <!-- font awesome script -->
   <script src="https://kit.fontawesome.com/372da758e4.js" crossorigin="anonymous"></script>
-  <!-- passing data to form-confirmation page script -->
-  <script>
-    var myFormArray = new Array();
-
-    function ShareData() {
-      myFormArray[0] = "First Name"
-      myFormArray[1] = document.getElementById('fname').value;
-      myFormArray[2] = "Last Name"
-      myFormArray[3] = document.getElementById('lname').value;
-      myFormArray[4] = "Email"
-      myFormArray[5] = document.getElementById('email').value;
-      myFormArray[6] = "Appointment Time"
-      myFormArray[7] = document.getElementById('appointmenttime').value;
-      myFormArray[8] = "Session Notes"
-      myFormArray[9] = document.getElementById('session_notes').value;
-      sessionStorage.setItem("myFormArray", JSON.stringify(myFormArray));
-    }
-  </script>
+  <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>
