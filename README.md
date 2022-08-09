@@ -16,10 +16,10 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
 |8|As a student, <br>I want to be able to easy navigate the pages  <br> so that I can get to the learning content quickly and efficiently to maximise learning time. <br> <br> I know I am done when all pages have clear links and sign postage.|
 |9|As a student, <br> I want to be able to see what I need to know for my exam  <br> so that I learn the correct content for my GCSE<br> <br> I know I am done when the AQA GCSE Specification can be viewed on the site. |
 |10|As a student, <br> I want to be able to save what topics I have completed  <br> so that I can keep track on where I am up to and not waste time doing a topic twice.<br> <br> I know I am done when the students can return to the site and have their progress shown.|
-|12|As a teacher<br>  want to be able to receive work from LPSB. Students <br> so that I don’t get work from people outside of the school<br> <br> I know I am done when the students can only submit work. |
-|13|As a teacher<br> I want to be able to organise sessions  with students that need help, from LPSB. <br> so that I don’t get requests from people outside of the school<br> <br> I know I am done when the students can only book if they are a student. |
-|14|As a user, <br> I want to be able to see what exam board the school is doing<br> so that I can get more information about the computer science department <br> <br> I know I am done when the AQA subject title is shown on the site.|
-|15|As a user, <br> I want to be able to go to the school website<br> so that I can get to more information about the school <br> <br> I know I am done when I have clear links to the school website.|
+|11|As a teacher<br>  want to be able to receive work from LPSB. Students <br> so that I don’t get work from people outside of the school<br> <br> I know I am done when the students can only submit work. |
+|12|As a teacher<br> I want to be able to organise sessions  with students that need help, from LPSB. <br> so that I don’t get requests from people outside of the school<br> <br> I know I am done when the students can only book if they are a student. |
+|13|As a user, <br> I want to be able to see what exam board the school is doing<br> so that I can get more information about the computer science department and know what exam board they follow.<br> <br> I know I am done when the AQA subject title is shown on the site.|
+|14|As a user, <br> I want to be able to go to the school website<br> so that I can get to more information about the school <br> <br> I know I am done when I have clear links to the school website.|
 
 ## Features 
 - __Index__
@@ -48,12 +48,12 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
 
 - __Questions__
     - The questions page has questions form the teacher lessons to check students understanding. 
-    - The button that says 'click here to see answers' shows the answers below for students to look at. 
+    - The button that says 'click here to see answers' shows the answers below for students to look at. They can toggle the answer display.  
 
     ![Questions](assets/media/question_screenshot.png)
 
 - __Specification Page__
-    - The content from the teacher lessons are shown ont he page for students to read. 
+    - The content from the teacher lessons are shown on the page for students to read. 
     - The page also has videos that link to the youtube revison channel used in lessons in the school. 
     - The font used is Roboto which is perfect for children when e-learning. 
 
@@ -87,7 +87,7 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
     ![Form Completeion](assets/media/form_submit_screenshot.png)
 
 - __Footer__
-    - Has links to the exam board, school and social media pages of the school. 
+    - Has links to the exam board, school website and social media pages of the school. 
     - There is also an external link to my Github page. 
 
     ![Footer](assets/media/footer_screenshot.png)
@@ -96,35 +96,34 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
 ## Testing 
 
 ### User stories Testing
-1. Test Past - Students can press the download buytton on the exams opage to download exam questions.
+1. <font color="green">Test Past</font> - Students can press the download button on the exams page to download exam questions.
 
-2. Test Past - Students are able to use the form on the drop in page to book a session with a teacher.
+2. <font color="yellow">Test Past</font> - Students are able to use the form on the drop in page to book a session with a teacher. (The backend systems have not been put in place so wll only go to a dummy confirmation page.)
 
-3. Test Past - Students are able to use the form on the upload page to upload files to a teacher.
+3. <font color="yellow">Test Past</font> - Students are able to use the form on the upload page to upload files to a teacher.(The backend systems have not been put in place so wll only go to a dummy confirmation page.)
 
-4. Test Past - The lessons formt he teachers have been placed onto specifiaction pages for students to read and interact with. 
+4. <font color="green">Test Past</font> - The lessons from the teachers have been placed onto specifiaction pages for students to read and interact with. 
 
-5. 
+5. <font color="green">Test Past</font> - The questions from the teachers lessons have been put onto all the content pages for students to answer. 
 
-6. 
+6. <font color="green">Test Past</font> - The questions have been given a button which displays the answer when clicked. This allows stduents to answer the questions, then check the answer.
 
-7. 
+7. <font color="green">Test Past</font> - The videos from the Craig and Dave youube channel have been embbeded onto the conen pages.
 
-8. 
+8. <font color="green">Test Past</font> - Every page has a signpost explaining what the page contains and all links to main pages are visible from all pages.
 
-9. 
+9. <font color="green">Test Past</font> - The lesson pages have been given a button which displays the specification table from the AQA Exam Board when clicked.
 
-10. 
+10. <font color="green">Test Past</font> - The use of java script allows local storage to store if the check box for completion has been ticked or not. 
 
-11. 
+11. <font color="green">Test Past</font> - The form has validation which only allows a valid LPSB email to complete the form. The email must end in lpsb.org.uk
 
-12. 
+12. <font color="green">Test Past</font> - The form has validation which only allows a valid LPSB email to complete the form. The email must end in lpsb.org.uk
 
-13. 
+13. <font color="green">Test Past</font> - The index of the page has the exam boarded clearly displayed so that users that dont do to the school or people who want to do computer science know what exam board the school do. 
 
-14. 
+14. <font color="green">Test Past</font> - The school badge has been made into a link so people can click the logo to go to the school website. 
 
-15. 
 
 ### Validator Testing
 
@@ -157,13 +156,11 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
 
    - Form Confirmation: No errors were returned when passing through the official W3C validator<br>https://validator.w3.org/nu/?doc=https%3A%2F%2Fdlhamilton.github.io%2FLPSB-Learn-GCSE-CS%2Fform_confirmation.html
 
-
-
 - CSS
     - No errors were found when passing through the official Jigsaw validator
     https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdlhamilton.github.io%2FLPSB-Learn-GCSE-CS%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
 
-### Functionaility Testing
+### Manual Testing
 - I have tested that this page works in diffeent web browsers.
 - I have tested that the project is responsive and works with different device sizes. It looks good and functions as normal. 
 - I have tested all links, intrnal and external. They go to the correct destination and open in the correct way. 
@@ -171,7 +168,9 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
 - I have tested that the correct data is passed when the forms are submitted. 
 ### Bugs
 
-The background image on the drop in page does n show up on mobile devices. I will bne making corrections in the comming weeks. 
+- The background image on the drop in page does n show up on mobile devices. I will bne making corrections in the comming weeks. 
+
+- Students need more space when they roatate their devices to view the content. Too much of the screen is taken up by the nav bar on the left. 
 
 ## Deployment
 
