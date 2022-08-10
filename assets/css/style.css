@@ -436,7 +436,7 @@ Media
 #page_header p {
   color: white;
   font-size: large;
-  background-color: #696969;
+  background-color: black;
 }
 
 #page_header:after,
