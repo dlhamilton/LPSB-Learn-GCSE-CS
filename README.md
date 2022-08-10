@@ -25,8 +25,10 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
 - __Index__
     - The home page shows the name of the site and has a constrasting color with the background.
     - The instructions are clear and explains what the site is for.
+    
     ![Index](assets/media/index_screenshot.webp)
      - The four buttons are large and give a clear descrption of what it does when hovered. The colors change to make it clear to the user what they are currently selecting.
+    
     ![Index hover](assets/media/index_hover.webp)
 
 - __Navigation__
@@ -40,52 +42,64 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
 
 - __Lessons__
     - The page has a clear breakdown of the specification headers. Each section has its own color to help users know what section they are currently learning.
+    
     ![Lessons](assets/media/lessons.webp)
     - The button for studnets to make sections that they have comopletetd. It will store the state in local storage so when students end the session the data will still be there for the next session. 
+    
     ![Lessons checkbox](assets/media/lessons_checkbox.webp)
     - Buttons in each section to go to the lessons or go to the questions for students to answer. The color changes to match the color of the specification content
+    
     ![Lessons hover](assets/media/lessons_hover.webp)
      - Students can press the link to see the specification as it is written in the AQA exam board page. 
+    
     ![Lessons specification show](assets/media/lessons_spec_show.webp)
 
 - __Questions__
     - The questions page has questions form the teacher lessons to check students understanding. 
     - The button that says 'click here to see answers' shows the answers in red below for students to look at. They can toggle the answer display.  
+    
     ![Questions](assets/media/lesson_questions.webp)
 
 - __Specification Page__
     - The content from the teacher lessons are shown on the page for students to read. 
     - The font used is Roboto which is perfect for children when e-learning. 
+    
     ![Specification Page](assets/media/lesson_spec.webp)
     - The page also has videos that link to the youtube revison channel used in lessons in the school. 
+    
     ![Specification Page](assets/media/lesson_video.webp)
 
 - __Exams__
     - Button for each specification item which downloads the pdf exam questions. 
     - The max sore for students is shown so students know roughly how many questions are in the pdf.
     - The colors are consistnt in the site that link each specification number to a certain color. 
+    
     ![Exams](assets/media/exams.webp)
 
 - __Drop in__
     - The form collects data about the student.
     - The stduents must enter a valid students emial address that ends with "lpsb.org.uk". this prevents students that are not in the school to book lesosns with teachers.
     - Students can upload files to the form so that teacher can see it. 
+    
     ![Drop in](assets/media/dropin.webp)
 
 - __Upload__
     - The stduents must enter a valid students emial address that ends with "lpsb.org.uk". this prevents students that are not in the school to upload work to teachers.
-    - There is a data time picker so that stduents can book a time. 
+    - There is a data time picker so that stduents can book a time.
+    
     ![Upload](assets/media/upload.webp)
         
 - __Form Completeion__
     - Shows the data that the fiorm has sent off.
     - After 10 seconds the page will go back to the home page.
-    - There is a countdown whcih shows how long is left in the countdown. 
+    - There is a countdown whcih shows how long is left in the countdown.
+    
     ![Form Completeion](assets/media/form_submit.webp)
 
 - __Footer__
     - Has links to the exam board, school website and social media pages of the school. 
-    - There is also an external link to my Github page. 
+    - There is also an external link to my Github page.
+    
     ![Footer](assets/media/footer.webp)
 
 
@@ -155,6 +169,11 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
 14. <font color="green">Test Past</font> - The school badge has been made into a link so people can click the logo to go to the school website. 
 
 ### Accessibility Testing
+| Index  | Lessons | s_3_1 | s_3_2 | s_3_3 | s_3_4 | s_3_5 |
+| ------- |---------| -----|-----|-----|-----|-----|
+
+| s_3_6 | s_3_7 | s_3_8 | Exams | Upload | Drop-in | Form Confirmation |
+| ------- |---------| -----|-----|-----|-----|-----|
 
 ### Manual Testing
 - I have tested that this page works in diffeent web browsers.
@@ -173,20 +192,63 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
 
 ## Deployment
 
-### Clone
+### Cloning & Forking
+#### Fork
+1. On GitHub.com, navigate to the [dlhamilton/LPSB-Learn-GCSE-CS](https://github.com/dlhamilton/LPSB-Learn-GCSE-CS) repository.
+2. In the top-right corner of the page, click Fork.
+3. By default, forks are named the same as their parent repositories. You can change the name of the fork to distinguish it further.
+4. Add a description to your fork.
+5. Click Create fork.
+
+#### Clone
+1. Above the list of files click the button that says 'Code'.
+2. Copy the URL for the repository.
+3. Open Terminal. Change the directory to the location where you want the cloned directory.
+4. Type git clone, and then paste the URL
+5. Press Enter.
 
 ### Local Deployment
+1. Sign up to Gitpod
+2. Download the Gitpod browser extension.
+3. On GitHub.com, navigate to the [dlhamilton/LPSB-Learn-GCSE-CS](https://github.com/dlhamilton/LPSB-Learn-GCSE-CS) repository.
+4. Above the list of files click the button that says 'Gitpod'.
 
 ### Remote Deployment 
+ The site was deployed to Github pages. The steps to deploy are:
+ 1. On GitHub.com, navigate to the [dlhamilton/LPSB-Learn-GCSE-CS](https://github.com/dlhamilton/LPSB-Learn-GCSE-CS) repository.
+ 2. Navigate to the settings tab
+ 3. Click on the tab called 'pages' ont he left hand side.
+ 4. From the source drop down list under the heading Build and deployment, select main.
+ 5. The page will hten provide the link to the website.
+
+ The live link can be found here - [LPSB Computer Science Hub](https://dlhamilton.github.io/LPSB-Learn-GCSE-CS/)
 
 ## Credits
 
 ### Content
+- Processes from the CI Love Running project was used to help create this website - [CI Love Running](https://code-institute-org.github.io/love-running-2.0/index.html)
+
+- HTML, CSS and Javascript code help was taken from w3schools - [W3Schools](https://www.w3schools.com/)
 
 ### Media
+#### Images
+- aqa_logo - [AQA Website](https://www.aqa.org.uk/)
+
+- classroom - [Pexels](https://www.pexels.com/)
+
+- hex_img - [CreativePro](https://creativepro.com/wp-content/uploads/2015/09/Color-picker-Photoshop.jpg)
+
+- logo_lpsb, logo_lpsb_bw - From the schools website [Langley Park School for Boys](https://www.lpsb.org.uk/)
+
+- All remaining images are from the PG Online GCSE Resources. - [PG Online](https://www.pgonline.co.uk/resources/computer-science/gcse-aqa/?tab=8525%2Dunits) 
+#### Videos
+- Video links int he lessons are from this youtube channel - [Craig'n'Dave](https://www.youtube.com/c/craigndave/featured)
+
+#### Icons
+- All page Icons - [Font Awesome](https://fontawesome.com/)
 
 ### Extra help
-- Blog looking into the best learning font for online learing - https://www.ttro.com/blog/design/five-free-fonts-that-will-improve-your-e%E2%80%91learning/
+- Blog looking into the best learning font for online learning - https://www.ttro.com/blog/design/five-free-fonts-that-will-improve-your-e%E2%80%91learning/
 
 
 
