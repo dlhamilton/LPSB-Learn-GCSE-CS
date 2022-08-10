@@ -103,7 +103,7 @@ body {
 #intro_title h1 {
   text-align: center;
   font-size: 4.5em;
-  color:#000;
+  color: #000;
   text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
 }
 
@@ -200,7 +200,7 @@ body {
   position: absolute;
   min-height: 5em;
   min-width: 5em;
-  transition: width 2s,height 2s;
+  transition: width 2s, height 2s;
 }
 
 #school_logo:hover {
@@ -214,7 +214,7 @@ body {
   text-align: center;
   font-size: 1.45em;
   font-family: 'Noto Sans', sans-serif;
- color:maroon;
+  color: maroon;
 }
 
 /* Spinner  animation for index page */
@@ -367,7 +367,7 @@ Media
 
 /* small top fixed navigation */
 #small_nav {
-  background-color: #696969;
+  background-color: black;
   opacity: 0.8;
   position: fixed;
   width: 100%;
@@ -405,7 +405,7 @@ Media
 #small_nav .active {
   opacity: 1;
   background-color: white;
-  color: #696969;
+  color: black;
 }
 
 /* page content */
@@ -541,7 +541,7 @@ Media
   border-color: black;
 }
 
-h4{
+h4 {
   font-size: 1.17em;
 }
 

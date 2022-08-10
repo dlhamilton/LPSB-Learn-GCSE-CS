@@ -1,7 +1,7 @@
 # LPSB Computer Science Hub
 The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub) is a site that hopes to help students to revise for their computer science GCSE. The LPSB Computer science Hub will be useful for students to see exactly what content they will need to know, give them guidance to help them understand the content and provide the students with questions to test their understanding of the content. 
 
-![Responsice Mockup](assets/media/lpsb_csh_mockup.png)
+![Responsice Mockup](assets/media/lpsb_csh_mockup.webp)
 
 ## User Stories 
 |Story No.|Story|
@@ -24,10 +24,10 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
 ## Features 
 - __Index__
     - The home page shows the name of the site and has a constrasting color with the background.
-    - The instructions are clear and explains what teh site is for.
-    - The four buttons are large and give a clear descrption of what it does when hovered. 
-
-    ![Index](assets/media/index_screenshot.png)
+    - The instructions are clear and explains what the site is for.
+    ![Index](assets/media/index_screenshot.webp)
+     - The four buttons are large and give a clear descrption of what it does when hovered. The colors change to make it clear to the user what they are currently selecting.
+    ![Index hover](assets/media/index_hover.webp)
 
 - __Navigation__
     - The Navigation bar is fixed to the left of the screen, with links to the school webiste and four main pages.
@@ -35,98 +35,63 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
     - The font is a easy to read for students and is perfect for e-learning. 
     - The color is consistant with the index page and inverts when hovered. 
     
-    ![Navigation](assets/media/nav_screenshot.png)
-    ![Top Fixed Navigation](assets/media/topnav_screenshot.png)
+    ![Navigation](assets/media/nav_side.webp)
+    ![Top Fixed Navigation](assets/media/nav_top.webp)
 
 - __Lessons__
     - The page has a clear breakdown of the specification headers. Each section has its own color to help users know what section they are currently learning.
-    - Students can pres the link to see the speciufication as it is written in the AQA exam board page. 
-    - Buttons in each section to go to the lessons or go to the questions for students to answer. 
-    - The button for studnets to makr sections that they have comopletetd. It will store the state in local storage so when students end the session the data will still be there for the next session. 
-
-    ![Lessons](assets/media/lessons_page_screenshot.png)
+    ![Lessons](assets/media/lessons.webp)
+    - The button for studnets to make sections that they have comopletetd. It will store the state in local storage so when students end the session the data will still be there for the next session. 
+    ![Lessons checkbox](assets/media/lessons_checkbox.webp)
+    - Buttons in each section to go to the lessons or go to the questions for students to answer. The color changes to match the color of the specification content
+    ![Lessons hover](assets/media/lessons_hover.webp)
+     - Students can press the link to see the specification as it is written in the AQA exam board page. 
+    ![Lessons specification show](assets/media/lessons_spec_show.webp)
 
 - __Questions__
     - The questions page has questions form the teacher lessons to check students understanding. 
-    - The button that says 'click here to see answers' shows the answers below for students to look at. They can toggle the answer display.  
-
-    ![Questions](assets/media/question_screenshot.png)
+    - The button that says 'click here to see answers' shows the answers in red below for students to look at. They can toggle the answer display.  
+    ![Questions](assets/media/lesson_questions.webp)
 
 - __Specification Page__
     - The content from the teacher lessons are shown on the page for students to read. 
-    - The page also has videos that link to the youtube revison channel used in lessons in the school. 
     - The font used is Roboto which is perfect for children when e-learning. 
-
-    ![Specification Page](assets/media/lesson_screenshot.png)
+    ![Specification Page](assets/media/lesson_spec.webp)
+    - The page also has videos that link to the youtube revison channel used in lessons in the school. 
+    ![Specification Page](assets/media/lesson_video.webp)
 
 - __Exams__
     - Button for each specification item which downloads the pdf exam questions. 
     - The max sore for students is shown so students know roughly how many questions are in the pdf.
     - The colors are consistnt in the site that link each specification number to a certain color. 
-
-    ![Exams](assets/media/exam_screenshot.png)
+    ![Exams](assets/media/exams.webp)
 
 - __Drop in__
     - The form collects data about the student.
     - The stduents must enter a valid students emial address that ends with "lpsb.org.uk". this prevents students that are not in the school to book lesosns with teachers.
     - Students can upload files to the form so that teacher can see it. 
-
-    ![Drop in](assets/media/dropin_screenshot.png)
+    ![Drop in](assets/media/dropin.webp)
 
 - __Upload__
     - The stduents must enter a valid students emial address that ends with "lpsb.org.uk". this prevents students that are not in the school to upload work to teachers.
     - There is a data time picker so that stduents can book a time. 
-
-    ![Upload](assets/media/upload_screenshot.png)
+    ![Upload](assets/media/upload.webp)
         
 - __Form Completeion__
     - Shows the data that the fiorm has sent off.
     - After 10 seconds the page will go back to the home page.
     - There is a countdown whcih shows how long is left in the countdown. 
-
-    ![Form Completeion](assets/media/form_submit_screenshot.png)
+    ![Form Completeion](assets/media/form_submit.webp)
 
 - __Footer__
     - Has links to the exam board, school website and social media pages of the school. 
     - There is also an external link to my Github page. 
-
-    ![Footer](assets/media/footer_screenshot.png)
+    ![Footer](assets/media/footer.webp)
 
 
 ## Testing 
 
-### User stories Testing
-1. <font color="green">Test Past</font> - Students can press the download button on the exams page to download exam questions.
-
-2. <font color="yellow">Test Past</font> - Students are able to use the form on the drop in page to book a session with a teacher. (The backend systems have not been put in place so wll only go to a dummy confirmation page.)
-
-3. <font color="yellow">Test Past</font> - Students are able to use the form on the upload page to upload files to a teacher.(The backend systems have not been put in place so wll only go to a dummy confirmation page.)
-
-4. <font color="green">Test Past</font> - The lessons from the teachers have been placed onto specifiaction pages for students to read and interact with. 
-
-5. <font color="green">Test Past</font> - The questions from the teachers lessons have been put onto all the content pages for students to answer. 
-
-6. <font color="green">Test Past</font> - The questions have been given a button which displays the answer when clicked. This allows stduents to answer the questions, then check the answer.
-
-7. <font color="green">Test Past</font> - The videos from the Craig and Dave youube channel have been embbeded onto the conen pages.
-
-8. <font color="green">Test Past</font> - Every page has a signpost explaining what the page contains and all links to main pages are visible from all pages.
-
-9. <font color="green">Test Past</font> - The lesson pages have been given a button which displays the specification table from the AQA Exam Board when clicked.
-
-10. <font color="green">Test Past</font> - The use of java script allows local storage to store if the check box for completion has been ticked or not. 
-
-11. <font color="green">Test Past</font> - The form has validation which only allows a valid LPSB email to complete the form. The email must end in lpsb.org.uk
-
-12. <font color="green">Test Past</font> - The form has validation which only allows a valid LPSB email to complete the form. The email must end in lpsb.org.uk
-
-13. <font color="green">Test Past</font> - The index of the page has the exam boarded clearly displayed so that users that dont do to the school or people who want to do computer science know what exam board the school do. 
-
-14. <font color="green">Test Past</font> - The school badge has been made into a link so people can click the logo to go to the school website. 
-
-
 ### Validator Testing
-
 - HTML
     - Index: No errors were returned when passing through the official W3C validator<br> https://validator.w3.org/nu/?doc=https%3A%2F%2Fdlhamilton.github.io%2FLPSB-Learn-GCSE-CS%2Findex.html
 
@@ -160,15 +125,49 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
     - No errors were found when passing through the official Jigsaw validator
     https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdlhamilton.github.io%2FLPSB-Learn-GCSE-CS%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
 
+### User stories Testing
+1. <font color="green">Test Past</font> - Students can press the download button on the exams page to download exam questions.
+
+2. <font color="yellow">Test Past</font> - Students are able to use the form on the drop in page to book a session with a teacher. (The backend systems have not been put in place so wll only go to a dummy confirmation page.)
+
+3. <font color="yellow">Test Past</font> - Students are able to use the form on the upload page to upload files to a teacher.(The backend systems have not been put in place so wll only go to a dummy confirmation page.)
+
+4. <font color="green">Test Past</font> - The lessons from the teachers have been placed onto specifiaction pages for students to read and interact with. 
+
+5. <font color="green">Test Past</font> - The questions from the teachers lessons have been put onto all the content pages for students to answer. 
+
+6. <font color="green">Test Past</font> - The questions have been given a button which displays the answer when clicked. This allows stduents to answer the questions, then check the answer.
+
+7. <font color="green">Test Past</font> - The videos from the Craig and Dave youube channel have been embbeded onto the conen pages.
+
+8. <font color="green">Test Past</font> - Every page has a signpost explaining what the page contains and all links to main pages are visible from all pages.
+
+9. <font color="green">Test Past</font> - The lesson pages have been given a button which displays the specification table from the AQA Exam Board when clicked.
+
+10. <font color="green">Test Past</font> - The use of java script allows local storage to store if the check box for completion has been ticked or not. 
+
+11. <font color="green">Test Past</font> - The form has validation which only allows a valid LPSB email to complete the form. The email must end in lpsb.org.uk
+
+12. <font color="green">Test Past</font> - The form has validation which only allows a valid LPSB email to complete the form. The email must end in lpsb.org.uk
+
+13. <font color="green">Test Past</font> - The index of the page has the exam boarded clearly displayed so that users that dont do to the school or people who want to do computer science know what exam board the school do. 
+
+14. <font color="green">Test Past</font> - The school badge has been made into a link so people can click the logo to go to the school website. 
+
+### Accessibility Testing
+
 ### Manual Testing
 - I have tested that this page works in diffeent web browsers.
+    - google, d and m
+    - safari, d , m
+    - firefox
 - I have tested that the project is responsive and works with different device sizes. It looks good and functions as normal. 
 - I have tested all links, intrnal and external. They go to the correct destination and open in the correct way. 
 - I have tested that all text and fonts are readable and easy to understand.
 - I have tested that the correct data is passed when the forms are submitted. 
 ### Bugs
 
-- The background image on the drop in page does n show up on mobile devices. I will bne making corrections in the comming weeks. 
+- The background image on the drop in page does not show up on mobile devices. I will bne making corrections in the comming weeks. 
 
 - Students need more space when they roatate their devices to view the content. Too much of the screen is taken up by the nav bar on the left. 
 
