@@ -191,7 +191,7 @@ body {
 
 /* school badge link on index page */
 #school_logo {
-  background-image: url("../images/logo_lpsb.webp");
+  /* background-image: url("../images/logo_lpsb.webp"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -201,6 +201,13 @@ body {
   min-height: 5em;
   min-width: 5em;
   transition: width 2s, height 2s;
+}
+
+.no-webp #school_logo{
+  background-image: url("../images/logo_lpsb.png");
+}
+.webp #school_logo{
+  background-image: url("../images/logo_lpsb.webp");
 }
 
 #school_logo:hover {

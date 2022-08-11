@@ -197,6 +197,12 @@ To check the colors and fonts, I used Lighthouse in the Google devtools. The res
     - google, d and m
     - safari, d , m
     - firefox
+
+|Safari 13.1.1|Firefox 103.0.2|Chrome 104.0.5112.79|
+| ----------- | ------------- | ------------------ |
+| | | |s
+
+
 - I have tested that the project is responsive and works with different device sizes. It looks good and functions as normal. 
 - I have tested all links, intrnal and external. They go to the correct destination and open in the correct way. 
 - I have tested that all text and fonts are readable and easy to understand.
@@ -256,6 +262,12 @@ New code:
   }
 }
 ```
+#### Bug 3
+https://css-tricks.com/using-webp-images/
+
+
+
+
 ***
 
 ## Deployment
@@ -307,6 +319,8 @@ New code:
 - classroom - [Pexels](https://www.pexels.com/)
 
 - hex_img - [CreativePro](https://creativepro.com/wp-content/uploads/2015/09/Color-picker-Photoshop.jpg)
+
+- black_white_pixel_image - [LearnLearn](https://learnlearn.uk/binary/black-white-image-representation-binary/)
 
 - logo_lpsb, logo_lpsb_bw - From the schools website [Langley Park School for Boys](https://www.lpsb.org.uk/)
 
