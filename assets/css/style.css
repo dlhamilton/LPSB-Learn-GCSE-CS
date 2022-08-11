@@ -548,7 +548,7 @@ h4 {
 /* -------------------------------
 Media 
 =================================*/
-/* for medium/ small screen sizes from 600px */
+/* for medium screen sizes from 950px */
 /* hide large nav */
 @media screen and (max-width:950px) {
   #large_nav {

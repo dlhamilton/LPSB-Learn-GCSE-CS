@@ -3,6 +3,8 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
 
 ![Responsice Mockup](assets/media/lpsb_csh_mockup.webp)
 
+***
+
 ## User Stories 
 |Story No.|Story|
 | ------------- | ------------- |
@@ -18,8 +20,11 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
 |10|As a student, <br> I want to be able to save what topics I have completed  <br> so that I can keep track on where I am up to and not waste time doing a topic twice.<br> <br> I know I am done when the students can return to the site and have their progress shown.|
 |11|As a teacher<br>  want to be able to receive work from LPSB. Students <br> so that I don’t get work from people outside of the school<br> <br> I know I am done when the students can only submit work. |
 |12|As a teacher<br> I want to be able to organise sessions  with students that need help, from LPSB. <br> so that I don’t get requests from people outside of the school<br> <br> I know I am done when the students can only book if they are a student. |
-|13|As a user, <br> I want to be able to see what exam board the school is doing<br> so that I can get more information about the computer science department and know what exam board they follow.<br> <br> I know I am done when the AQA subject title is shown on the site.|
-|14|As a user, <br> I want to be able to go to the school website<br> so that I can get to more information about the school <br> <br> I know I am done when I have clear links to the school website.|
+|13|As a teacher<br> I want to be able to have the students ID number when they send work <br> so that I can easily identify what student has sent work to me<br> <br> I know I am done when the students work has a ID number with it when work is sent.|
+|14|As a user, <br> I want to be able to see what exam board the school is doing<br> so that I can get more information about the computer science department and know what exam board they follow.<br> <br> I know I am done when the AQA subject title is shown on the site.|
+|15|As a user, <br> I want to be able to go to the school website<br> so that I can get to more information about the school <br> <br> I know I am done when I have clear links to the school website.|
+
+***
 
 ## Features 
 - __Index__
@@ -102,6 +107,7 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
     
     ![Footer](assets/media/footer.webp)
 
+***
 
 ## Testing 
 
@@ -140,40 +146,51 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
     https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdlhamilton.github.io%2FLPSB-Learn-GCSE-CS%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
 
 ### User stories Testing
-1. <font color="green">Test Past</font> - Students can press the download button on the exams page to download exam questions.
-
-2. <font color="yellow">Test Past</font> - Students are able to use the form on the drop in page to book a session with a teacher. (The backend systems have not been put in place so wll only go to a dummy confirmation page.)
-
-3. <font color="yellow">Test Past</font> - Students are able to use the form on the upload page to upload files to a teacher.(The backend systems have not been put in place so wll only go to a dummy confirmation page.)
-
-4. <font color="green">Test Past</font> - The lessons from the teachers have been placed onto specifiaction pages for students to read and interact with. 
-
-5. <font color="green">Test Past</font> - The questions from the teachers lessons have been put onto all the content pages for students to answer. 
-
-6. <font color="green">Test Past</font> - The questions have been given a button which displays the answer when clicked. This allows stduents to answer the questions, then check the answer.
-
-7. <font color="green">Test Past</font> - The videos from the Craig and Dave youube channel have been embbeded onto the conen pages.
-
-8. <font color="green">Test Past</font> - Every page has a signpost explaining what the page contains and all links to main pages are visible from all pages.
-
-9. <font color="green">Test Past</font> - The lesson pages have been given a button which displays the specification table from the AQA Exam Board when clicked.
-
-10. <font color="green">Test Past</font> - The use of java script allows local storage to store if the check box for completion has been ticked or not. 
-
-11. <font color="green">Test Past</font> - The form has validation which only allows a valid LPSB email to complete the form. The email must end in lpsb.org.uk
-
-12. <font color="green">Test Past</font> - The form has validation which only allows a valid LPSB email to complete the form. The email must end in lpsb.org.uk
-
-13. <font color="green">Test Past</font> - The index of the page has the exam boarded clearly displayed so that users that dont do to the school or people who want to do computer science know what exam board the school do. 
-
-14. <font color="green">Test Past</font> - The school badge has been made into a link so people can click the logo to go to the school website. 
+|Story No.|Result|Story/ Evidence|
+| ------------- | ------------- | ------------- |
+|1|<font color="green">Test Pass</font>|As a student, <br> I want to be able to answer past exam questions <br> so that I can get practice answering the correct style of questions that are in the exam in September. <br><br>I know I am done when students can download the exam paper PDF documents<br><br>Evidence:<br>Students can press the download button on the exams page to download exam questions.<br> ![Exams](assets/media/exams.webp)|
+|2|*<font color="yellow">Test Pass, more required</font>* |As a student, <br> I want to be able to get help from a teacher if I am finding a topic difficult <br> so that I can get help and alert the teach that I want to go over the topic again.<br><br>I know I am done when students can contact teachers telling them when they would like to get help.<br><br>Evidence:<br>Students are able to use the form on the drop in page to book a session with a teacher. (The backend systems have not been put in place so wll only go to a dummy confirmation page.)<br>![Drop in](assets/media/dropin.webp)![Drop in](assets/media/form_submit.webp)|
+|3|*<font color="yellow">Test Pass, more required</font>* |As a student, <br> I want to be able to get feedback from a teacher <br> so that I know if I am getting the answers correct and work out the answers correctly. <br><br> I know I am done when students can share their work with teachers.<br><br>Evidence:<br>Students are able to use the form on the upload page to upload files to a teacher.(The backend systems have not been put in place so wll only go to a dummy confirmation page.)<br>![Drop in](assets/media/upload.webp)![Drop in](assets/media/form_submit.webp)||
+|4|<font color="green">Test Pass</font> |As a student,<br> I want to be able to view notes and lessons <br> so that I can revise and learn the topic. <br> <br> I know I am done when students can view the teachers lessons online.<br><br>Evidence:<br>The lessons from the teachers have been placed onto specifiaction pages for students to read and interact with.<br>![Specification Page](assets/media/lesson_spec.webp)|
+|5|<font color="green">Test Pass</font> |As a student, <br>I want to be able to answer questions  <br> so that I can test my knowledge of the topic.<br> <br> I know I am done when students can view the questions that are linked to the lesson to help understand the topic. <br><br>Evidence:<br>The questions from the teachers lessons have been put onto all the content pages for students to answer.<br> ![Questions](assets/media/lesson_questions.webp)|
+|6|<font color="green">Test Pass</font> |As a student, <br>I want to be able to self mark my work after lessons.<br> so that I can move onto the next topic. <br> <br> I know I am done when students can view the answers to the questions that are linked to the lesson to help understand the topic.<br><br>Evidence:<br>The questions have been given a button which displays the answer when clicked. This allows stduents to answer the questions, then check the answer.<br> ![Questions](assets/media/lesson_questions.webp)|
+|7|<font color="green">Test Pass</font> |As a student, <br> I want to be able to watch videos that are linked to the lesson  <br> so that I can get a more visual and audial way of learning.<br> <br> I know I am done when the topic videos are watchable from the website. <br><br>Evidence:<br>The videos from the Craig and Dave youube channel have been embbeded onto the conen pages.<br>![Specification Page](assets/media/lesson_video.webp)|
+|8|<font color="green">Test Pass</font> |As a student, <br>I want to be able to easy navigate the pages  <br> so that I can get to the learning content quickly and efficiently to maximise learning time. <br> <br> I know I am done when all pages have clear links and sign postage.<br><br>Evidence:<br>Every page has a signpost explaining what the page contains and all links to main pages are visible from all pages.<br>![Specification Page](assets/media/lessons_test_result.webp)![Specification Page](assets/media/lessons_test_result_mobile.webp)|
+|9|<font color="green">Test Pass</font> |As a student, <br> I want to be able to see what I need to know for my exam  <br> so that I learn the correct content for my GCSE<br> <br> I know I am done when the AQA GCSE Specification can be viewed on the site. <br><br>Evidence:<br>The lesson pages have been given a button which displays the specification table from the AQA Exam Board when clicked.<br>![Lessons specification show](assets/media/lessons_spec_show.webp)|
+|10|<font color="green">Test Pass</font> |As a student, <br> I want to be able to save what topics I have completed  <br> so that I can keep track on where I am up to and not waste time doing a topic twice.<br> <br> I know I am done when the students can return to the site and have their progress shown.<br><br>Evidence:<br>The use of java script allows local storage to store if the check box for completion has been ticked or not.<br>![Lessons checkbox](assets/media/lessons_checkbox.webp)|
+|11|<font color="green">Test Pass</font> |As a teacher<br>  want to be able to receive work from LPSB. Students <br> so that I don’t get work from people outside of the school<br> <br> I know I am done when the students can only submit work. <br><br>Evidence:<br>The form has validation which only allows a valid LPSB email to complete the form. The email must end in lpsb.org.uk<br>![Validate email upload](assets/media/upload_test_result.webp)|
+|12|<font color="green">Test Pass</font> |As a teacher<br> I want to be able to organise sessions  with students that need help, from LPSB. <br> so that I don’t get requests from people outside of the school<br> <br> I know I am done when the students can only book if they are a student.<br><br>Evidence:<br>The form has validation which only allows a valid LPSB email to complete the form. The email must end in lpsb.org.uk<br>![Validate email drop-in](assets/media/dropin_test_result.webp)|
+|13|<font color="green">Test Pass</font> |As a teacher<br> I want to be able to have the students ID number when they send work <br> so that I can easily identify what student has sent work to me<br> <br> I know I am done when the students work has a ID number with it when work is sent.<br>![Drop in validation](assets/media/upload_result_ID.webp)|
+|14|<font color="green">Test Pass</font> |As a user, <br> I want to be able to see what exam board the school is doing<br> so that I can get more information about the computer science department and know what exam board they follow.<br> <br> I know I am done when the AQA subject title is shown on the site.<br><br>Evidence:<br>The index of the page has the exam board clearly displayed so that users that dont go to the school or people who want to do computer science know what exam board the school do.<br>![Index_page_Signpost](assets/media/index_screenshot_AQA.webp)|
+|15|<font color="green">Test Pass</font>|As a user, <br> I want to be able to go to the school website<br> so that I can get to more information about the school <br> <br> I know I am done when I have clear links to the school website.<br><br>Evidence:<br>The school badge has been made into a link so people can click the logo to go to the school website.<br>![Index_page_Signpost](assets/media/lpsb_logo_1.webp)  ![Index_page_Signpost](assets/media/lpsb_logo_2.webp). ![Index_page_Signpost](assets/media/lpsb_logo_3.webp)|
 
 ### Accessibility Testing
-| Index  | Lessons | s_3_1 | s_3_2 | s_3_3 | s_3_4 | s_3_5 |
-| ------- |---------| -----|-----|-----|-----|-----|
 
-| s_3_6 | s_3_7 | s_3_8 | Exams | Upload | Drop-in | Form Confirmation |
-| ------- |---------| -----|-----|-----|-----|-----|
+To check the colors and fonts, I used Lighthouse in the Google devtools. The results are shown below:
+
+| Index  |
+| ------- |
+| ![lighthouse result index page](assets/media/lighthouse_index.webp) |
+
+| Lessons |
+| ------- |
+| ![lighthouse result lessons page](assets/media/lighthouse_lessons.webp) |
+
+| Exams | 
+| ------- |
+| ![lighthouse result exams page](assets/media/lighthouse-exams.webp) |
+
+| Upload |
+| ------- |
+| ![lighthouse result upload page](assets/media/lighthouse_upload.webp) |
+
+| Drop-in |
+| ------- |
+| ![lighthouse result drop-in page](assets/media/lighthouse_dropin.webp) |
+
+| s_3_1, s_3_2, s_3_3, s_3_4, s_3_5, s_3_6, s_3_7, s_3_8 |
+| ------- |
+| ![lighthouse result spec page](assets/media/lighthouse_specification_pages.webp) |
 
 ### Manual Testing
 - I have tested that this page works in diffeent web browsers.
@@ -184,11 +201,62 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
 - I have tested all links, intrnal and external. They go to the correct destination and open in the correct way. 
 - I have tested that all text and fonts are readable and easy to understand.
 - I have tested that the correct data is passed when the forms are submitted. 
-### Bugs
+### Fixed Bugs
 
-- The background image on the drop in page does not show up on mobile devices. I will bne making corrections in the comming weeks. 
+#### Bug 1
+- The background image on the drop in page does not show up on ios devices.
+The code change is shown below:
 
-- Students need more space when they roatate their devices to view the content. Too much of the screen is taken up by the nav bar on the left. 
+Original code:
+```css
+background: url("/assets/images/classroom.webp") no-repeat center center !important;
+```
+New code:
+```css
+background: url("../images/classroom.webp") no-repeat center top !important;
+```
+
+#### Bug 2
+- Students need more space when they roatate their mobile devices to view the lesson content. Too much of the screen is taken up by the nav bar fixed on the left. 
+The code change is shown below:
+
+Original code:
+```css
+/* hide large nav */
+@media screen and (max-width:600px) {
+  #large_nav {
+    display: none !important;
+  }
+}
+```
+
+```css
+/* hide small nav */
+@media (min-width:601px) {
+  #small_nav {
+    display: none !important
+  }
+}
+```
+
+New code:
+```css
+/* hide large nav */
+@media screen and (max-width:950px) {
+  #large_nav {
+    display: none !important;
+  }
+}
+```
+```css
+/* hide small nav */
+@media (min-width:951px) {
+  #small_nav {
+    display: none !important
+  }
+}
+```
+***
 
 ## Deployment
 
@@ -223,6 +291,8 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
 
  The live link can be found here - [LPSB Computer Science Hub](https://dlhamilton.github.io/LPSB-Learn-GCSE-CS/)
 
+***
+
 ## Credits
 
 ### Content
@@ -247,7 +317,7 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
 #### Icons
 - All page Icons - [Font Awesome](https://fontawesome.com/)
 
-### Extra help
+### Useful Links
 - Blog looking into the best learning font for online learning - https://www.ttro.com/blog/design/five-free-fonts-that-will-improve-your-e%E2%80%91learning/
 
 
