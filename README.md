@@ -265,7 +265,17 @@ New code:
 #### Bug 3
 https://css-tricks.com/using-webp-images/
 
+/*! modernizr 3.6.0 (Custom Build) | MIT *
+ * https://modernizr.com/download/?-webp-setclasses !*/
 
+ <script src="assets/js/modernizr-custom.js"></script>
+
+.no-webp #school_logo{
+  background-image: url("../images/logo_lpsb.png");
+}
+.webp #school_logo{
+  background-image: url("../images/logo_lpsb.webp");
+}
 
 
 ***
@@ -335,4 +345,5 @@ https://css-tricks.com/using-webp-images/
 - Blog looking into the best learning font for online learning - https://www.ttro.com/blog/design/five-free-fonts-that-will-improve-your-e%E2%80%91learning/
 
 
+https://css-tricks.com/using-webp-images/
 

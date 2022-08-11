@@ -1032,10 +1032,17 @@ Media
 
 .dropin_form_section {
   clear: left;
-  background: url("../images/classroom.webp") no-repeat center top !important;
+  /* background: url("../images/classroom.webp") no-repeat center top !important; */
   background-size: cover;
   background-position: center;
   height: fit-content !important;
+}
+
+.no-webp .dropin_form_section{
+  background: url("../images/classroom.jpg") no-repeat center top !important;
+}
+.webp .dropin_form_section{
+  background: url("../images/classroom.webp") no-repeat center top !important;
 }
 
 .form_section {
