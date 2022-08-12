@@ -26,6 +26,34 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
 
 ***
 
+## Wireframes
+Below are the designs that I used to build the site. I have used the user story numbers to link where I can meet the goal in my design. This will help me to think about the users needs as I build the page.
+
+### Index Page Design<br>
+User Story Number - 8, 14, 15<br>
+![Index Page Design](assets/media/index_design.webp)
+![Index Page Design](assets/media/index_design1.webp)
+
+### User Story Number - Lesson Page Design<br>
+9, 10<br>
+![Lesson Page Design](assets/media/lesson_design.webp)
+
+### User Story Number - Lesson Content Design<br>
+4, 5, 6, 7<br>
+![Lesson Content Page Design](assets/media/lesson_content_design.webp)
+![Lesson Content Page Design](assets/media/lesson_content_design1.webp)
+![Questions on Lesson Content Page Design](assets/media/questions_design.webp)
+
+### User Story Number - Exams Design<br>
+1<br>
+![Exams Page Design](assets/media/exams_design.webp)
+
+### User Story Number - Form Design<br>
+2, 3, 11, 12, 13<br> 
+![Form Page Design](assets/media/form_design.webp)
+
+***
+
 ## Features 
 - __Index__
     - The home page shows the name of the site and has a constrasting color with the background.
@@ -334,7 +362,7 @@ I then used the picture tag for image that were on the html pages.
  <picture>
     <source srcset="assets/images/logo_lpsb.webp" type="image/webp">
     <source srcset="assets/images/logo_lpsb.png" type="image/png">
-    <img src="assets/images/logo_lpsb.png" style="width:100%" alt="Langley Park School for Boys Logo, Go to site">
+    <img src="assets/images/logo_lpsb.png"   alt="Langley Park School for Boys Logo, Go to site">
   </picture>
 ```
 
@@ -380,16 +408,16 @@ html {
 5. Press Enter.
 
 ### Local Deployment
-1. Sign up to Gitpod
+1. Sign up to [Gitpod](https://gitpod.io/)
 2. Download the Gitpod browser extension.
 3. On GitHub.com, navigate to the [dlhamilton/LPSB-Learn-GCSE-CS](https://github.com/dlhamilton/LPSB-Learn-GCSE-CS) repository.
 4. Above the list of files click the button that says 'Gitpod'.
 
 ### Remote Deployment 
- The site was deployed to Github pages. The steps to deploy are:
- 1. On GitHub.com, navigate to the [dlhamilton/LPSB-Learn-GCSE-CS](https://github.com/dlhamilton/LPSB-Learn-GCSE-CS) repository.
- 2. Navigate to the settings tab
- 3. Click on the tab called 'pages' ont he left hand side.
+ The site was deployed to Github pages. If you have forked/cloned the repository the steps to deploy are:
+ 1. On GitHub.com, navigate to your repository.
+ 2. Navigate to the settings tab.
+ 3. Click on the tab called 'pages' on the left hand side.
  4. From the source drop down list under the heading Build and deployment, select main.
  5. The page will hten provide the link to the website.
 
