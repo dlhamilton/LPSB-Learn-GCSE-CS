@@ -27,6 +27,7 @@ body {
   animation-duration: 1s;
   -webkit-animation-name: fadein;
   -webkit-animation-duration: 1s;
+  z-index: 1;
 }
 
 /* fade in for pages  */
