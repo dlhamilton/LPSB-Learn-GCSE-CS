@@ -1,5 +1,5 @@
 # LPSB Computer Science Hub
-The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub) is a site that hopes to help students to revise for their computer science GCSE. The LPSB Computer science Hub will be useful for students to see exactly what content they will need to know, give them guidance to help them understand the content and provide the students with questions to test their understanding of the content. 
+The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub) is a site that hopes to help students to revise for their computer science GCSE. The LPSB Computer science Hub will be useful for students to see exactly what content they will need to know, give them guidance to help them understand the content and provide the students with questions to test their understanding of the content. This has only been made for unit 3 Data representation from the AQA specification. I am looking to complete the other 7 units in the future. 
 
 ![Responsice Mockup](assets/media/lpsb_csh_mockup.webp)
 
