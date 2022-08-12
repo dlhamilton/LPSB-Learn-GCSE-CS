@@ -500,6 +500,10 @@ Media
   height: 22px;
 }
 
+#page_footer a{
+ text-decoration: none; 
+}
+
 #page_footer img:hover {
   background-color: rgba(105, 105, 105, 0.5);
 }
