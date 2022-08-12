@@ -277,6 +277,13 @@ https://css-tricks.com/using-webp-images/
   background-image: url("../images/logo_lpsb.webp");
 }
 
+did the same for the drop in page:
+.no-webp .dropin_form_section{
+  background: url("../images/classroom.jpg") no-repeat center top !important;
+}
+.webp .dropin_form_section{
+  background: url("../images/classroom.webp") no-repeat center top !important;
+}
 
 ***
 
