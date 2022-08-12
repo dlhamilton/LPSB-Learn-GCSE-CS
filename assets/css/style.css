@@ -807,6 +807,11 @@ Media
   width: 100%;
 }
 
+.two_column_width_half {
+  width: 100%;
+  max-width: 500px;
+}
+
 /* for the images on page s_3_7 */
 .spec_img_border {
   border: 2px solid black;
