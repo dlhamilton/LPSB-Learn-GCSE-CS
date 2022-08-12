@@ -23,103 +23,18 @@ body {
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  animation-name: fadein;
-  animation-duration: 1s;
-  -webkit-animation-name: fadein;
-  -webkit-animation-duration: 1s;
-  z-index: 1;
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s;
 }
 
 /* fade in for pages  */
 @keyframes fadein {
-  0% {
-    opacity: 0.0;
-  }
-
-  10% {
-    opacity: 0.1;
-  }
-
-  20% {
-    opacity: 0.2;
-  }
-
-  30% {
-    opacity: 0.3;
-  }
-
-  40% {
-    opacity: 0.4;
-  }
-
-  50% {
-    opacity: 0.5;
-  }
-
-  60% {
-    opacity: 0.6;
-  }
-
-  70% {
-    opacity: 0.7;
-  }
-
-  80% {
-    opacity: 0.8;
-  }
-
-  90% {
-    opacity: 0.9;
-  }
-
-  100% {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+    to   { opacity: 1; }
 }
 @-webkit-keyframes fadein{
-  0% {
-    opacity: 0.0;
-  }
-
-  10% {
-    opacity: 0.1;
-  }
-
-  20% {
-    opacity: 0.2;
-  }
-
-  30% {
-    opacity: 0.3;
-  }
-
-  40% {
-    opacity: 0.4;
-  }
-
-  50% {
-    opacity: 0.5;
-  }
-
-  60% {
-    opacity: 0.6;
-  }
-
-  70% {
-    opacity: 0.7;
-  }
-
-  80% {
-    opacity: 0.8;
-  }
-
-  90% {
-    opacity: 0.9;
-  }
-
-  100% {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 /* ================================ End of all page styling ======================================== */
