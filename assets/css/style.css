@@ -30,12 +30,23 @@ body {
 
 /* fade in for pages  */
 @keyframes fadein {
-  from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
-@-webkit-keyframes fadein{
-  from { opacity: 0; }
-  to   { opacity: 1; }
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* ================================ End of all page styling ======================================== */
@@ -167,10 +178,11 @@ body {
   transition: width 2s, height 2s;
 }
 
-.no-webp #school_logo{
+.no-webp #school_logo {
   background-image: url("../images/logo_lpsb.png");
 }
-.webp #school_logo{
+
+.webp #school_logo {
   background-image: url("../images/logo_lpsb.webp");
 }
 
@@ -478,10 +490,11 @@ Media
   word-spacing: 0px;
 }
 
-.footer_button{
+.footer_button {
   margin-left: 10px;
   margin-right: 10px;
 }
+
 #page_footer img {
   width: 22px;
   height: 22px;
@@ -919,6 +932,7 @@ Media
     width: 80%;
     margin: 0 10%;
   }
+
   .one_column_width_large {
     width: 100%;
   }
@@ -1012,10 +1026,11 @@ Media
   height: fit-content !important;
 }
 
-.no-webp .dropin_form_section{
+.no-webp .dropin_form_section {
   background: url("../images/classroom.jpg") no-repeat center top !important;
 }
-.webp .dropin_form_section{
+
+.webp .dropin_form_section {
   background: url("../images/classroom.webp") no-repeat center top !important;
 }
 

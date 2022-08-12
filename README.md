@@ -30,9 +30,12 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
 - __Index__
     - The home page shows the name of the site and has a constrasting color with the background.
     - The instructions are clear and explains what the site is for.
+    - The school logo in the topr right gets bigger when hovered over and is a link to the school website.
     
     ![Index](assets/media/index_screenshot.webp)
      - The four buttons are large and give a clear descrption of what it does when hovered. The colors change to make it clear to the user what they are currently selecting.
+     - The tool tip text appears when the button is hovered over to give more detail to the user.
+     - Animation of the cricle to spin. 
     
     ![Index hover](assets/media/index_hover.webp)
 
@@ -43,13 +46,16 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
     - The color is consistant with the index page and inverts when hovered. 
     
     ![Navigation](assets/media/nav_side.webp)
+
+    - The top fixed navigtion bar has a black color rather than grey so that the accessability color contrast is a better score. 
+    
     ![Top Fixed Navigation](assets/media/nav_top.webp)
 
 - __Lessons__
     - The page has a clear breakdown of the specification headers. Each section has its own color to help users know what section they are currently learning.
     
     ![Lessons](assets/media/lessons.webp)
-    - The button for studnets to make sections that they have comopletetd. It will store the state in local storage so when students end the session the data will still be there for the next session. 
+    - The button for students to make sections that they have completed. It will store the state in local storage so when students end the session the data will still be there for the next session. 
     
     ![Lessons checkbox](assets/media/lessons_checkbox.webp)
     - Buttons in each section to go to the lessons or go to the questions for students to answer. The color changes to match the color of the specification content
@@ -76,28 +82,31 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
 
 - __Exams__
     - Button for each specification item which downloads the pdf exam questions. 
-    - The max sore for students is shown so students know roughly how many questions are in the pdf.
-    - The colors are consistnt in the site that link each specification number to a certain color. 
+    - The max score for students is shown so students know roughly how many questions are in the pdf.
+    - The colors are consistant in the site that link each specification number to a certain color. 
     
     ![Exams](assets/media/exams.webp)
 
 - __Drop in__
     - The form collects data about the student.
-    - The stduents must enter a valid students emial address that ends with "lpsb.org.uk". this prevents students that are not in the school to book lesosns with teachers.
+    - The students must enter a valid students email address that ends with "@lpsb.org.uk". this prevents students that are not in the school to book lesosns with teachers.
     - Students can upload files to the form so that teacher can see it. 
+    - All fields need to be completed except for the ectra notes area.
+    - The combo box contains all the spec items that students may need help with. 
     
     ![Drop in](assets/media/dropin.webp)
 
 - __Upload__
     - The stduents must enter a valid students emial address that ends with "lpsb.org.uk". this prevents students that are not in the school to upload work to teachers.
-    - There is a data time picker so that stduents can book a time.
+    - There is a data time picker so that students can book a time.
+    - The student id has a format on it so it validates if it is a valid student ID. Must start with a and have 5 numbers.
     
     ![Upload](assets/media/upload.webp)
         
 - __Form Completeion__
-    - Shows the data that the fiorm has sent off.
+    - Shows the data that the form has sent off.
     - After 10 seconds the page will go back to the home page.
-    - There is a countdown whcih shows how long is left in the countdown.
+    - There is a countdown which shows how long is left in the countdown.
     
     ![Form Completeion](assets/media/form_submit.webp)
 
@@ -193,11 +202,15 @@ To check the colors and fonts, I used Lighthouse in the Google devtools. The res
 | ![lighthouse result spec page](assets/media/lighthouse_specification_pages.webp) |
 
 ### Manual Testing
-- I have tested that this page works in diffeent web browsers.
-    - google, d and m
-    - safari, d , m
-    - firefox
+- I have tested that this page works in different web browsers.
+- I have tested that the project is responsive and works with different device sizes. It looks good and functions as normal. 
+- I have tested all links, internal and external. They go to the correct destination and open in the correct way. 
+- I have tested that all text and fonts are readable and easy to understand.
+- I have tested that the correct data is passed when the forms are submitted. 
 
+This is a sample of shots of what the site looks like on different devices. 
+
+#### Desktop
 |Safari 13.1.1|Firefox 103.0.2|Chrome 104.0.5112.79|
 | ----------- | ------------- | ------------------ |
 |![safari index page](assets/media/safari_index.webp)|![firefox index page](assets/media/firefox_index.webp)|![chrome index page](assets/media/chrome_index.webp)|
@@ -207,10 +220,29 @@ To check the colors and fonts, I used Lighthouse in the Google devtools. The res
 
 ![chrome drop in page](assets/media/responsive_desktop.webp)
 
-- I have tested that the project is responsive and works with different device sizes. It looks good and functions as normal. 
-- I have tested all links, intrnal and external. They go to the correct destination and open in the correct way. 
-- I have tested that all text and fonts are readable and easy to understand.
-- I have tested that the correct data is passed when the forms are submitted. 
+#### Mobile and Tablet
+##### Safari iOS 15.5
+
+![safari ios index page](assets/media/ios_index.webp) ![safari ios index page](assets/media/ios_index2.webp)
+![safari ios lesson page](assets/media/ios_lessons.webp) ![safari ios lesson page](assets/media/ios_lessons2.webp)
+![safari ios lesson content page](assets/media/ios_lesson_content.webp) ![safari ios lesson content page](assets/media/ios_lesson_content2.webp)
+![safari ios dropin page](assets/media/ios_dropin.webp) ![safari ios dropin page](assets/media/ios_dropin2.webp)
+
+##### Chrome 104 for Android
+
+![android index page](assets/media/android_index.webp)
+![android lesson page](assets/media/android_lessons.webp) ![android lesson page](assets/media/android_lessons2.webp)
+![android lesson content page](assets/media/android_lesson_content.webp) ![android lesson content page](assets/media/android_lesson_content2.webp)
+![android dropin page](assets/media/android_dropin.webp)
+
+##### Safari iOS tablet 12.5.5
+
+![android index page](assets/media/tablet_index.webp)
+![android lesson page](assets/media/tablet_lessons.webp)
+![android lesson content page](assets/media/tablet_lesson_content.webp)
+![android dropin page](assets/media/tablet_dropin.webp)
+
+
 ### Fixed Bugs
 
 #### Bug 1
@@ -267,13 +299,21 @@ New code:
 }
 ```
 #### Bug 3
-https://css-tricks.com/using-webp-images/
+After reading the article below, I noticed that older versions of safari does not support webp. 
+This is useful for students so all can access the lessons and not worry about browser version.
+I used the modernizr custom js to idenifty if the browser that the user is using is able to use webp. 
 
-/*! modernizr 3.6.0 (Custom Build) | MIT *
- * https://modernizr.com/download/?-webp-setclasses !*/
+- https://css-tricks.com/using-webp-images/
 
- <script src="assets/js/modernizr-custom.js"></script>
+- Modernizr 3.6.0 (Custom Build) | MIT
+https://modernizr.com/download/?-webp-setclasses
 
+I added the following code to the html pages and css.
+```html
+<script src="assets/js/modernizr-custom.js"></script>
+```
+ ```css
+ /* The image select for the index page */
 .no-webp #school_logo{
   background-image: url("../images/logo_lpsb.png");
 }
@@ -281,17 +321,28 @@ https://css-tricks.com/using-webp-images/
   background-image: url("../images/logo_lpsb.webp");
 }
 
-did the same for the drop in page:
+ /* The image select for the dropin page */
 .no-webp .dropin_form_section{
   background: url("../images/classroom.jpg") no-repeat center top !important;
 }
 .webp .dropin_form_section{
   background: url("../images/classroom.webp") no-repeat center top !important;
 }
+```
+I then used the picture tag for image that were on the html pages. 
+```html
+ <picture>
+    <source srcset="assets/images/logo_lpsb.webp" type="image/webp">
+    <source srcset="assets/images/logo_lpsb.png" type="image/png">
+    <img src="assets/images/logo_lpsb.png" style="width:100%" alt="Langley Park School for Boys Logo, Go to site">
+  </picture>
+```
 
 #### Bug 4 
 
+When safari pages load the fade in the body the links that are not visable on screen becam inactive. This lead to me improving the fade code and move the command to give the page a fade to the html tag. The code is shown below:
 
+```css
 /* fade in for pages  */
 @keyframes fadein {
   from { opacity: 0; }
@@ -307,6 +358,7 @@ html {
   -webkit-animation: fadein 1s;
   animation: fadein 1s;
 }
+```
 
 ***
 
@@ -374,6 +426,5 @@ html {
 ### Useful Links
 - Blog looking into the best learning font for online learning - https://www.ttro.com/blog/design/five-free-fonts-that-will-improve-your-e%E2%80%91learning/
 
-
-https://css-tricks.com/using-webp-images/
+- A page giving the reason and different solutions on why webp images were not showing in older versions of safari - https://css-tricks.com/using-webp-images/
 
