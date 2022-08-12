@@ -23,9 +23,10 @@ body {
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* animation-name: fadein;
-  animation-duration: 2s; */
-  /* animation: fadein 1s; */
+  animation-name: fadein;
+  animation-duration: 1s;
+  -webkit-animation-name: fadein;
+  -webkit-animation-duration: 1s;
 }
 
 /* fade in for pages  */
@@ -72,7 +73,6 @@ body {
 
   100% {
     opacity: 1;
-    z-index: 0;
   }
 }
 
