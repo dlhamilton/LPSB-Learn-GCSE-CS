@@ -804,6 +804,10 @@ Media
   width: 15em;
 }
 
+.one_column_width_large {
+  width: 530px;
+}
+
 #lesson_content {
   list-style: inside;
   margin-bottom: 32px;
@@ -914,6 +918,9 @@ Media
   .one_column_width {
     width: 80%;
     margin: 0 10%;
+  }
+  .one_column_width_large {
+    width: 100%;
   }
 }
 
