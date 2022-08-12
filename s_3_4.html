@@ -17,8 +17,11 @@
   <!-- Icon Bar (Sidebar - hidden on small screens) -->
   <nav id="large_nav">
     <a href="https://www.lpsb.org.uk/" rel="external" title="Go to Langley Park School for boys page" target="_blank"
-      class="side_button"><img src="assets/images/logo_lpsb.webp" style="width:100%"
-        alt="Langley Park School for Boys Logo, Go to site"></a>
+      class="side_button">
+      <picture>
+        <source srcset="assets/images/logo_lpsb.webp" type="image/webp">
+        <source srcset="assets/images/logo_lpsb.png" type="image/png">
+        <img src="assets/images/logo_lpsb.png" style="width:100%" alt="Langley Park School for Boys Logo, Go to site"></picture></a>
     <a href="lessons.html" title="Go to Lesson" class="nav-item active">
       <i class="fa-solid fa-book-open"></i>
       <p>Lessons</p>
@@ -74,8 +77,12 @@
             <br>
           </div>
           <div class="two_column">
-            <figure><img src="assets/images/binary_add_img.webp" width="300"
-                alt="Image showing an example of adding three binary numbers together"></figure>
+            <figure>
+              <picture>
+              <source srcset="assets/images/binary_add_img.webp" type="image/webp">
+              <source srcset="assets/images/binary_add_img.jpg" type="image/jpg">
+              <img src="assets/images/binary_add_img.jpg" width="300"
+                alt="Image showing an example of adding three binary numbers together"></picture></figure>
             <br>
           </div>
         </div>
