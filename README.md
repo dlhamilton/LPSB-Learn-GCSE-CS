@@ -285,6 +285,25 @@ did the same for the drop in page:
   background: url("../images/classroom.webp") no-repeat center top !important;
 }
 
+#### Bug 4 
+
+
+/* fade in for pages  */
+@keyframes fadein {
+  from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes fadein{
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+html {
+  height: 100%;
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s;
+}
+
 ***
 
 ## Deployment
