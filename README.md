@@ -27,7 +27,7 @@ The Langley Park School for Boys Computer Science Hub (LPSB Computer Science Hub
 ***
 
 ## Wireframes
-Below are the designs that I used to build the site. I have used the user story numbers to link where I can meet the goal in my design. This will help me to think about the users needs as I build the page.
+Below are the designs that I can use to build the site. I have used the user story numbers to link where I can meet the goal in my design. This will help me to think about the users needs as I build the page.
 
 ### Index Page Design<br>
 User Story Number - 8, 14, 15<br>
