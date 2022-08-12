@@ -23,8 +23,9 @@ body {
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  animation-name: fadein;
-  animation-duration: 2s;
+  /* animation-name: fadein;
+  animation-duration: 2s; */
+  animation: fadein 1s;
 }
 
 /* fade in for pages  */
