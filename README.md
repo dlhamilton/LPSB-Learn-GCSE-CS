@@ -200,8 +200,12 @@ To check the colors and fonts, I used Lighthouse in the Google devtools. The res
 
 |Safari 13.1.1|Firefox 103.0.2|Chrome 104.0.5112.79|
 | ----------- | ------------- | ------------------ |
-| | | |s
+|![safari index page](assets/media/safari_index.webp)|![firefox index page](assets/media/firefox_index.webp)|![chrome index page](assets/media/chrome_index.webp)|
+|![safari lesson page](assets/media/safari_lessons.webp)|![firefox lesson page](assets/media/firefox_lessons.webp)|![chrome lesson page](assets/media/chrome_lessons.webp)|
+|![safari lesson content page](assets/media/safari_lesson_content.webp)|![firefox lesson content page](assets/media/firefox_lesson_content.webp)|![chrome lesson content page](assets/media/chrome_lesson_content.webp)|
+|![safari drop in page](assets/media/safari_dropin.webp)|![firefox drop in page](assets/media/firefox_dropin.webp)|![chrome drop in page](assets/media/chrome_dropin.webp)|
 
+![chrome drop in page](assets/media/responsive_desktop.webp)
 
 - I have tested that the project is responsive and works with different device sizes. It looks good and functions as normal. 
 - I have tested all links, intrnal and external. They go to the correct destination and open in the correct way. 
